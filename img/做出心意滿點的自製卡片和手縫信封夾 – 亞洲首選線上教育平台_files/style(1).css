@@ -1,0 +1,141 @@
+/*
+
+Theme Name: WPLMS Child 
+
+Template: wplms
+
+Theme URI: https://WPLMS.io/
+
+Description: WPLMS is a Learning Management System for WordPress. The theme is deep integrated with BuddyPress and comes packed with the Course Module plugin. 
+
+Theme has very powerful features which are essential for a full fledges LMS. Theme utilizes maximum of both WordPress and BuddyPress and can be run on a large scale platform as well.
+
+Author: Mr.Vibe
+
+Author URI: https://www.VibeThemes.com/
+
+Version: 3.9.6
+
+License: Themeforest 
+
+License URI: https://themeforest.net/licenses
+
+Text Domain: vibe
+
+Tags: Education, LMS, eLearning, BuddyPress, WPLMS
+
+Domain Path: /languages/
+
+*/
+
+
+
+
+  @font-face {
+       font-family: RalewayThin;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-Thin.ttf");
+      }
+	  
+	  
+	  @font-face {
+       font-family: RalewaySemiBold;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-SemiBold.ttf");
+      }
+	  
+	  
+	  
+	  @font-face {
+       font-family: RalewayRegular;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-Regular.ttf");
+      }
+	  
+	  
+	  @font-face {
+       font-family: RalewayMedium;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-Medium.ttf");
+      }
+	  
+	  
+	  @font-face {
+       font-family: RalewayLight;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-Light.ttf");
+      }
+	  
+	  
+	  
+	  @font-face {
+       font-family: RalewayHeavy;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-Heavy.ttf");
+      }
+	  
+	  
+	  
+	  @font-face {
+       font-family: RalewayExtraLight;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-ExtraLight.ttf");
+      }
+	  
+	  
+	  @font-face {
+       font-family: RalewayExtraBold;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-ExtraBold.ttf");
+      }
+	  
+	  
+	  
+	  @font-face {
+       font-family: RalewayBold;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/Raleway-Bold.ttf");
+      }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   @font-face {
+       font-family: NotoSansThin;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/NotoSans-Thin.ttf");
+      }
+	  
+	  
+	   @font-face {
+       font-family: NotoSansRegular;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/NotoSans-Regular.ttf");
+      }
+	  
+	  
+	   @font-face {
+       font-family: NotoSansMedium;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/NotoSans-Medium.ttf");
+      }
+	  
+	   @font-face {
+       font-family: NotoSansLight;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/NotoSans-Light.ttf");
+      }
+	  
+	  
+	   @font-face {
+       font-family: NotoSansBold;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/NotoSans-Bold.ttf");
+      }
+	  
+	  
+	   @font-face {
+       font-family: NotoSansBlack;
+       src: url("https://www.noschools.life/wp-content/themes/wplms-child/fonts/NotoSans-Black.ttf");
+      }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	

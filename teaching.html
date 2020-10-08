@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+.wrap {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.wrap .item {
+  width: 370px;
+  margin: 0 15px;
+  text-align: center;
+  border: 10px solid white;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px #ef9a9a;
+}
+.wrap .item .text {
+  padding: 16px 20px;
+}
+.wrap .item .icon {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  margin: -80px auto 10px;
+  font-size: 65px;
+  line-height: 150px;
+  border-radius: 45%;
+  position: relative;
+  color: #00838F;
+}
+.wrap .item .icon:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+}
+.wrap .item:hover .fas {
+  animation: anil 0.2s infinite alternate;
+}
+
+h3 {
+  color: #00838F;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: black;
+  line-height: 1.5em;
+}
+
+@keyframes anil {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+	</style>
+</head>
+<body>
+	<section class="title">
+		<p>設計風，手寫英文藝術字（基礎篇）</p>
+	</section>
+	<section>
+		<h2>課前資訊</h2>
+
+
+	</section>
+	<div class="wrap">
+  <div class="item">
+    <div class="icon"><i class="fas fa-adjust"></i></div>
+    <div class="text">
+      <h3>金魚網頁切版</h3>
+      <p>金魚都懂得這個網頁怎麼切，是鐵人賽的主題，訴求將簡單快速把一個網頁完成，但由於時間有限，所以沒有處理RWD的部分。</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="icon"><i class="fas fa-cannabis"></i></div>
+    <div class="text">
+      <h3>金魚網頁切版</h3>
+      <p>金魚都懂得這個網頁怎麼切，是鐵人賽的主題，訴求將簡單快速把一個網頁完成，但由於時間有限，所以沒有處理RWD的部分。</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="icon"><i class="fas fa-bug"></i></div>
+    <div class="text">
+      <h3>金魚網頁切版</h3>
+      <p>金魚都懂得這個網頁怎麼切，是鐵人賽的主題，訴求將簡單快速把一個網頁完成，但由於時間有限，所以沒有處理RWD的部分。</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

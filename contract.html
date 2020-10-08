@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/contact-from.css">
+	<title>書香世家</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin:0;
+			padding:0;
+		}
+		.flex{
+			display:flex;
+		}
+		.flex-n{
+			display:flex;
+			flex-wrap:nowrap;
+		}
+		.flex-w{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.flex-r{
+			display:flex;
+			flex-wrap:wrap-reverse;
+		}
+		.y-flex{
+			display:flex;
+			flex-direction: column;
+		}
+		.x-flex{display:flex;
+			flex-direction: row;}
+		a{
+			text-decoration: none;
+			color:#000;
+		}
+		div.breadcrumb{
+		  /*background-color: #e9ecef;*/
+		  padding: 5px 10px;
+		  border-radius: 5px;
+		}
+		div.breadcrumb ol.breadcrumb_list{
+		   list-style: none;
+		}
+		div.breadcrumb ol.breadcrumb_list > li{
+		  display: inline-block;
+		  margin-right: 10px;
+		}
+		div.breadcrumb ol.breadcrumb_list > li::before{
+		  content: "/";
+		  font-size: 18px;
+		  color: #aaa;
+		  margin-right: 12px;
+		}
+		/* 第一個 li 元素，將 ::before 設定回來需要的 */
+		div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+		  content: "";
+		  margin-right: 0;
+		}
+		/* 基本文字樣式 */
+		div.breadcrumb ol.breadcrumb_list > li > a{
+		    display: inline-block;
+		  color: #007bff;
+		}
+		/* 滑動移過後改變文字顏色 */
+		div.breadcrumb ol.breadcrumb_list > li > a:hover{
+		  color: #0056b3;
+		}
+		.fc-00838f{color:#00838F;}
+		body{
+			background-color:#f9f9ec;
+		}
+		
+		.ad{
+			width:980px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.location{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left:30px;
+			width:99%;
+			min-width:100px;
+			height:40px;
+			background-color: #FFDE86;
+			line-height: 40px;
+		}
+		.head {
+			text-indent:2px;
+			line-height: 40px;
+			border:1px solid yellow;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.head>h3{text-align: left;}
+		div.con{
+			margin-left:auto;
+			margin-right:auto;
+			border:2px solid brown;
+			width:100px;
+			height:45px;
+			text-align:center;
+			color:brown;
+
+		}
+		article.help{
+			justify-content:center;
+			width:1000px;
+			line-height: 40px;
+			
+		}
+		article.help div.map{
+			
+			
+		}
+		.adress{
+			margin:0;
+		}
+		article.help div.map img{
+			border:1px solid black;
+		
+			width:100%;
+
+		}
+		/*article.help{
+			display:flex;
+			width:1000px;
+		}*/
+	</style>
+</head>
+<body>
+	<header class="main-head">
+		<ul class="navul">
+			<li>
+				<div class="pen">
+					<img src="./img/feather.png" alt="" class="pimg">
+					<a class="span1" href="#">文具房</a>
+					<ul class="span11">
+						<li><a href="write.html">筆記文具</a></li>
+						<li><a href="write.html">筆盒/筆袋</a></li>
+						<li><a href="write.html">墨水</a></li>
+						<li><a href="write.html">筆記本</a></li>
+					</ul>
+				</div>
+					
+					
+				</li>
+				<li>
+				<div class="gift">
+					<img src="./img/gift-icon.png" alt="" class="gimg">
+					<a class="span2" href="#">禮品小物</a>
+					<ul class="span21">
+						<li><a href="gift.html">療癒香氛</a></li>
+						<li><a href="gift.html">清潔收納</a></li>
+						<li><a href="gift.html">瓶瓶罐罐</a></li>
+						<li><a href="gift.html">餐桌道具</a></li>
+						<li><a href="gift.html">皮件工具</a></li>
+					</ul>
+				</div>
+					
+				</li>
+			<li><a href="orginal.html">手工原創</a></li>
+			<li><a href="teaching2.html">手寫教學</a></li>
+			<li><a href="cantact.html">聯絡我們</a></li>
+		</ul>
+		<div class="logobox"><img src="./img/logok.png" alt=""></div>
+	</header>
+	<div class="breadcrumb ad">
+  	<ol class="breadcrumb_list">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="#">聯絡我們</a></li>
+    
+  	</ol>
+	</div>
+	<article class="head ad">
+		<h3 class="fc-00838f location">別出心裁的手作文物</h3>
+		<p>書香世家創立于2010年，是一家充滿手感溫度且的文房具店所提供的文具想傳遞一個概念：</p>
+		<p>沒有浮誇設計與機能、注重文具的本質。</p>
+		<p>因此我們所挑選的每一款文具都是從眾多文具當中親自使用過後，覺得能夠推薦給各位才放上書香世家網站。</p>
+		<p>我們想藉此傳達書寫的快樂並保留，客製化筆記本及客製化墨水因而誕生。</p>
+		<p>除原創筆具外，店內精選許多海外特色文具！</p>
+		<section>
+		<h4>“享受書寫的樂趣”</h4>
+		<p>期待能藉由文具增近人與人之間的情感距離</p>
+		
+		
+		</section>
+		
+	</article>
+	<section  class="ad">
+		<h3 class="fc-00838f location">書香世家的位置：</h3>
+		<article class="help flex">
+				<div class="container">  
+				  <form id="contact" action="" method="post">
+				    <h3>聯絡我們</h3>
+				    <h4>留下你的訊息</h4>
+				    <fieldset>
+				      <input placeholder="姓名" type="text" tabindex="1" required autofocus>
+				    </fieldset>
+				    <fieldset>
+				      <input placeholder="電子郵件" type="email" tabindex="2" required>
+				    </fieldset>
+				    <fieldset>
+				      <input placeholder="你的電話號碼" type="tel" tabindex="3" required>
+				    </fieldset>
+				    
+				    <fieldset>
+				      <textarea placeholder="你想說甚麼" tabindex="4" required></textarea>
+				    </fieldset>
+				    <fieldset>
+				      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">送出</button>
+				    </fieldset>
+				    
+				  </form>
+				</div>
+			
+			<div class="adress y-flex">
+				<h3 class="fc-00838f">聯絡資訊</h3>
+				<p>聯絡地址 :桃園市中壢區復興路46號9樓</p>
+				<p>客服電話：03-2205097</p>
+				<p><span>客服信箱 ：</span><a href="mailto:postintw@gmail.com">postintw@gmail.com</a></p>
+				<div class="map">
+						<img src="./img/map.png" alt="">
+				</div>
+			</div>
+
+		</article>
+	</section>
+	<footer>
+<div class="foot">
+  <div class="container">
+    <div class="item">
+      <h3>關於書香世家</h3>
+      <div class="nav"><a href="#">客製化服務</a><a href="#">預約空間</a><a href="#">預約座位</a></div>
+    </div>
+    <div class="item">
+      <h3>客戶須知</h3>
+      <div class="nav"><a href="#">退換貨流程</a><a href="#">售後服務</a><a href="#">免責聲明</a><a href="#">品牌理念</a></div>
+    </div>
+    <div class="item">
+      <h3>產品與服務</h3>
+      <div class="nav"><a href="orginal2.html">＞手工原創</a><a href="teaching2.html">＞手寫教學</a><a href="gift.html">＞禮品小物</a><a href="write.html">＞文房具</a></div>
+    </div>
+    <div class="item item_form">
+      <h3>訂閱電子報</h3>
+      <form>
+        <input type="email" name=""/>
+        <input type="submit" value="訂閱"/>
+      </form>
+    </div>
+  </div>
+  <div class="foot copy">copyright &copy;書香世家</div>
+</div>
+	</footer>
+</body>
+</html>

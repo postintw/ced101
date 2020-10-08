@@ -1,0 +1,123 @@
+@charset "UTF-8";
+*{		
+			padding: 0;
+			margin: 0;	
+			box-sizing: border-box;
+		}
+@keyframes ani {
+		  0% {
+		    transform: rotate(-10deg);
+		  }
+		  50%,100% {
+		    transform: rotate(0deg);
+		  }
+		  75% {
+		    transform: rotate(10deg);
+		  }
+		  	}
+		.main-head{
+			z-index: 3;
+			border:1px solid yellow;
+			width:100%;
+			height:100px;
+			position: sticky;
+			top:0px;
+			padding-top:20px;
+			background-color:rgba(254,252,224,0.7);
+			font-size:24px;
+		}
+		div.logobox{
+			position:relative;
+			left:3px;
+			top:-30px;
+			/*border:1px solid black;*/
+			width:142px;
+		}	
+		li a{
+		text-decoration: none;
+		color:#000;	
+		}
+		ul.navul{
+			/*border:3px solid blue;*/
+			display: flex;
+			list-style: none;
+			margin-top:30px;
+			margin-right:auto;
+			margin-left: auto;
+			width:800px;
+			justify-content: center;
+			padding:0;
+		}
+		
+		ul.navul li{
+						list-style: none;
+			flex-grow: 1;
+			text-align: center;
+			font-size:24px;
+			display:relative;
+		}
+		ul.navul li:hover{
+			border-bottom: 5px solid #fccb00;
+		}
+		li>div.pen,li>div.gift{
+			position:relative;
+		}
+		.pen>img.pimg{
+			display: block;
+			position:absolute;
+			left:0px;
+			bottom:0px;
+			width:18%;
+			
+		}
+		.gift>img.gimg{
+			display:block;
+			position:absolute;
+			left:0px;
+			bottom:0px;
+			width:18%;
+		}
+		.pen:hover img.pimg,.gift:hover img.gimg{
+			animation: ani 0.4s infinite alternate;
+		}
+		ul.span11{
+			margin:0 auto;
+			/*border:1px solid ;*/
+			display: none;
+			position:absolute;
+			background-color: rgba(50,11,5,0.7) ;
+			width:100%;
+		}
+		ul.span11 li a{
+			color:#FFF;
+		}
+		ul.span11 li:hover{
+			background-color: rgba(254,255,224,0.7);
+		}
+		ul.span11 li:hover a{
+			color:#00838F;
+			font-weight:600;
+		}
+		ul.span21{
+			display:none;
+			position:absolute;
+			background-color:rgba(50,11,5,0.7);
+			margin:0 auto;
+			width:100%;
+		}
+		ul.span21 li:hover{
+			background-color: rgba(254,255,224,0.7);
+		}
+		ul.span21 li:hover a{
+			color:#00838F;
+			font-weight:600;
+		}
+		ul.span21 li a {
+			color:#FFF;
+		}
+		.gift:hover ul.span21{
+			display:block;
+		}
+		.pen:hover ul.span11{
+			display:block;
+		}

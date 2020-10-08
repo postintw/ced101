@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button type="button" class="hamburger_icon">
+  <span class="-hr -top"></span>
+  <span class="-hr -middle"></span>
+  <span class="-hr -bottom"></span>
+</button>
+<script>
+	$(function(){
+  /* 按鈕狀態的切換 */
+  $("button.hamburger_icon").on("click", function(){
+    $(this).toggleClass("-on");
+  });
+});
+	document.addEventListener('DOMContentLoaded', function(){
+  
+  var hamburger_icon = document.getElementsByClassName("hamburger_icon")[0];
+  hamburger_icon.addEventListener("click", function(){
+    if( hamburger_icon.classList.contains("-on") ){
+      hamburger_icon.classList.remove("-on");
+    }else{
+      hamburger_icon.classList.add("-on");
+    }
+  });
+  
+});
+</script>
+</body>
+</html>

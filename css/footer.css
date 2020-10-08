@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.foot {
+  padding: 150px 0 0;
+  background: linear-gradient(0deg, #f1e7c0, #f4f1e3);
+}
+.foot .container {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+}
+.foot .container .item {
+  width: 0;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+.foot .container .item h3 {
+  font-size: 20px;
+  color: #eec110;
+  text-shadow: 0 0 2px black;
+  font-weight: 50;
+  border-bottom: 2px dotted #fff;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.6em;
+}
+.foot .container .item .nav {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6em;
+}
+.foot .container .item .nav a {
+  color: #eec110;
+  text-decoration: none;
+  padding: 5px;
+}
+input[type="email"]{}
+.foot.copy {
+  text-align: center;
+  margin: 150px 0 0;
+  padding: 10px 0;
+  background-color: #fbf1e3;
+  color: #eec110;
+
+}

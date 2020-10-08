@@ -1,0 +1,14 @@
+window.mcwidget = {"appId":"532160876956612","pageId":"123151","page_name":"noschools.life","fb_page_id":"103492261076522","widget_phone":null,"widgets":[{"widget_id":9960391,"page_id":"123151","widget_type":"button","status":"active","name":"付款失敗按鈕","data":{"feed_comment_settings":[],"main":{"buttonBackground":"white","buttonSize":"large","ctaText":"GET_CUSTOMER_SERVICE"},"submitted":{"colors":{"buttonBackground":"#AD292A","buttonText":"#FFFFFF"},"ctaText":"到Facebook聊天室查看"}},"channel":"facebook","ts_created":1585563153},{"widget_id":9720185,"page_id":"123151","widget_type":"button","status":"active","name":"付款頁面按鈕","data":{"feed_comment_settings":[],"main":{"buttonBackground":"white","buttonSize":"large","ctaText":"GET_CUSTOMER_ASSISTANCE"},"submitted":{"colors":{"buttonBackground":"#AD2625","buttonText":"#FFFFFF"},"ctaText":"到聊天室查看訊息"}},"channel":"facebook","ts_created":1583991073}],"widgetLocale":"zh_TW","defaultSize":0,"fbSDKVersion":"v6.0","whitelist":["e04a45f0a505569fddc714decd22a84e8cb421b628b371dd70f2ca7035eac346","f2cbfeda670dc91d10651057f2d9c1f9010175cf28059cfc43337b7d2c6f3f4d","97bef2871a2f2e131b554fdf36b3cd1c516f45dfd51877232596cb0360c0ec2e","8b9f6f9d09886aab7ca36fbbf64a3cc5f741c03f2548e180f1fa30bda24db024"],"smsModalConsentText":"Please note that by typing in your phone number in the field above you are agreeing to receive autodialed personal and marketing text messages to your mobile number. Consent is not required for purchase. Message and data rates may apply. Reply “STOP” by SMS to cancel."};
+
+
+    (function(d, s, id){
+        var host = 'mccdn.me/127253';
+
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = '//' + host + '/assets/js/widget.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'mcwidget-core'));
+
+            

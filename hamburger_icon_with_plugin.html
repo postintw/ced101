@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hamburger_icon_with_plugin</title>
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/jonsuh/hamburgers/master/dist/hamburgers.css">
+	<style>
+		button.hamburger{
+			width:100px;
+			height:50px;
+		}
+	</style>
+</head>
+<body>
+	<button class="hamburger"></button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+</script>
+<script>
+	$(function(){
+  
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+  });
+
+});
+</script>
+</body>
+</html>

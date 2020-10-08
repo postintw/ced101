@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		nav.main_nav ul li{
+			border:1px solid orange;
+			display:inline-block;
+		}
+		ul{
+			list-style:none;
+		}
+		nav.main_nav ul 
+		nav.
+	</style>
+</head>
+<body>
+	<button type="button" class="btn_switch">導覽列縮合按鈕</button>
+<nav class="main_nav">
+  <ul class="nav_list">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">關於我們</a></li>
+    <li><a href="#">分類頁</a></li>
+  </ul>
+</nav>
+<script>
+	$(function(){
+  
+  // 點擊按鈕，選單縮放
+  $("button.btn_switch").on("click", function(){
+    $("nav.main_nav").slideToggle();
+  });
+  });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</body>
+</html>

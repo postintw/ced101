@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>書香世家</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/catgift.css">
+	<style>
+		a{
+			text-decoration: none;
+		}
+		div.write{
+			width:100%;
+			/*height:700px;*/
+			background-image: url(./img/石.png);
+			background-repeat: repeat;
+
+		}
+		div.row1{
+			display:flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+			width:100%;
+			/*border:2px solid red;*/
+		}
+		div.p{
+			width:45%;
+			min-width: 400px;
+			text-align: center;
+		}
+		div.img1{
+		/*	border:1px solid green;*/
+			width:45%;
+			min-width:520px;
+			position:relative;
+		}
+
+		img.boo{
+			/*border:1px solid green;*/
+			
+			position:absolute;
+			max-width:520px;
+			right: 100px;
+			z-index: 4;
+		}
+		img.waterpen{
+			/*border:1px solid pink;*/
+			width: 100%;
+			position: relative;
+			
+			right:0px;
+			z-index: 5;
+
+		}
+		div.write div.row2{
+			/*border:1px solid black;*/
+			height:400px;
+			width:100%;
+			display:flex;
+			justify-content: space-around;
+
+		}
+		div.shop1,div.shop2,div.shop3{
+			border:15px solid #ee2c03;
+			width:350px;
+			position:relative;
+		}
+		div.shopt{
+			width:100%;
+			height:80px;
+			background-color: rgba(255,255,255,0.7);
+			position: absolute;
+			bottom:0;
+			text-align:center;
+
+		}
+		.maingift{
+		
+			background-color:rgb(255,186,255);
+			width:100%;
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content:space-between;
+		}
+		.gift1{
+			width:335px;
+	
+		}
+		.gift2{
+			/*border:1px solid yellow;*/
+			width:460px;
+			position:relative;
+			line-height: 40px;
+			text-align:center;
+			padding-top:40px;
+			
+		}
+		.gift2 h3{
+			width:300px;
+			margin:auto;
+			
+		}
+		
+
+
+		 img{
+			max-width:100%;
+		}
+		.gift3{
+			width:355px;
+			text-align:center;
+		}
+		
+		.gift3 img{
+			width:100%;
+		}
+		div.hand{
+		width:100%;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		}
+		div.hand :nth-child(1){
+			width:45%;
+			min-width: 490px;
+			/*height:45%;*/
+		}
+		div.hand :last-child{
+			width:45%;
+			min-width: 490px;
+			/*height:45%;*/
+		}
+.Carousel {
+	z-index: 1;		
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	background-color: #000;
+}
+.Carousel > div {	
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  animation: change 25s infinite;
+  opacity: 0;
+}
+.Carousel > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.Carousel > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.Carousel > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.Carousel > div:nth-child(5) {
+  animation-delay: 20s;
+}
+
+@keyframes change {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+  }  
+}/*footer*/
+
+
+	</style>
+</head>
+<body>
+	<header class="main-head">
+		<ul class="navul">
+			<li>
+				<div class="pen">
+					<img src="./img/feather.png" alt="" class="pimg">
+					<a class="span1" href="#">文具房</a>
+					<ul class="span11">
+						<li><a href="write.html">筆記文具</a></li>
+						<li><a href="write.html">筆盒/筆袋</a></li>
+						<li><a href="write.html">墨水</a></li>
+						<li><a href="write.html">筆記本</a></li>
+					</ul>
+				</div>
+					
+					
+				</li>
+				<li>
+				<div class="gift">
+					<img src="./img/gift-icon.png" alt="" class="gimg">
+					<a class="span2" href="#">禮品小物</a>
+					<ul class="span21">
+						<li><a href="gift.html">療癒香氛</a></li>
+						<li><a href="gift.html">清潔收納</a></li>
+						<li><a href="gift.html">瓶瓶罐罐</a></li>
+						<li><a href="gift.html">餐桌道具</a></li>
+						<li><a href="gift.html">皮件工具</a></li>
+					</ul>
+				</div>
+					
+				</li>
+			<li><a href="orginal.html">手工原創</a></li>
+			<li><a href="teaching2.html">手寫教學</a></li>
+			<li><a href="cantact.html">聯絡我們</a></li>
+		</ul>
+		<div class="logobox"><img src="./img/logok.png" alt=""></div>
+	</header>
+	<main>
+		<div class="Carousel" >
+			<!-- style="background-image:url(./img/og_banner.jpg") -->
+  <div style="background-image:url(./img/103408.jpg)"></div>
+  <div style="background-image:url(./img/104153.jpg)"></div>
+  <div style="background-image:url(./img/185053.jpg)"></div>
+  <div style="background-image:url(./img/og_banner.jpg)"></div>
+  <div style="background-image:url(./img/172033.jpg)"></div>
+  
+
+		</div>
+		<div class="write">
+			<div class="row1">
+				<div class="p">
+				<p style="font-size: 48px">文	具	 房</p>
+				<p>“沒有浮誇設計與機能、注重文具的本質。”</p>
+
+				</div>
+
+				<div class="img1">
+					<img class="waterpen" src="./img/專業沾水筆.png" alt="專業沾水筆">
+					<img class="boo" src="./img/手寫簿.png" alt="手寫簿子">
+				</div>
+				
+				<!-- <div class="img1"></div>
+				<div class="img2"></div> -->
+			</div>
+			<div class="row2" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+				<div class="shop1">
+					<div class="img"><img src="./img/無重力太空筆.png" alt=""></div>
+					<div class="shopt">
+						<h4>無重力太空筆</h4>
+					</div>
+				</div>
+				<div class="shop2">
+					<div class="img"><img src="./img/義大利羽毛沾水筆.png" alt=""></div>
+					<div class="shopt">
+						<h4>義大利羽毛沾水筆</h4>
+					</div>
+				</div>
+				<div class="shop3">
+					<div class="img"><img src="./img/羽毛筆.png" alt=""></div>
+					<div class="shopt">
+						<h4>羽毛沾水筆</h4>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		
+		<div class="maingift">
+				<div class="gift1">
+				<img  src="./img/gift_left.png" alt="">
+				</div>
+			
+		
+				<div class="gift2">
+				
+				
+				<a href="#" class="ourter" >
+				<h3>各式禮品精緻小物</h3>
+				<p>本月主打手帳信紙周邊小物，並同步與日travel'note合作聯名商品</p>
+				  <div class="box">   
+				    <div class="message"></div>   
+				    <div class="box-top">
+				      <ul>
+				        <li class="first"></li>
+				        <li class="middle"></li>
+				        <li class="last"></li>
+				      </ul>
+				      <div class="lid"><span></span></div>
+				    </div>
+				    
+				    <div class="box-bottom">
+				      <div class="base"><span></span></div>
+				      <div class="cat">
+				        <div class="face">
+				          <span class="eye left"></span>
+				          <span class="eye right"></span>
+				          <span class="nose"></span>
+				          <span class="mouth"></span>
+				        </div>
+				        
+				        <div class="body">
+				          <span class="hand left"></span>
+				          <span class="hand right"></span>
+				          <div class="rotulo"><span style="z-index:10;">我要禮物</span></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</a>
+				</div>
+				<div class="gift3"><img class="" src="./img/gift_right.png" alt="">
+				</div >
+
+				
+			</div>
+		</div>	
+				
+		<div class="hand">
+			<img src="./img/handlove.png" alt="">
+			<img src="./img/handright.png" alt="">
+		</div>
+
+	</main>
+	<footer>
+<div class="foot">
+  <div class="container">
+    <div class="item">
+      <h3>關於書香世家</h3>
+      <div class="nav"><a href="#">客製化服務</a><a href="#">預約空間</a><a href="#">預約座位</a></div>
+    </div>
+    <div class="item">
+      <h3>客戶須知</h3>
+      <div class="nav"><a href="#">退換貨流程</a><a href="#">售後服務</a><a href="#">免責聲明</a><a href="#">品牌理念</a></div>
+    </div>
+    <div class="item">
+      <h3>產品與服務</h3>
+      <div class="nav"><a href="orginal2.html">＞手工原創</a><a href="teaching2.html">＞手寫教學</a><a href="gift.html">＞禮品小物</a><a href="write.html">＞文房具</a></div>
+    </div>
+    <div class="item item_form">
+      <h3>訂閱電子報</h3>
+      <form>
+        <input type="email" name=""/>
+        <input type="submit" value="訂閱"/>
+      </form>
+    </div>
+  </div>
+  <div class="foot copy">copyright &copy;書香世家</div>
+</div>
+	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
+</body>
+</html>
