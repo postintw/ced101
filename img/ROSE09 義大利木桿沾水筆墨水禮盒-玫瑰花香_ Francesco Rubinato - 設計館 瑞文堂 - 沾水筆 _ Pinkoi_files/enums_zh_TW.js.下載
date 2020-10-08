@@ -1,0 +1,4032 @@
+requirejs.undef('enums'); define('enums', function(){return {
+    "categoryMap": {
+        "closure": "\u6b3e\u5f0f",
+        "size": "\u5c3a\u78bc",
+        "kids-shoes-size-eu": "\u5c3a\u78bc\uff08EU\uff09",
+        "mens-shoes-size-uk": "\u5c3a\u78bc \u7537\uff08UK\uff09",
+        "color": "\u984f\u8272",
+        "womens-shoes-size-us": "\u5c3a\u78bc \u5973\uff08US\uff09",
+        "womens-shoes-size-jp": "\u5c3a\u78bc \u5973\uff08JP\uff09",
+        "ring-size-us": "\u6212\u570d\uff08US\uff09",
+        "ring-size-tw": "\u6212\u570d\uff08TW \u570b\u969b\u570d\uff09",
+        "kids-shoes-size-us": "\u5c3a\u78bc\uff08US\uff09",
+        "womens-shoes-size-uk": "\u5c3a\u78bc \u5973\uff08UK\uff09",
+        "kids-shoes-size-jp": "\u5c3a\u78bc\uff08JP\uff09",
+        "kids-shoes-size-uk": "\u5c3a\u78bc\uff08UK\uff09",
+        "ring-size-hk": "\u6212\u570d\uff08HK\uff09",
+        "ring-size-jp": "\u6212\u570d\uff08JP\uff09",
+        "mens-shoes-size-eu": "\u5c3a\u78bc \u7537\uff08EU\uff09",
+        "mens-shoes-size-jp": "\u5c3a\u78bc \u7537\uff08JP\uff09",
+        "mens-shoes-size-us": "\u5c3a\u78bc \u7537\uff08US\uff09",
+        "womens-shoes-size-eu": "\u5c3a\u78bc \u5973\uff08EU\uff09"
+    },
+    "material": {
+        "0": "\u5176\u4ed6\u6750\u8cea",
+        "2": "\u7d19",
+        "5": "\u5176\u4ed6\u91d1\u5c6c",
+        "6": "\u9676",
+        "7": "\u7f8a\u6bdb",
+        "9": "\u68c9\uff0e\u9ebb",
+        "10": "\u771f\u76ae",
+        "11": "\u9632\u6c34\u6750\u8cea",
+        "12": "\u6728\u982d",
+        "13": "\u5851\u81a0",
+        "14": "\u690d\u7269\uff0e\u82b1",
+        "15": "\u73bb\u7483",
+        "17": "\u7e61\u7dda",
+        "18": "\u5bf6\u77f3",
+        "19": "\u77fd\u81a0",
+        "20": "\u7af9",
+        "21": "\u6c34\u6ce5",
+        "22": "\u743a\u746f",
+        "23": "\u881f",
+        "24": "\u6a61\u81a0",
+        "25": "\u65b0\u9bae\u98df\u6750",
+        "26": "\u7d72\uff0e\u7d79",
+        "27": "\u74f7",
+        "28": "\u9ecf\u571f",
+        "29": "\u58d3\u514b\u529b",
+        "30": "\u77f3\u982d",
+        "31": "\u984f\u6599",
+        "32": "\u805a\u916f\u7e96\u7dad",
+        "33": "24k \u91d1",
+        "34": "\u8cb4\u91d1\u5c6c",
+        "35": "\u73ab\u7470\u91d1",
+        "36": "\u92c1\u5408\u91d1",
+        "37": "\u9280",
+        "38": "\u7d14\u9280",
+        "39": "\u9285/\u9ec3\u9285",
+        "40": "\u947d\u77f3",
+        "41": "\u7389\u77f3",
+        "42": "\u534a\u5bf6\u77f3",
+        "43": "\u6c34\u6676",
+        "44": "\u73cd\u73e0",
+        "45": "\u8c9d\u6bbc",
+        "46": "\u4e9e\u9ebb",
+        "47": "\u7fbd\u7d68",
+        "48": "\u4eba\u9020\u76ae\u9769",
+        "49": "\u8edf\u6728/\u6c34\u677e\u6728",
+        "50": "\u7409\u7483",
+        "51": "\u4e0d\u93fd\u92fc",
+        "52": "\u6a39\u8102",
+        "53": "\u78b3\u7e96\u7dad",
+        "54": "\u5c3c\u9f8d",
+        "55": "\u5176\u4ed6\u4eba\u9020\u7e96\u7dad",
+        "56": "\u4e73\u81a0",
+        "57": "\u6d77\u7dbf",
+        "58": "\u74b0\u4fdd\u6750\u8cea",
+        "59": "\u7cbe\u6cb9",
+        "60": "\u6fc3\u7e2e/\u8403\u53d6\u7269"
+    },
+    "subcategory": {
+        "1": "\u5973\u88dd T \u6064",
+        "2": "\u5973\u88dd\u80cc\u5fc3",
+        "3": "\u88d9\u5b50",
+        "6": "\u6d0b\u88dd/\u9023\u8eab\u88d9",
+        "8": "\u5973\u88dd\u91dd\u7e54\u886b/\u6bdb\u8863",
+        "9": "\u5973\u88dd\u896f\u886b",
+        "11": "\u5973\u88dd\u4e0a\u8863",
+        "13": "\u540a\u5e36\u8932/\u9023\u8eab\u8932",
+        "15": "\u4e2d\u6027\u9023\u5e3d\u5916\u5957/T \u6064",
+        "16": "\u7537\u88dd\u4e0a\u8863/T \u6064",
+        "17": "\u7537\u88dd\u80cc\u5fc3",
+        "18": "\u7537\u88dd\u896f\u886b",
+        "19": "\u7537\u9577\u8932",
+        "20": "\u7537\u88dd\u5916\u5957",
+        "21": "\u7537\u88dd\u91dd\u7e54\u886b/\u6bdb\u8863",
+        "22": "\u5973\u88dd\u5167\u8863\u8932",
+        "23": "\u665a\u88dd/\u79ae\u670d",
+        "24": "\u65d7\u888d",
+        "25": "\u5973\u88dd\u5167\u642d/\u7dca\u8eab\u8932",
+        "26": "\u7537\u88dd\u5167\u8863\u8932",
+        "27": "\u4e2d\u6027\u8932\u88dd",
+        "28": "\u5c45\u5bb6\u670d/\u7761\u8863",
+        "29": "\u5973\u88dd\u897f\u88dd\u5916\u5957",
+        "30": "\u5973\u88dd\u4f11\u9592/\u6a5f\u80fd\u5916\u5957",
+        "31": "\u5973\u88dd\u9577\u8932",
+        "32": "\u5973\u88dd\u77ed\u8932",
+        "33": "\u7537\u77ed\u8932",
+        "34": "\u7537\u897f\u88dd\u5916\u5957",
+        "99": "\u5176\u4ed6",
+        "103": "\u9577\u77ed\u593e/\u9322\u5305",
+        "104": "\u5074\u80cc\u5305/\u659c\u80cc\u5305",
+        "105": "\u624b\u63d0\u5305/\u624b\u63d0\u888b",
+        "106": "\u96f6\u9322\u5305",
+        "109": "\u96fb\u8166\u5305/\u7b46\u96fb\u5305",
+        "110": "\u76f8\u6a5f\u5305/\u76f8\u6a5f\u888b",
+        "111": "\u5f8c\u80cc\u5305/\u66f8\u5305",
+        "112": "\u516c\u4e8b\u5305/\u91ab\u751f\u5305",
+        "113": "\u5316\u599d\u5305/\u96dc\u7269\u5305",
+        "114": "\u675f\u53e3\u5f8c\u80cc\u5305",
+        "117": "\u884c\u674e\u7bb1/\u884c\u674e\u7bb1\u4fdd\u8b77\u5957",
+        "118": "\u624b\u62ff\u5305",
+        "199": "\u5176\u4ed6",
+        "201": "\u9805\u934a",
+        "202": "\u6212\u6307",
+        "203": "\u8033\u74b0/\u8033\u593e",
+        "204": "\u9aee\u98fe",
+        "205": "\u624b\u934a/\u624b\u74b0",
+        "207": "\u7d72\u5dfe",
+        "208": "\u5e3d\u5b50",
+        "209": "\u624b\u5957",
+        "210": "\u80f8\u91dd",
+        "213": "\u8896\u6263",
+        "215": "\u5973\u9336",
+        "216": "\u773c\u93e1/\u773c\u93e1\u6846",
+        "217": "\u9470\u5319\u5708/\u9470\u5319\u5305",
+        "218": "\u8b77\u7167\u593e/\u8b77\u7167\u5957",
+        "219": "\u540d\u7247\u593e/\u540d\u7247\u76d2",
+        "220": "\u8b49\u4ef6\u5957/\u5361\u5957",
+        "222": "\u9818\u5e36/\u9818\u5e36\u593e",
+        "224": "\u7d0b\u8eab\u8cbc\u7d19",
+        "225": "\u8170\u5e36/\u76ae\u5e36",
+        "226": "\u773c\u7f69",
+        "228": "\u8173\u934a/\u8173\u74b0",
+        "229": "\u9aee\u5e36/\u9aee\u7b8d",
+        "230": "\u80f8\u82b1/\u624b\u8155\u82b1",
+        "231": "\u7537\u9336/\u4e2d\u6027\u9336",
+        "232": "\u5c0d\u9336/\u60c5\u4fb6\u9336",
+        "233": "\u9336\u5e36",
+        "234": "\u592a\u967d\u773c\u93e1",
+        "235": "\u9818\u7d50/\u9818\u5dfe",
+        "236": "\u570d\u5dfe/\u62ab\u80a9",
+        "237": "\u639b\u7e69/\u540a\u7e69",
+        "238": "\u53e3\u7f69",
+        "239": "\u624b\u5e15/\u65b9\u5dfe",
+        "240": "\u5fbd\u7ae0/\u5225\u91dd",
+        "241": "\u540a\u98fe",
+        "242": "\u884c\u674e\u540a\u724c",
+        "243": "\u5c0d\u6212",
+        "244": "\u9838\u93c8",
+        "245": "\u9396\u9aa8\u934a",
+        "246": "\u9577\u93c8",
+        "299": "\u5176\u4ed6",
+        "301": "\u7b46\u8a18\u672c/\u624b\u5e33",
+        "303": "\u7b46\u76d2/\u7b46\u888b",
+        "304": "\u5361\u7247/\u660e\u4fe1\u7247",
+        "305": "\u8cbc\u7d19",
+        "306": "\u7b46\u7b52/\u7b46\u5ea7",
+        "307": "\u651d\u5f71\u96c6",
+        "308": "\u76f8\u7c3f/\u76f8\u672c",
+        "309": "\u6587\u4ef6\u593e/\u8cc7\u6599\u593e",
+        "310": "\u7d19\u81a0\u5e36",
+        "312": "\u5370\u7ae0/\u5370\u53f0",
+        "313": "\u520a\u7269/\u66f8\u7c4d",
+        "316": "\u91d8\u66f8\u6a5f",
+        "317": "\u539f\u5b50\u7b46/\u4e2d\u6027\u7b46",
+        "318": "\u78c1\u9435",
+        "320": "\u5e74\u66c6/\u684c\u66c6",
+        "321": "\u4fbf\u689d\u7d19/\u6a19\u7c64\u8cbc",
+        "322": "\u7d05\u5305/\u6625\u806f",
+        "323": "\u66f8\u7c64",
+        "324": "\u540d\u7247\u67b6/\u540d\u7247\u5ea7",
+        "325": "\u4fe1\u5c01/\u4fe1\u7d19",
+        "326": "\u7d19\u76d2/\u5305\u88dd\u76d2",
+        "327": "\u66f8\u8863/\u66f8\u5957",
+        "328": "\u97f3\u6a02\u5c08\u8f2f",
+        "329": "\u7d50\u5a5a\u66f8\u7d04",
+        "330": "\u559c\u5e16",
+        "331": "\u925b\u7b46/\u81ea\u52d5\u925b\u7b46",
+        "332": "\u92fc\u73e0\u7b46",
+        "333": "\u92fc\u7b46",
+        "334": "\u6cbe\u6c34\u7b46",
+        "335": "\u5176\u4ed6\u66f8\u5beb\u7528\u5177",
+        "336": "\u58a8\u6c34",
+        "337": "\u524a\u7b46\u5668",
+        "338": "\u526a\u5200/\u62c6\u4fe1\u5200",
+        "399": "\u5176\u4ed6",
+        "403": "\u5152\u7ae5\u5bb6\u5177",
+        "404": "\u73a9\u5177/\u73a9\u5076",
+        "405": "\u570d\u515c/\u53e3\u6c34\u5dfe",
+        "406": "\u5abd\u5abd\u5305",
+        "409": "\u7ae5\u88dd\u978b",
+        "412": "\u5f4c\u6708\u79ae\u76d2",
+        "414": "\u5976\u74f6/\u5976\u5634",
+        "415": "\u5b30\u5152\u5e3d/\u9aee\u5e36",
+        "416": "\u5b30\u5152\u98fe\u54c1",
+        "417": "\u5b30\u5152\u896a\u5b50",
+        "418": "\u5b30\u5152\u978b",
+        "419": "\u5305\u5c41\u8863/\u9023\u8eab\u8863",
+        "420": "\u7ae5\u88dd\u4e0a\u8863",
+        "421": "\u7ae5\u88dd\u88d9",
+        "422": "\u7ae5\u88dd\u8932",
+        "423": "\u7ae5\u88dd\u5916\u5957",
+        "424": "\u7ae5\u88dd\u79ae\u670d/\u6d0b\u88dd",
+        "425": "\u80cc\u5305/\u888b\u5b50",
+        "426": "\u5152\u7ae5\u96e8\u8863/\u96e8\u5177",
+        "427": "\u6cf3\u8863/\u6e38\u6cf3\u7528\u54c1",
+        "428": "\u5152\u7ae5\u7e6a\u672c/\u5716\u66f8",
+        "429": "\u5b30\u5152\u5e8a\u4e0a\u7528\u54c1",
+        "430": "\u5b30\u5152\u8eca/\u624b\u63a8\u8eca",
+        "431": "\u722c\u884c\u588a/\u904a\u6232\u588a",
+        "432": "\u5152\u7ae5\u9910\u5177/\u9910\u76e4",
+        "433": "\u89aa\u5b50\u88dd",
+        "434": "\u5b55\u5a66\u88dd",
+        "435": "\u54fa\u4e73\u5dfe",
+        "436": "\u5e73\u5b89\u7b26/\u7b26\u888b",
+        "499": "\u5176\u4ed6",
+        "501": "\u71c8\u5177/\u71c8\u98fe",
+        "503": "\u9999\u6c1b/\u7cbe\u6cb9/\u7dda\u9999",
+        "506": "\u64fa\u98fe",
+        "507": "\u7246\u8cbc/\u58c1\u8cbc",
+        "508": "\u690d\u683d/\u76c6\u683d",
+        "509": "\u82b1\u74f6/\u9676\u5668",
+        "510": "\u73a9\u5076/\u516c\u4ed4",
+        "512": "\u6642\u9418/\u9b27\u9418",
+        "514": "\u96a8\u884c\u676f\u63d0\u888b/\u6c34\u58fa\u888b",
+        "516": "\u881f\u71ed/\u71ed\u53f0",
+        "517": "\u6d77\u5831/\u756b\u4f5c/\u7248\u756b",
+        "521": "\u5176\u4ed6\u5bb6\u5177",
+        "524": "\u756b\u6846/\u76f8\u6846",
+        "525": "\u6795\u982d/\u62b1\u6795",
+        "526": "\u88ab\u5b50/\u6bdb\u6bef",
+        "527": "\u5be2\u5177",
+        "532": "\u6536\u7d0d\u7528\u54c1",
+        "536": "\u5b58\u9322\u7b52",
+        "538": "\u5ba2\u88fd\u756b\u50cf",
+        "540": "\u9580\u7c3e/\u9580\u724c",
+        "541": "\u5730\u588a/\u5730\u6bef",
+        "542": "\u9910\u684c/\u66f8\u684c",
+        "543": "\u6905\u5b50/\u6c99\u767c",
+        "544": "\u66f8\u67b6/\u66f8\u64cb",
+        "545": "\u96fb\u8996\u6ac3",
+        "546": "\u8863\u6ac3/\u978b\u6ac3",
+        "547": "\u4fdd\u6eab\u74f6/\u4fdd\u6eab\u676f",
+        "548": "\u96fb\u98a8\u6247",
+        "549": "\u4e7e\u71e5\u82b1/\u6367\u82b1",
+        "550": "\u7f6e\u7269\u67b6/\u7c43\u5b50",
+        "551": "\u8863\u67b6/\u639b\u52fe",
+        "552": "\u5783\u573e\u6876",
+        "553": "\u773c\u93e1\u76d2/\u62ed\u5e03",
+        "554": "\u9762\u7d19\u76d2",
+        "555": "\u6c34\u58fa/\u6c34\u74f6",
+        "557": "\u885b\u6d74\u7528\u54c1",
+        "558": "\u5438\u5875\u5668",
+        "559": "\u6247\u5b50",
+        "560": "\u9632\u868a\u7528\u54c1",
+        "561": "\u5176\u4ed6\u5c0f\u5bb6\u96fb",
+        "562": "\u8863\u7269\u6e05\u6f54",
+        "563": "\u6bdb\u5dfe\u6d74\u5dfe",
+        "599": "\u5176\u4ed6",
+        "602": "\u73a9\u5177",
+        "603": "\u5e8a\u588a/\u7c60",
+        "604": "\u9805\u5708/\u727d\u7e69",
+        "605": "\u98fc\u6599/\u7f50\u982d/\u9bae\u98df",
+        "606": "\u6e05\u6f54/\u7f8e\u5bb9",
+        "607": "\u8863/\u5e3d",
+        "608": "\u7897/\u7897\u67b6",
+        "609": "\u5ba2\u88fd\u62b1\u6795/\u98fe\u54c1",
+        "610": "\u96f6\u98df/\u9ede\u5fc3",
+        "611": "\u6293\u677f/\u8df3\u53f0",
+        "612": "\u8c93\u7802/\u8c93\u7802\u588a",
+        "613": "\u5916\u51fa\u5305",
+        "699": "\u5176\u4ed6",
+        "801": "\u4e32\u73e0/\u98fe\u54c1\u6750\u6599",
+        "803": "DIY/\u624b\u5de5\u85dd\u5305",
+        "804": "\u7d19\u5f35\u6750\u6599",
+        "805": "\u6bdb\u7dda/\u7dda\u6750",
+        "806": "\u5305\u88dd\u6750\u6599",
+        "899": "\u5176\u4ed6",
+        "901": "\u8173\u8e0f\u8eca/\u5468\u908a",
+        "902": "\u96e8\u5098/\u96e8\u8863",
+        "903": "\u5730\u5716",
+        "905": "\u91ce\u9910\u588a/\u9732\u71df\u7528\u54c1",
+        "906": "\u5973\u88dd\u904b\u52d5\u8863",
+        "907": "\u5973\u88dd\u904b\u52d5\u8932",
+        "908": "\u5973\u88dd\u745c\u73c8\u670d",
+        "909": "\u5973\u88dd\u904b\u52d5\u5167\u8863",
+        "910": "\u5973\u88dd\u6cf3\u8863/\u6bd4\u57fa\u5c3c",
+        "911": "\u7537\u88dd\u904b\u52d5\u8863",
+        "912": "\u7537\u88dd\u904b\u52d5\u8932",
+        "913": "\u7537\u88dd\u6cf3\u8932",
+        "914": "\u745c\u73c8\u588a",
+        "915": "\u904b\u52d5/\u5065\u8eab\u7528\u5177",
+        "916": "\u904b\u52d5\u914d\u4ef6",
+        "917": "\u5b89\u5168\u5e3d",
+        "919": "\u9838\u6795/\u65c5\u884c\u6795",
+        "920": "\u684c\u904a/\u73a9\u5177",
+        "921": "\u62fc\u5716",
+        "922": "\u5409\u4ed6/\u6a02\u5668",
+        "923": "\u5409\u4ed6\u914d\u4ef6",
+        "999": "\u5176\u4ed6",
+        "1001": "\u86cb\u7cd5/\u751c\u9ede",
+        "1002": "\u8336",
+        "1003": "\u679c\u91ac/\u62b9\u91ac",
+        "1004": "\u8702\u871c/\u9ed1\u7cd6",
+        "1005": "\u96f6\u98df/\u9ede\u5fc3",
+        "1007": "\u9e79\u6d3e/\u751c\u6d3e",
+        "1009": "\u51b0\u6dc7\u6dcb/\u51b0\u68d2",
+        "1010": "\u624b\u5de5\u9905\u4e7e",
+        "1013": "\u6c34\u679c\u4e7e",
+        "1016": "\u9eb5\u5305/\u5410\u53f8",
+        "1018": "\u5496\u5561",
+        "1019": "\u9eb5/\u9eb5\u7dda/\u7c73\u7c89",
+        "1020": "\u91ac\u6599/\u8abf\u5473\u6599",
+        "1021": "\u6599\u7406\u5305",
+        "1022": "\u5de7\u514b\u529b",
+        "1023": "\u4e94\u7a40\u96dc\u7ce7/\u7c73",
+        "1024": "\u8089\u4e7e/\u8089\u9b06",
+        "1025": "\u5976\u51cd/\u5e03\u4e01",
+        "1026": "\u512a\u683c/\u512a\u916a\u4e73",
+        "1027": "\u5976\u985e/\u8c46\u6f3f",
+        "1028": "\u679c\u6c41/\u852c\u679c\u6c41",
+        "1029": "\u918b/\u6c34\u679c\u918b",
+        "1030": "\u5805\u679c",
+        "1031": "\u990a\u751f/\u4fdd\u5065",
+        "1032": "\u9ea5\u7247\u7a40\u985e",
+        "1033": "\u719f\u98df\u5c0f\u5403",
+        "1099": "\u5176\u4ed6",
+        "1105": "USB \u96a8\u8eab\u789f",
+        "1106": "\u6372\u7dda\u5668/\u96fb\u7dda\u6536\u7d0d",
+        "1107": "\u8033\u6a5f",
+        "1108": "\u5e73\u677f/\u96fb\u8166\u4fdd\u8b77\u6bbc",
+        "1110": "\u76f8\u6a5f",
+        "1111": "\u64f4\u97f3\u5668/\u5587\u53ed",
+        "1113": "\u884c\u52d5\u96fb\u6e90/\u50b3\u8f38\u7dda",
+        "1114": "\u624b\u6a5f\u6bbc/\u624b\u6a5f\u5957",
+        "1115": "\u624b\u6a5f\u5ea7/\u9632\u5875\u585e",
+        "1116": "\u76f8\u6a5f\u5e36/\u8173\u67b6",
+        "1117": "\u6ed1\u9f20\u588a",
+        "1118": "\u96fb\u8166\u914d\u4ef6",
+        "1119": "\u79d1\u6280\u5c0f\u7269",
+        "1120": "\u624b\u6a5f\u914d\u4ef6",
+        "1121": "\u8033\u6a5f\u6536\u7d0d",
+        "1122": "\u624b\u6a5f\u5145\u96fb\u5468\u908a",
+        "1199": "\u5176\u4ed6",
+        "1201": "\u896a\u5b50",
+        "1202": "\u7d72\u896a",
+        "1203": "\u7537\u5973\u6dbc\u978b",
+        "1204": "\u5973\u6b3e\u4f11\u9592\u978b",
+        "1205": "\u5973\u6b3e\u76ae\u978b",
+        "1206": "\u5973\u6b3e\u725b\u6d25\u978b/\u6a02\u798f\u978b",
+        "1207": "\u5973\u6b3e\u9577\u9774",
+        "1208": "\u5973\u6b3e\u77ed\u9774",
+        "1209": "\u5973\u6b3e\u904b\u52d5\u978b/\u7403\u978b",
+        "1210": "\u9ad8\u8ddf\u978b",
+        "1211": "\u82ad\u857e\u821e\u978b/\u5a03\u5a03\u978b",
+        "1212": "\u96e8\u978b/\u96e8\u9774",
+        "1213": "\u7537\u6b3e\u4f11\u9592\u978b",
+        "1214": "\u7537\u6b3e\u76ae\u978b",
+        "1215": "\u7537\u6b3e\u725b\u6d25\u978b/\u6a02\u798f\u978b",
+        "1216": "\u7537\u6b3e\u9774\u5b50",
+        "1217": "\u7537\u6b3e\u904b\u52d5\u978b/\u7403\u978b",
+        "1218": "\u62d6\u978b",
+        "1219": "\u5ba4\u5167\u62d6\u978b",
+        "1220": "\u978b\u588a/\u5468\u908a",
+        "1221": "\u7d33\u58eb\u896a",
+        "1299": "\u5176\u4ed6",
+        "1301": "\u676f\u5b50",
+        "1302": "\u5496\u5561\u58fa/\u5468\u908a",
+        "1303": "\u9152\u676f/\u9152\u5668",
+        "1304": "\u958b\u74f6\u5668/\u958b\u7f50\u5668",
+        "1305": "\u76e4\u5b50/\u9910\u76e4/\u76e4\u67b6",
+        "1306": "\u6258\u76e4/\u7827\u677f",
+        "1307": "\u4fbf\u7576\u76d2/\u9910\u76d2",
+        "1308": "\u83dc\u5200/\u5200\u67b6",
+        "1309": "\u5496\u5561\u676f/\u99ac\u514b\u676f",
+        "1310": "\u8336\u5177/\u8336\u676f",
+        "1311": "\u676f\u588a",
+        "1312": "\u9910\u588a/\u684c\u5dfe",
+        "1313": "\u7897",
+        "1314": "\u6dfa\u789f/\u5c0f\u789f",
+        "1315": "\u7b77\u5b50/\u7b77\u67b6",
+        "1316": "\u9910\u5200/\u53c9/\u5319\u7d44\u5408",
+        "1317": "\u8abf\u5473\u7f50/\u91ac\u6599\u7f50",
+        "1318": "\u5eda\u623f\u7528\u5177",
+        "1319": "\u570d\u88d9",
+        "1320": "\u74b0\u4fdd\u5438\u7ba1",
+        "1321": "\u5eda\u623f\u5bb6\u96fb",
+        "1322": "\u934b\u5177/\u70e4\u76e4",
+        "1323": "\u6e6f\u52fa/\u934b\u93df",
+        "1324": "\u7897\u76e4\u6e05\u6f54",
+        "1399": "\u5176\u4ed6",
+        "1401": "\u5f69\u599d\u5237\u5177/\u93e1\u5b50/\u68b3\u5b50",
+        "1402": "\u80a5\u7682/\u624b\u5de5\u7682",
+        "1404": "\u81c9\u90e8\u6e05\u6f54/\u5378\u599d",
+        "1407": "\u624b\u8db3\u4fdd\u990a",
+        "1408": "\u6307\u7532\u6cb9/\u6307\u7532\u8cbc",
+        "1409": "\u5507\u90e8\u4fdd\u990a",
+        "1410": "\u9999\u6c34/\u9999\u818f",
+        "1412": "\u7259\u5237/\u53e3\u8154\u6e05\u6f54",
+        "1413": "\u751f\u7406\u7528\u54c1",
+        "1415": "\u65c5\u884c\u7d44",
+        "1416": "\u9762\u819c/\u51cd\u819c",
+        "1417": "\u5316\u599d\u6c34/\u5674\u9727",
+        "1418": "\u7cbe\u83ef\u6db2/\u5b89\u74f6",
+        "1419": "\u4e73\u6db2",
+        "1420": "\u65e5\u971c/\u665a\u971c",
+        "1421": "\u6d17\u9aee\u7528\u54c1",
+        "1422": "\u6f64\u9aee\u7528\u54c1",
+        "1423": "\u6c90\u6d74\u7528\u54c1",
+        "1424": "\u8eab\u9ad4\u4fdd\u990a/\u6309\u6469\u6cb9",
+        "1425": "\u6d17\u624b\u7528\u54c1",
+        "1426": "\u5e95\u599d",
+        "1427": "\u7c89\u9905/\u871c\u7c89",
+        "1428": "\u5507/\u9830\u5f69",
+        "1429": "\u773c/\u7709\u5f69",
+        "1430": "\u9632\u66ec",
+        "1431": "\u7537\u6027\u6e05\u6f54\u4fdd\u990a",
+        "1432": "\u81c9\u90e8\u6309\u6469/\u6e05\u6f54\u5de5\u5177",
+        "1499": "\u5176\u4ed6",
+        "1501": "\u91d1\u5de5/\u98fe\u54c1",
+        "1502": "\u76ae\u4ef6/\u76ae\u9769",
+        "1506": "\u9676\u85dd/\u73bb\u7483",
+        "1507": "\u63d2\u756b/\u7e6a\u756b/\u5beb\u5b57",
+        "1508": "\u690d\u683d/\u82b1\u85dd",
+        "1509": "\u7f8e\u98df/\u6599\u7406",
+        "1510": "\u881f\u71ed/\u9999\u6c1b",
+        "1511": "\u7de8\u7e54/\u7f8a\u6bdb\u6c08/\u5e03",
+        "1512": "\u6df1\u5ea6\u65c5\u904a",
+        "1513": "\u6236\u5916/\u5ba4\u5167\u904b\u52d5",
+        "1514": "\u651d\u5f71/\u5fc3\u9748/\u8b1b\u5ea7",
+        "1515": "\u6728\u5de5/\u7af9\u85dd",
+        "1599": "\u5176\u4ed6",
+        "9901": "\u975e\u516c\u958b\u5546\u54c1",
+        "9902": "\u975e\u5be6\u9ad4\u5546\u54c1",
+        "9999": "\u5176\u4ed6"
+    },
+    "major_shipping_countries": [
+        "TW",
+        "CN",
+        "HK",
+        "JP",
+        "US",
+        "CA",
+        "MO",
+        "AU",
+        "SG",
+        "TH",
+        "MY",
+        "DE",
+        "GB"
+    ],
+    "how_its_made": {
+        "1": "\u624b\u5de5\u88fd\u9020",
+        "2": "\u6a5f\u5668\u88fd\u9020",
+        "99": "\u4ee5\u4e0a\u7686\u975e"
+    },
+    "exp_duration": [
+        [
+            15,
+            "15 \u5206\u9418"
+        ],
+        [
+            30,
+            "30 \u5206\u9418"
+        ],
+        [
+            60,
+            "1 \u5c0f\u6642"
+        ],
+        [
+            90,
+            "1.5 \u5c0f\u6642"
+        ],
+        [
+            120,
+            "2 \u5c0f\u6642"
+        ],
+        [
+            150,
+            "2.5 \u5c0f\u6642"
+        ],
+        [
+            180,
+            "3 \u5c0f\u6642"
+        ],
+        [
+            210,
+            "3.5 \u5c0f\u6642"
+        ],
+        [
+            240,
+            "4 \u5c0f\u6642"
+        ],
+        [
+            0,
+            "\u898b\u6d3b\u52d5\u5167\u5bb9"
+        ]
+    ],
+    "agreement": {
+        "zh_TW": {
+            "url": "/pinkoi.site/panel/start/20191220/Pinkoi_Shop_Agreement_zh_TW_20191220.pdf",
+            "html_content": "/media/agreement/20191220/zh_TW.html"
+        },
+        "en": {
+            "url": "/pinkoi.site/panel/start/20191220/Pinkoi_Shop_Agreement_en_20191220.pdf",
+            "html_content": "/media/agreement/20191220/en.html"
+        },
+        "ja": {
+            "url": "/pinkoi.site/panel/start/20191220/Pinkoi_Shop_Agreement_ja_20200201.pdf",
+            "html_content": "/media/agreement/20191220/ja_v2.html"
+        },
+        "zh_CN": {
+            "url": "/pinkoi.site/panel/start/20191220/Pinkoi_Shop_Agreement_zh_CN_20191220.pdf",
+            "html_content": "/media/agreement/20191220/zh_CN.html"
+        }
+    },
+    "characteristic": {
+        "customize": "\u6709\u63d0\u4f9b\u5ba2\u88fd\u670d\u52d9",
+        "award": "\u5f97\u734e\u8a2d\u8a08",
+        "exclusive": "Pinkoi \u7368\u5bb6\u8ca9\u552e"
+    },
+    "tw_shipping_methods": [
+        "mail",
+        "sevenpayatpickup",
+        "sevenpickupc2c",
+        "sevenpickup",
+        "famiportpickup",
+        "24hour",
+        "4hour",
+        "home",
+        "express"
+    ],
+    "exp_admission_time": [
+        [
+            0,
+            "\u6e96\u6642\u5165\u5834"
+        ],
+        [
+            10,
+            "\u6d3b\u52d5\u958b\u59cb\u524d 10 \u5206\u9418"
+        ],
+        [
+            15,
+            "\u6d3b\u52d5\u958b\u59cb\u524d 15 \u5206\u9418"
+        ],
+        [
+            30,
+            "\u6d3b\u52d5\u958b\u59cb\u524d 30 \u5206\u9418"
+        ],
+        [
+            99,
+            "\u898b\u6d3b\u52d5\u5167\u5bb9"
+        ]
+    ],
+    "colors": [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "purple",
+        "pink",
+        "khaki",
+        "brown",
+        "gold",
+        "silver",
+        "black",
+        "grey",
+        "white",
+        "transparent",
+        "multi"
+    ],
+    "shipping_method_name_map": {
+        "mail": "\u90f5\u5bc4",
+        "sevenpayatpickup": "7-11\u53d6\u8ca8\u4ed8\u6b3e",
+        "sevenpickupc2c": "7-11\u53d6\u8ca8",
+        "sevenpickup": "7-11\u53d6\u8ca8",
+        "famiportpickup": "\u5168\u5bb6\u53d6\u8ca8",
+        "24hour": "24\u5c0f\u6642\u5feb\u901f\u5230\u8ca8",
+        "4hour": "\u5927\u53f0\u5317\u90fd\u67034\u5c0f\u6642\u5feb\u901f\u5230\u8ca8",
+        "home": "\u5b85\u914d",
+        "express": "\u5feb\u905e",
+        "transnational": "\u8de8\u570b\u5bc4\u9001",
+        "tranship": "\u5bc4\u5f80\u8f49\u904b\u4e2d\u5fc3",
+        "Taiwan": "\u53f0\u7063",
+        "Hong Kong": "\u9999\u6e2f",
+        "Singapore": "\u65b0\u52a0\u5761",
+        "Macau": "\u6fb3\u9580",
+        "China": "\u4e2d\u570b\u5927\u9678",
+        "United States": "\u7f8e\u570b",
+        "Canada": "\u52a0\u62ff\u5927",
+        "United Kingdom": "\u82f1\u570b",
+        "France": "\u6cd5\u570b",
+        "Germany": "\u5fb7\u570b",
+        "The Netherlands": "\u8377\u862d",
+        "Spain": "\u897f\u73ed\u7259",
+        "Portugal": "\u8461\u8404\u7259",
+        "Ireland": "\u611b\u723e\u862d",
+        "Switzerland": "\u745e\u58eb",
+        "Russia": "\u4fc4\u7f85\u65af",
+        "United Arab Emirates": "\u963f\u62c9\u4f2f\u806f\u5408\u5927\u516c\u570b",
+        "Australia": "\u6fb3\u6d32",
+        "New Zealand": "\u7d10\u897f\u862d",
+        "Japan": "\u65e5\u672c",
+        "South Korea": "\u5357\u97d3",
+        "Indonesia": "\u5370\u5c3c",
+        "Thailand": "\u6cf0\u570b",
+        "Malaysia": "\u99ac\u4f86\u897f\u4e9e",
+        "Philippines": "\u83f2\u5f8b\u8cd3",
+        "Latvia": "\u62c9\u812b\u7dad\u4e9e",
+        "Estonia": "\u611b\u6c99\u5c3c\u4e9e",
+        "India": "\u5370\u5ea6",
+        "Vietnam": "\u8d8a\u5357",
+        "Sweden": "\u745e\u5178",
+        "Bulgaria": "\u4fdd\u52a0\u5229\u4e9e",
+        "Hungary": "\u5308\u7259\u5229",
+        "Lithuania": "\u7acb\u9676\u5b9b",
+        "Norway": "\u632a\u5a01",
+        "Poland": "\u6ce2\u862d",
+        "Romania": "\u7f85\u99ac\u5c3c\u4e9e",
+        "Slovenia": "\u65af\u6d1b\u7dad\u5c3c\u4e9e",
+        "Greece": "\u5e0c\u81d8",
+        "Italy": "\u7fa9\u5927\u5229",
+        "Belgium": "\u6bd4\u5229\u6642",
+        "Chile": "\u667a\u5229",
+        "Ukraine": "\u70cf\u514b\u862d",
+        "Finland": "\u82ac\u862d",
+        "Czech Republic": "\u6377\u514b\u5171\u548c\u570b",
+        "Brazil": "\u5df4\u897f",
+        "Turkey": "\u571f\u8033\u5176",
+        "Cambodia": "\u67ec\u57d4\u5be8",
+        "Brunei": "\u6c76\u840a",
+        "Lebanon": "\u9ece\u5df4\u5ae9",
+        "Nepal": "\u5c3c\u6cca\u723e",
+        "Morocco": "\u6469\u6d1b\u54e5",
+        "Denmark": "\u4e39\u9ea5",
+        "Israel": "\u4ee5\u8272\u5217",
+        "Croatia": "\u514b\u7f85\u57c3\u897f\u4e9e",
+        "Argentina": "\u963f\u6839\u5ef7",
+        "Everywhere Else": "\u6240\u6709\u5176\u4ed6\u570b\u5bb6/\u5730\u5340"
+    },
+    "exp_country_code_language_map": {
+        "CN": "zh",
+        "TW": "zh",
+        "MO": "yue",
+        "JP": "jpn",
+        "US": "eng",
+        "HK": "yue",
+        "TH": "tha"
+    },
+    "promo_operator_key_name_map": {
+        "mul_poff": "\u6298\u6263\uff08% off\uff09",
+        "mul_tw": "\u6298\u6263\uff08\u6298\uff09",
+        "sub": "\u6298\u62b5\uff08\u5143\uff09",
+        "set": "\u964d\u81f3\uff08\u5143\uff09"
+    },
+    "gender": {
+        "her": "\u7d66\u5979",
+        "him": "\u7d66\u4ed6",
+        "nogender": "\u4e0d\u5206\u6027\u5225"
+    },
+    "variationPhraseMap": {
+        "ring-size-hk-no-8": {
+            "zh_TW": "#8",
+            "en": "#8",
+            "ja": "#8",
+            "th": "#8",
+            "zh_CN": "#8"
+        },
+        "mens-shoes-size-uk-7": {
+            "zh_TW": "7",
+            "en": "7",
+            "ja": "7",
+            "th": "7",
+            "zh_CN": "7"
+        },
+        "kids-shoes-size-eu-23": {
+            "zh_TW": "23",
+            "en": "23",
+            "ja": "23",
+            "th": "23",
+            "zh_CN": "23"
+        },
+        "ring-size-hk-no-9": {
+            "zh_TW": "#9",
+            "en": "#9",
+            "ja": "#9",
+            "th": "#9",
+            "zh_CN": "#9"
+        },
+        "mens-shoes-size-jp-23-5": {
+            "zh_TW": "23.5",
+            "en": "23.5",
+            "ja": "23.5",
+            "th": "23.5",
+            "zh_CN": "23.5"
+        },
+        "ring-size-hk-no-6": {
+            "zh_TW": "#6",
+            "en": "#6",
+            "ja": "#6",
+            "th": "#6",
+            "zh_CN": "#6"
+        },
+        "ring-size-hk-no-7": {
+            "zh_TW": "#7",
+            "en": "#7",
+            "ja": "#7",
+            "th": "#7",
+            "zh_CN": "#7"
+        },
+        "womens-shoes-size-jp-25-5": {
+            "zh_TW": "25.5",
+            "en": "25.5",
+            "ja": "25.5",
+            "th": "25.5",
+            "zh_CN": "25.5"
+        },
+        "kids-shoes-size-uk-10-5": {
+            "zh_TW": "10.5",
+            "en": "10.5",
+            "ja": "10.5",
+            "th": "10.5",
+            "zh_CN": "10.5"
+        },
+        "mens-shoes-size-jp-22-5": {
+            "zh_TW": "22.5",
+            "en": "22.5",
+            "ja": "22.5",
+            "th": "22.5",
+            "zh_CN": "22.5"
+        },
+        "ring-size-jp-no-24": {
+            "zh_TW": "#24",
+            "en": "#24",
+            "ja": "#24",
+            "th": "#24",
+            "zh_CN": "#24"
+        },
+        "mens-shoes-size-us-9-5": {
+            "zh_TW": "9.5",
+            "en": "9.5",
+            "ja": "9.5",
+            "th": "9.5",
+            "zh_CN": "9.5"
+        },
+        "womens-shoes-size-jp-22-5": {
+            "zh_TW": "22.5",
+            "en": "22.5",
+            "ja": "22.5",
+            "th": "22.5",
+            "zh_CN": "22.5"
+        },
+        "womens-shoes-size-us-8-5": {
+            "zh_TW": "8.5",
+            "en": "8.5",
+            "ja": "8.5",
+            "th": "8.5",
+            "zh_CN": "8.5"
+        },
+        "mens-shoes-size-jp-28-5": {
+            "zh_TW": "28.5",
+            "en": "28.5",
+            "ja": "28.5",
+            "th": "28.5",
+            "zh_CN": "28.5"
+        },
+        "ring-size-us-no-2-5": {
+            "zh_TW": "#2.5",
+            "en": "#2.5",
+            "ja": "#2.5",
+            "th": "#2.5",
+            "zh_CN": "#2.5"
+        },
+        "ring-size-us-no-9": {
+            "zh_TW": "#9",
+            "en": "#9",
+            "ja": "#9",
+            "th": "#9",
+            "zh_CN": "#9"
+        },
+        "ring-size-us-no-8": {
+            "zh_TW": "#8",
+            "en": "#8",
+            "ja": "#8",
+            "th": "#8",
+            "zh_CN": "#8"
+        },
+        "ring-size-us-no-5": {
+            "zh_TW": "#5",
+            "en": "#5",
+            "ja": "#5",
+            "th": "#5",
+            "zh_CN": "#5"
+        },
+        "ring-size-us-no-4": {
+            "zh_TW": "#4",
+            "en": "#4",
+            "ja": "#4",
+            "th": "#4",
+            "zh_CN": "#4"
+        },
+        "ring-size-us-no-7": {
+            "zh_TW": "#7",
+            "en": "#7",
+            "ja": "#7",
+            "th": "#7",
+            "zh_CN": "#7"
+        },
+        "ring-size-us-no-6": {
+            "zh_TW": "#6",
+            "en": "#6",
+            "ja": "#6",
+            "th": "#6",
+            "zh_CN": "#6"
+        },
+        "ring-size-us-no-3": {
+            "zh_TW": "#3",
+            "en": "#3",
+            "ja": "#3",
+            "th": "#3",
+            "zh_CN": "#3"
+        },
+        "mens-shoes-size-us-7-5": {
+            "zh_TW": "7.5",
+            "en": "7.5",
+            "ja": "7.5",
+            "th": "7.5",
+            "zh_CN": "7.5"
+        },
+        "mens-shoes-size-jp-29": {
+            "zh_TW": "29",
+            "en": "29",
+            "ja": "29",
+            "th": "29",
+            "zh_CN": "29"
+        },
+        "mens-shoes-size-jp-28": {
+            "zh_TW": "28",
+            "en": "28",
+            "ja": "28",
+            "th": "28",
+            "zh_CN": "28"
+        },
+        "mens-shoes-size-us-10-5": {
+            "zh_TW": "10.5",
+            "en": "10.5",
+            "ja": "10.5",
+            "th": "10.5",
+            "zh_CN": "10.5"
+        },
+        "kids-shoes-size-jp-17": {
+            "zh_TW": "17",
+            "en": "17",
+            "ja": "17",
+            "th": "17",
+            "zh_CN": "17"
+        },
+        "color-neon-green": {
+            "zh_TW": "\u87a2\u5149\u7da0",
+            "en": "Neon green",
+            "ja": "\u30cd\u30aa\u30f3\u30b0\u30ea\u30fc\u30f3",
+            "th": "\u0e2a\u0e35\u0e19\u0e35\u0e2d\u0e2d\u0e19\u0e40\u0e02\u0e35\u0e22\u0e27",
+            "zh_CN": "\u8424\u5149\u7eff"
+        },
+        "mens-shoes-size-us-6": {
+            "zh_TW": "6",
+            "en": "6",
+            "ja": "6",
+            "th": "6",
+            "zh_CN": "6"
+        },
+        "womens-shoes-size-uk-7-5": {
+            "zh_TW": "7.5",
+            "en": "7.5",
+            "ja": "7.5",
+            "th": "7.5",
+            "zh_CN": "7.5"
+        },
+        "color-neon-orange": {
+            "zh_TW": "\u87a2\u5149\u6a58",
+            "en": "Neon orange",
+            "ja": "\u30cd\u30aa\u30f3\u30aa\u30ec\u30f3\u30b8",
+            "th": "\u0e2a\u0e35\u0e19\u0e35\u0e2d\u0e2d\u0e19\u0e2a\u0e49\u0e21",
+            "zh_CN": "\u8424\u5149\u6a58"
+        },
+        "mens-shoes-size-us-9": {
+            "zh_TW": "9",
+            "en": "9",
+            "ja": "9",
+            "th": "9",
+            "zh_CN": "9"
+        },
+        "mens-shoes-size-jp-23": {
+            "zh_TW": "23",
+            "en": "23",
+            "ja": "23",
+            "th": "23",
+            "zh_CN": "23"
+        },
+        "mens-shoes-size-jp-22": {
+            "zh_TW": "22",
+            "en": "22",
+            "ja": "22",
+            "th": "22",
+            "zh_CN": "22"
+        },
+        "womens-shoes-size-uk-4-5": {
+            "zh_TW": "4.5",
+            "en": "4.5",
+            "ja": "4.5",
+            "th": "4.5",
+            "zh_CN": "4.5"
+        },
+        "womens-shoes-size-uk-9-5": {
+            "zh_TW": "9.5",
+            "en": "9.5",
+            "ja": "9.5",
+            "th": "9.5",
+            "zh_CN": "9.5"
+        },
+        "mens-shoes-size-jp-27": {
+            "zh_TW": "27",
+            "en": "27",
+            "ja": "27",
+            "th": "27",
+            "zh_CN": "27"
+        },
+        "mens-shoes-size-jp-26": {
+            "zh_TW": "26",
+            "en": "26",
+            "ja": "26",
+            "th": "26",
+            "zh_CN": "26"
+        },
+        "kids-shoes-size-us-4-5": {
+            "zh_TW": "4.5",
+            "en": "4.5",
+            "ja": "4.5",
+            "th": "4.5",
+            "zh_CN": "4.5"
+        },
+        "mens-shoes-size-uk-13-5": {
+            "zh_TW": "13.5",
+            "en": "13.5",
+            "ja": "13.5",
+            "th": "13.5",
+            "zh_CN": "13.5"
+        },
+        "color-silver": {
+            "zh_TW": "\u9280",
+            "en": "Silver",
+            "ja": "\u30b7\u30eb\u30d0\u30fc",
+            "th": "\u0e40\u0e07\u0e34\u0e19",
+            "zh_CN": "\u94f6"
+        },
+        "ring-size-us-no-12-5": {
+            "zh_TW": "#12.5",
+            "en": "#12.5",
+            "ja": "#12.5",
+            "th": "#12.5",
+            "zh_CN": "#12.5"
+        },
+        "mens-shoes-size-uk-14-5": {
+            "zh_TW": "14.5",
+            "en": "14.5",
+            "ja": "14.5",
+            "th": "14.5",
+            "zh_CN": "14.5"
+        },
+        "kids-shoes-size-eu-25": {
+            "zh_TW": "25",
+            "en": "25",
+            "ja": "25",
+            "th": "25",
+            "zh_CN": "25"
+        },
+        "kids-shoes-size-eu-24": {
+            "zh_TW": "24",
+            "en": "24",
+            "ja": "24",
+            "th": "24",
+            "zh_CN": "24"
+        },
+        "kids-shoes-size-eu-27": {
+            "zh_TW": "27",
+            "en": "27",
+            "ja": "27",
+            "th": "27",
+            "zh_CN": "27"
+        },
+        "kids-shoes-size-eu-26": {
+            "zh_TW": "26",
+            "en": "26",
+            "ja": "26",
+            "th": "26",
+            "zh_CN": "26"
+        },
+        "kids-shoes-size-eu-21": {
+            "zh_TW": "21",
+            "en": "21",
+            "ja": "21",
+            "th": "21",
+            "zh_CN": "21"
+        },
+        "kids-shoes-size-eu-20": {
+            "zh_TW": "20",
+            "en": "20",
+            "ja": "20",
+            "th": "20",
+            "zh_CN": "20"
+        },
+        "color-peach": {
+            "zh_TW": "\u6843\u7d05",
+            "en": "Peach",
+            "ja": "\u30b7\u30e7\u30c3\u30ad\u30f3\u30b0\u30d4\u30f3\u30af",
+            "th": "\u0e0a\u0e21\u0e1e\u0e39\u0e2d\u0e21\u0e21\u0e48\u0e27\u0e07",
+            "zh_CN": "\u6843\u7ea2"
+        },
+        "kids-shoes-size-eu-22": {
+            "zh_TW": "22",
+            "en": "22",
+            "ja": "22",
+            "th": "22",
+            "zh_CN": "22"
+        },
+        "color-blue": {
+            "zh_TW": "\u85cd",
+            "en": "Blue",
+            "ja": "\u30d6\u30eb\u30fc",
+            "th": "\u0e2a\u0e35\u0e1f\u0e49\u0e32",
+            "zh_CN": "\u84dd"
+        },
+        "kids-shoes-size-uk-8": {
+            "zh_TW": "8",
+            "en": "8",
+            "ja": "8",
+            "th": "8",
+            "zh_CN": "8"
+        },
+        "size-xl": {
+            "zh_TW": "XL",
+            "en": "XL",
+            "ja": "XL",
+            "th": "XL",
+            "zh_CN": "XL"
+        },
+        "kids-shoes-size-eu-29": {
+            "zh_TW": "29",
+            "en": "29",
+            "ja": "29",
+            "th": "29",
+            "zh_CN": "29"
+        },
+        "kids-shoes-size-eu-28": {
+            "zh_TW": "28",
+            "en": "28",
+            "ja": "28",
+            "th": "28",
+            "zh_CN": "28"
+        },
+        "ring-size-tw-no-5": {
+            "zh_TW": "#5",
+            "en": "#5",
+            "ja": "#5",
+            "th": "#5",
+            "zh_CN": "#5"
+        },
+        "size-xs": {
+            "zh_TW": "XS",
+            "en": "XS",
+            "ja": "XS",
+            "th": "XS",
+            "zh_CN": "XS"
+        },
+        "ring-size-hk-no-18": {
+            "zh_TW": "#18",
+            "en": "#18",
+            "ja": "#18",
+            "th": "#18",
+            "zh_CN": "#18"
+        },
+        "ring-size-hk-no-19": {
+            "zh_TW": "#19",
+            "en": "#19",
+            "ja": "#19",
+            "th": "#19",
+            "zh_CN": "#19"
+        },
+        "ring-size-tw-no-4": {
+            "zh_TW": "#4",
+            "en": "#4",
+            "ja": "#4",
+            "th": "#4",
+            "zh_CN": "#4"
+        },
+        "color-brown": {
+            "zh_TW": "\u68d5",
+            "en": "Brown",
+            "ja": "\u30d6\u30e9\u30a6\u30f3",
+            "th": "\u0e2a\u0e35\u0e19\u0e33\u0e49\u0e15\u0e32\u0e25",
+            "zh_CN": "\u68d5"
+        },
+        "ring-size-tw-no-6": {
+            "zh_TW": "#6",
+            "en": "#6",
+            "ja": "#6",
+            "th": "#6",
+            "zh_CN": "#6"
+        },
+        "ring-size-tw-no-7": {
+            "zh_TW": "#7",
+            "en": "#7",
+            "ja": "#7",
+            "th": "#7",
+            "zh_CN": "#7"
+        },
+        "ring-size-tw-no-8": {
+            "zh_TW": "#8",
+            "en": "#8",
+            "ja": "#8",
+            "th": "#8",
+            "zh_CN": "#8"
+        },
+        "ring-size-tw-no-9": {
+            "zh_TW": "#9",
+            "en": "#9",
+            "ja": "#9",
+            "th": "#9",
+            "zh_CN": "#9"
+        },
+        "kids-shoes-size-jp-16-5": {
+            "zh_TW": "16.5",
+            "en": "16.5",
+            "ja": "16.5",
+            "th": "16.5",
+            "zh_CN": "16.5"
+        },
+        "kids-shoes-size-uk-7": {
+            "zh_TW": "7",
+            "en": "7",
+            "ja": "7",
+            "th": "7",
+            "zh_CN": "7"
+        },
+        "ring-size-hk-no-16": {
+            "zh_TW": "#16",
+            "en": "#16",
+            "ja": "#16",
+            "th": "#16",
+            "zh_CN": "#16"
+        },
+        "kids-shoes-size-uk-5-5": {
+            "zh_TW": "5.5",
+            "en": "5.5",
+            "ja": "5.5",
+            "th": "5.5",
+            "zh_CN": "5.5"
+        },
+        "ring-size-hk-no-14": {
+            "zh_TW": "#14",
+            "en": "#14",
+            "ja": "#14",
+            "th": "#14",
+            "zh_CN": "#14"
+        },
+        "ring-size-hk-no-15": {
+            "zh_TW": "#15",
+            "en": "#15",
+            "ja": "#15",
+            "th": "#15",
+            "zh_CN": "#15"
+        },
+        "ring-size-us-no-9-5": {
+            "zh_TW": "#9.5",
+            "en": "#9.5",
+            "ja": "#9.5",
+            "th": "#9.5",
+            "zh_CN": "#9.5"
+        },
+        "kids-shoes-size-uk-4": {
+            "zh_TW": "4",
+            "en": "4",
+            "ja": "4",
+            "th": "4",
+            "zh_CN": "4"
+        },
+        "mens-shoes-size-eu-49": {
+            "zh_TW": "49",
+            "en": "49",
+            "ja": "49",
+            "th": "49",
+            "zh_CN": "49"
+        },
+        "mens-shoes-size-eu-48": {
+            "zh_TW": "48",
+            "en": "48",
+            "ja": "48",
+            "th": "48",
+            "zh_CN": "48"
+        },
+        "color-orange": {
+            "zh_TW": "\u6a59",
+            "en": "Orange",
+            "ja": "\u30aa\u30ec\u30f3\u30b8",
+            "th": "\u0e2a\u0e35\u0e2a\u0e49\u0e21",
+            "zh_CN": "\u6a59"
+        },
+        "ring-size-tw-no-14": {
+            "zh_TW": "#14",
+            "en": "#14",
+            "ja": "#14",
+            "th": "#14",
+            "zh_CN": "#14"
+        },
+        "kids-shoes-size-uk-5": {
+            "zh_TW": "5",
+            "en": "5",
+            "ja": "5",
+            "th": "5",
+            "zh_CN": "5"
+        },
+        "mens-shoes-size-eu-43": {
+            "zh_TW": "43",
+            "en": "43",
+            "ja": "43",
+            "th": "43",
+            "zh_CN": "43"
+        },
+        "mens-shoes-size-eu-42": {
+            "zh_TW": "42",
+            "en": "42",
+            "ja": "42",
+            "th": "42",
+            "zh_CN": "42"
+        },
+        "mens-shoes-size-jp-30": {
+            "zh_TW": "30",
+            "en": "30",
+            "ja": "30",
+            "th": "30",
+            "zh_CN": "30"
+        },
+        "womens-shoes-size-jp-26-5": {
+            "zh_TW": "26.5",
+            "en": "26.5",
+            "ja": "26.5",
+            "th": "26.5",
+            "zh_CN": "26.5"
+        },
+        "mens-shoes-size-eu-47": {
+            "zh_TW": "47",
+            "en": "47",
+            "ja": "47",
+            "th": "47",
+            "zh_CN": "47"
+        },
+        "kids-shoes-size-uk-6": {
+            "zh_TW": "6",
+            "en": "6",
+            "ja": "6",
+            "th": "6",
+            "zh_CN": "6"
+        },
+        "mens-shoes-size-eu-45": {
+            "zh_TW": "45",
+            "en": "45",
+            "ja": "45",
+            "th": "45",
+            "zh_CN": "45"
+        },
+        "kids-shoes-size-uk-9": {
+            "zh_TW": "9",
+            "en": "9",
+            "ja": "9",
+            "th": "9",
+            "zh_CN": "9"
+        },
+        "womens-shoes-size-us-8": {
+            "zh_TW": "8",
+            "en": "8",
+            "ja": "8",
+            "th": "8",
+            "zh_CN": "8"
+        },
+        "womens-shoes-size-us-9": {
+            "zh_TW": "9",
+            "en": "9",
+            "ja": "9",
+            "th": "9",
+            "zh_CN": "9"
+        },
+        "ring-size-hk-no-11": {
+            "zh_TW": "#11",
+            "en": "#11",
+            "ja": "#11",
+            "th": "#11",
+            "zh_CN": "#11"
+        },
+        "kids-shoes-size-jp-15": {
+            "zh_TW": "15",
+            "en": "15",
+            "ja": "15",
+            "th": "15",
+            "zh_CN": "15"
+        },
+        "closure-post": {
+            "zh_TW": "\u8033\u91dd",
+            "en": "Post",
+            "ja": "\u30d4\u30a2\u30b9/\u30b9\u30bf\u30c3\u30c9\u3001\u30d5\u30fc\u30d7",
+            "th": "\u0e15\u0e48\u0e32\u0e07\u0e2b\u0e39\u0e41\u0e1a\u0e1a\u0e40\u0e02\u0e47\u0e21",
+            "zh_CN": "\u8033\u9488"
+        },
+        "kids-shoes-size-us-7-5": {
+            "zh_TW": "7.5",
+            "en": "7.5",
+            "ja": "7.5",
+            "th": "7.5",
+            "zh_CN": "7.5"
+        },
+        "womens-shoes-size-us-5": {
+            "zh_TW": "5",
+            "en": "5",
+            "ja": "5",
+            "th": "5",
+            "zh_CN": "5"
+        },
+        "color-red": {
+            "zh_TW": "\u7d05",
+            "en": "Red",
+            "ja": "\u30ec\u30c3\u30c9",
+            "th": "\u0e2a\u0e35\u0e41\u0e14\u0e07",
+            "zh_CN": "\u7ea2"
+        },
+        "womens-shoes-size-us-7": {
+            "zh_TW": "7",
+            "en": "7",
+            "ja": "7",
+            "th": "7",
+            "zh_CN": "7"
+        },
+        "color-neon-blue": {
+            "zh_TW": "\u87a2\u5149\u85cd",
+            "en": "Neon blue",
+            "ja": "\u30cd\u30aa\u30f3\u30d6\u30eb\u30fc",
+            "th": "\u0e2a\u0e35\u0e19\u0e35\u0e2d\u0e2d\u0e19\u0e1f\u0e49\u0e32",
+            "zh_CN": "\u8424\u5149\u84dd"
+        },
+        "ring-size-jp-no-12": {
+            "zh_TW": "#12",
+            "en": "#12",
+            "ja": "#12",
+            "th": "#12",
+            "zh_CN": "#12"
+        },
+        "color-neon-yellow": {
+            "zh_TW": "\u87a2\u5149\u9ec3",
+            "en": "Neon yellow",
+            "ja": "\u30cd\u30aa\u30f3\u30a4\u30a8\u30ed\u30fc",
+            "th": "\u0e2a\u0e35\u0e19\u0e35\u0e2d\u0e2d\u0e19\u0e40\u0e2b\u0e25\u0e37\u0e2d\u0e07",
+            "zh_CN": "\u8424\u5149\u9ec4"
+        },
+        "closure-clip-on": {
+            "zh_TW": "\u8033\u593e",
+            "en": "Clip-on",
+            "ja": "\u30a4\u30e4\u30ea\u30f3\u30b0",
+            "th": "\u0e15\u0e48\u0e32\u0e07\u0e2b\u0e39\u0e41\u0e1a\u0e1a\u0e2b\u0e19\u0e35\u0e1a",
+            "zh_CN": "\u8033\u5939"
+        },
+        "kids-shoes-size-eu-32": {
+            "zh_TW": "32",
+            "en": "32",
+            "ja": "32",
+            "th": "32",
+            "zh_CN": "32"
+        },
+        "ring-size-jp-no-16": {
+            "zh_TW": "#16",
+            "en": "#16",
+            "ja": "#16",
+            "th": "#16",
+            "zh_CN": "#16"
+        },
+        "kids-shoes-size-eu-30": {
+            "zh_TW": "30",
+            "en": "30",
+            "ja": "30",
+            "th": "30",
+            "zh_CN": "30"
+        },
+        "kids-shoes-size-eu-31": {
+            "zh_TW": "31",
+            "en": "31",
+            "ja": "31",
+            "th": "31",
+            "zh_CN": "31"
+        },
+        "kids-shoes-size-uk-9-5": {
+            "zh_TW": "9.5",
+            "en": "9.5",
+            "ja": "9.5",
+            "th": "9.5",
+            "zh_CN": "9.5"
+        },
+        "ring-size-jp-no-19": {
+            "zh_TW": "#19",
+            "en": "#19",
+            "ja": "#19",
+            "th": "#19",
+            "zh_CN": "#19"
+        },
+        "ring-size-jp-no-18": {
+            "zh_TW": "#18",
+            "en": "#18",
+            "ja": "#18",
+            "th": "#18",
+            "zh_CN": "#18"
+        },
+        "ring-size-us-no-11-5": {
+            "zh_TW": "#11.5",
+            "en": "#11.5",
+            "ja": "#11.5",
+            "th": "#11.5",
+            "zh_CN": "#11.5"
+        },
+        "size-custom-size": {
+            "zh_TW": "\u5ba2\u88fd\u5c3a\u5bf8",
+            "en": "Custom size",
+            "ja": "\u30ab\u30b9\u30bf\u30de\u30a4\u30ba",
+            "th": "\u0e44\u0e0b\u0e2a\u0e4c\u0e1e\u0e34\u0e40\u0e28\u0e29\u0e40\u0e09\u0e1e\u0e32\u0e30\u0e25\u0e39\u0e01\u0e04\u0e49\u0e32",
+            "zh_CN": "\u5b9a\u5236\u5c3a\u5bf8"
+        },
+        "mens-shoes-size-uk-8-5": {
+            "zh_TW": "8.5",
+            "en": "8.5",
+            "ja": "8.5",
+            "th": "8.5",
+            "zh_CN": "8.5"
+        },
+        "womens-shoes-size-uk-10": {
+            "zh_TW": "10",
+            "en": "10",
+            "ja": "10",
+            "th": "10",
+            "zh_CN": "10"
+        },
+        "kids-shoes-size-us-12": {
+            "zh_TW": "12",
+            "en": "12",
+            "ja": "12",
+            "th": "12",
+            "zh_CN": "12"
+        },
+        "kids-shoes-size-us-13": {
+            "zh_TW": "13",
+            "en": "13",
+            "ja": "13",
+            "th": "13",
+            "zh_CN": "13"
+        },
+        "kids-shoes-size-us-10": {
+            "zh_TW": "10",
+            "en": "10",
+            "ja": "10",
+            "th": "10",
+            "zh_CN": "10"
+        },
+        "kids-shoes-size-us-11": {
+            "zh_TW": "11",
+            "en": "11",
+            "ja": "11",
+            "th": "11",
+            "zh_CN": "11"
+        },
+        "color-green": {
+            "zh_TW": "\u7da0",
+            "en": "Green",
+            "ja": "\u30b0\u30ea\u30fc\u30f3",
+            "th": "\u0e2a\u0e35\u0e40\u0e02\u0e35\u0e22\u0e27",
+            "zh_CN": "\u7eff"
+        },
+        "womens-shoes-size-eu-43": {
+            "zh_TW": "43",
+            "en": "43",
+            "ja": "43",
+            "th": "43",
+            "zh_CN": "43"
+        },
+        "kids-shoes-size-jp-12": {
+            "zh_TW": "12",
+            "en": "12",
+            "ja": "12",
+            "th": "12",
+            "zh_CN": "12"
+        },
+        "mens-shoes-size-jp-24-5": {
+            "zh_TW": "24.5",
+            "en": "24.5",
+            "ja": "24.5",
+            "th": "24.5",
+            "zh_CN": "24.5"
+        },
+        "mens-shoes-size-eu-41": {
+            "zh_TW": "41",
+            "en": "41",
+            "ja": "41",
+            "th": "41",
+            "zh_CN": "41"
+        },
+        "womens-shoes-size-jp-28": {
+            "zh_TW": "28",
+            "en": "28",
+            "ja": "28",
+            "th": "28",
+            "zh_CN": "28"
+        },
+        "womens-shoes-size-eu-42": {
+            "zh_TW": "42",
+            "en": "42",
+            "ja": "42",
+            "th": "42",
+            "zh_CN": "42"
+        },
+        "kids-shoes-size-us-8-5": {
+            "zh_TW": "8.5",
+            "en": "8.5",
+            "ja": "8.5",
+            "th": "8.5",
+            "zh_CN": "8.5"
+        },
+        "ring-size-tw-no-17": {
+            "zh_TW": "#17",
+            "en": "#17",
+            "ja": "#17",
+            "th": "#17",
+            "zh_CN": "#17"
+        },
+        "womens-shoes-size-jp-21": {
+            "zh_TW": "21",
+            "en": "21",
+            "ja": "21",
+            "th": "21",
+            "zh_CN": "21"
+        },
+        "womens-shoes-size-jp-23": {
+            "zh_TW": "23",
+            "en": "23",
+            "ja": "23",
+            "th": "23",
+            "zh_CN": "23"
+        },
+        "womens-shoes-size-jp-22": {
+            "zh_TW": "22",
+            "en": "22",
+            "ja": "22",
+            "th": "22",
+            "zh_CN": "22"
+        },
+        "womens-shoes-size-jp-25": {
+            "zh_TW": "25",
+            "en": "25",
+            "ja": "25",
+            "th": "25",
+            "zh_CN": "25"
+        },
+        "womens-shoes-size-jp-24": {
+            "zh_TW": "24",
+            "en": "24",
+            "ja": "24",
+            "th": "24",
+            "zh_CN": "24"
+        },
+        "womens-shoes-size-jp-27": {
+            "zh_TW": "27",
+            "en": "27",
+            "ja": "27",
+            "th": "27",
+            "zh_CN": "27"
+        },
+        "womens-shoes-size-jp-26": {
+            "zh_TW": "26",
+            "en": "26",
+            "ja": "26",
+            "th": "26",
+            "zh_CN": "26"
+        },
+        "color-rose-gold": {
+            "zh_TW": "\u73ab\u7470\u91d1",
+            "en": "Rose Gold",
+            "ja": "\u30ed\u30fc\u30ba\u30b4\u30fc\u30eb\u30c9",
+            "th": "\u0e42\u0e23\u0e2a\u0e42\u0e01\u0e25\u0e14\u0e4c",
+            "zh_CN": "\u73ab\u7470\u91d1"
+        },
+        "ring-size-hk-no-13": {
+            "zh_TW": "#13",
+            "en": "#13",
+            "ja": "#13",
+            "th": "#13",
+            "zh_CN": "#13"
+        },
+        "color-gray": {
+            "zh_TW": "\u7070",
+            "en": "Gray",
+            "ja": "\u30b0\u30ec\u30fc",
+            "th": "\u0e2a\u0e35\u0e40\u0e17\u0e32",
+            "zh_CN": "\u7070"
+        },
+        "ring-size-jp-no-27": {
+            "zh_TW": "#27",
+            "en": "#27",
+            "ja": "#27",
+            "th": "#27",
+            "zh_CN": "#27"
+        },
+        "womens-shoes-size-uk-5-5": {
+            "zh_TW": "5.5",
+            "en": "5.5",
+            "ja": "5.5",
+            "th": "5.5",
+            "zh_CN": "5.5"
+        },
+        "kids-shoes-size-us-6": {
+            "zh_TW": "6",
+            "en": "6",
+            "ja": "6",
+            "th": "6",
+            "zh_CN": "6"
+        },
+        "kids-shoes-size-us-7": {
+            "zh_TW": "7",
+            "en": "7",
+            "ja": "7",
+            "th": "7",
+            "zh_CN": "7"
+        },
+        "womens-shoes-size-us-9-5": {
+            "zh_TW": "9.5",
+            "en": "9.5",
+            "ja": "9.5",
+            "th": "9.5",
+            "zh_CN": "9.5"
+        },
+        "ring-size-us-no-3-5": {
+            "zh_TW": "#3.5",
+            "en": "#3.5",
+            "ja": "#3.5",
+            "th": "#3.5",
+            "zh_CN": "#3.5"
+        },
+        "kids-shoes-size-jp-14-5": {
+            "zh_TW": "14.5",
+            "en": "14.5",
+            "ja": "14.5",
+            "th": "14.5",
+            "zh_CN": "14.5"
+        },
+        "ring-size-jp-no-25": {
+            "zh_TW": "#25",
+            "en": "#25",
+            "ja": "#25",
+            "th": "#25",
+            "zh_CN": "#25"
+        },
+        "kids-shoes-size-us-8": {
+            "zh_TW": "8",
+            "en": "8",
+            "ja": "8",
+            "th": "8",
+            "zh_CN": "8"
+        },
+        "ring-size-tw-no-18": {
+            "zh_TW": "#18",
+            "en": "#18",
+            "ja": "#18",
+            "th": "#18",
+            "zh_CN": "#18"
+        },
+        "ring-size-us-no-10-5": {
+            "zh_TW": "#10.5",
+            "en": "#10.5",
+            "ja": "#10.5",
+            "th": "#10.5",
+            "zh_CN": "#10.5"
+        },
+        "color-white": {
+            "zh_TW": "\u767d",
+            "en": "White",
+            "ja": "\u30db\u30ef\u30a4\u30c8",
+            "th": "\u0e2a\u0e35\u0e02\u0e32\u0e27",
+            "zh_CN": "\u767d"
+        },
+        "mens-shoes-size-eu-40": {
+            "zh_TW": "40",
+            "en": "40",
+            "ja": "40",
+            "th": "40",
+            "zh_CN": "40"
+        },
+        "kids-shoes-size-us-5": {
+            "zh_TW": "5",
+            "en": "5",
+            "ja": "5",
+            "th": "5",
+            "zh_CN": "5"
+        },
+        "womens-shoes-size-us-6-5": {
+            "zh_TW": "6.5",
+            "en": "6.5",
+            "ja": "6.5",
+            "th": "6.5",
+            "zh_CN": "6.5"
+        },
+        "ring-size-us-no-4-5": {
+            "zh_TW": "#4.5",
+            "en": "#4.5",
+            "ja": "#4.5",
+            "th": "#4.5",
+            "zh_CN": "#4.5"
+        },
+        "mens-shoes-size-uk-6-5": {
+            "zh_TW": "6.5",
+            "en": "6.5",
+            "ja": "6.5",
+            "th": "6.5",
+            "zh_CN": "6.5"
+        },
+        "mens-shoes-size-uk-10": {
+            "zh_TW": "10",
+            "en": "10",
+            "ja": "10",
+            "th": "10",
+            "zh_CN": "10"
+        },
+        "mens-shoes-size-eu-46": {
+            "zh_TW": "46",
+            "en": "46",
+            "ja": "46",
+            "th": "46",
+            "zh_CN": "46"
+        },
+        "mens-shoes-size-uk-5-5": {
+            "zh_TW": "5.5",
+            "en": "5.5",
+            "ja": "5.5",
+            "th": "5.5",
+            "zh_CN": "5.5"
+        },
+        "mens-shoes-size-uk-11": {
+            "zh_TW": "11",
+            "en": "11",
+            "ja": "11",
+            "th": "11",
+            "zh_CN": "11"
+        },
+        "womens-shoes-size-eu-40": {
+            "zh_TW": "40",
+            "en": "40",
+            "ja": "40",
+            "th": "40",
+            "zh_CN": "40"
+        },
+        "womens-shoes-size-uk-10-5": {
+            "zh_TW": "10.5",
+            "en": "10.5",
+            "ja": "10.5",
+            "th": "10.5",
+            "zh_CN": "10.5"
+        },
+        "mens-shoes-size-eu-44": {
+            "zh_TW": "44",
+            "en": "44",
+            "ja": "44",
+            "th": "44",
+            "zh_CN": "44"
+        },
+        "ring-size-hk-no-22": {
+            "zh_TW": "#22",
+            "en": "#22",
+            "ja": "#22",
+            "th": "#22",
+            "zh_CN": "#22"
+        },
+        "kids-shoes-size-jp-15-5": {
+            "zh_TW": "15.5",
+            "en": "15.5",
+            "ja": "15.5",
+            "th": "15.5",
+            "zh_CN": "15.5"
+        },
+        "mens-shoes-size-us-6-5": {
+            "zh_TW": "6.5",
+            "en": "6.5",
+            "ja": "6.5",
+            "th": "6.5",
+            "zh_CN": "6.5"
+        },
+        "kids-shoes-size-jp-13-5": {
+            "zh_TW": "13.5",
+            "en": "13.5",
+            "ja": "13.5",
+            "th": "13.5",
+            "zh_CN": "13.5"
+        },
+        "mens-shoes-size-uk-9": {
+            "zh_TW": "9",
+            "en": "9",
+            "ja": "9",
+            "th": "9",
+            "zh_CN": "9"
+        },
+        "kids-shoes-size-jp-19-5": {
+            "zh_TW": "19.5",
+            "en": "19.5",
+            "ja": "19.5",
+            "th": "19.5",
+            "zh_CN": "19.5"
+        },
+        "mens-shoes-size-us-11-5": {
+            "zh_TW": "11.5",
+            "en": "11.5",
+            "ja": "11.5",
+            "th": "11.5",
+            "zh_CN": "11.5"
+        },
+        "womens-shoes-size-uk-8-5": {
+            "zh_TW": "8.5",
+            "en": "8.5",
+            "ja": "8.5",
+            "th": "8.5",
+            "zh_CN": "8.5"
+        },
+        "mens-shoes-size-eu-38": {
+            "zh_TW": "38",
+            "en": "38",
+            "ja": "38",
+            "th": "38",
+            "zh_CN": "38"
+        },
+        "mens-shoes-size-eu-39": {
+            "zh_TW": "39",
+            "en": "39",
+            "ja": "39",
+            "th": "39",
+            "zh_CN": "39"
+        },
+        "ring-size-hk-no-21": {
+            "zh_TW": "#21",
+            "en": "#21",
+            "ja": "#21",
+            "th": "#21",
+            "zh_CN": "#21"
+        },
+        "kids-shoes-size-uk-7-5": {
+            "zh_TW": "7.5",
+            "en": "7.5",
+            "ja": "7.5",
+            "th": "7.5",
+            "zh_CN": "7.5"
+        },
+        "womens-shoes-size-jp-21-5": {
+            "zh_TW": "21.5",
+            "en": "21.5",
+            "ja": "21.5",
+            "th": "21.5",
+            "zh_CN": "21.5"
+        },
+        "kids-shoes-size-jp-12-5": {
+            "zh_TW": "12.5",
+            "en": "12.5",
+            "ja": "12.5",
+            "th": "12.5",
+            "zh_CN": "12.5"
+        },
+        "kids-shoes-size-uk-10": {
+            "zh_TW": "10",
+            "en": "10",
+            "ja": "10",
+            "th": "10",
+            "zh_CN": "10"
+        },
+        "color-khaki": {
+            "zh_TW": "\u5361\u5176",
+            "en": "Khaki",
+            "ja": "\u30ab\u30fc\u30ad",
+            "th": "\u0e2a\u0e35\u0e01\u0e32\u0e01\u0e35",
+            "zh_CN": "\u5361\u5176"
+        },
+        "mens-shoes-size-us-8-5": {
+            "zh_TW": "8.5",
+            "en": "8.5",
+            "ja": "8.5",
+            "th": "8.5",
+            "zh_CN": "8.5"
+        },
+        "womens-shoes-size-us-5-5": {
+            "zh_TW": "5.5",
+            "en": "5.5",
+            "ja": "5.5",
+            "th": "5.5",
+            "zh_CN": "5.5"
+        },
+        "womens-shoes-size-jp-23-5": {
+            "zh_TW": "23.5",
+            "en": "23.5",
+            "ja": "23.5",
+            "th": "23.5",
+            "zh_CN": "23.5"
+        },
+        "mens-shoes-size-jp-26-5": {
+            "zh_TW": "26.5",
+            "en": "26.5",
+            "ja": "26.5",
+            "th": "26.5",
+            "zh_CN": "26.5"
+        },
+        "color-indigo": {
+            "zh_TW": "\u975b",
+            "en": "Indigo",
+            "ja": "\u30a4\u30f3\u30c7\u30a3\u30b4",
+            "th": "\u0e2a\u0e35\u0e04\u0e23\u0e32\u0e21",
+            "zh_CN": "\u975b"
+        },
+        "kids-shoes-size-uk-6-5": {
+            "zh_TW": "6.5",
+            "en": "6.5",
+            "ja": "6.5",
+            "th": "6.5",
+            "zh_CN": "6.5"
+        },
+        "size-xxl": {
+            "zh_TW": "XXL",
+            "en": "XXL",
+            "ja": "XXL",
+            "th": "XXL",
+            "zh_CN": "XXL"
+        },
+        "mens-shoes-size-uk-8": {
+            "zh_TW": "8",
+            "en": "8",
+            "ja": "8",
+            "th": "8",
+            "zh_CN": "8"
+        },
+        "closure-hook": {
+            "zh_TW": "\u8033\u52fe",
+            "en": "Hook",
+            "ja": "\u30d4\u30a2\u30b9/\u30d5\u30c3\u30af",
+            "th": "\u0e15\u0e48\u0e32\u0e07\u0e2b\u0e39\u0e41\u0e1a\u0e1a\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27",
+            "zh_CN": "\u8033\u52fe"
+        },
+        "mens-shoes-size-jp-29-5": {
+            "zh_TW": "29.5",
+            "en": "29.5",
+            "ja": "29.5",
+            "th": "29.5",
+            "zh_CN": "29.5"
+        },
+        "mens-shoes-size-uk-9-5": {
+            "zh_TW": "9.5",
+            "en": "9.5",
+            "ja": "9.5",
+            "th": "9.5",
+            "zh_CN": "9.5"
+        },
+        "kids-shoes-size-jp-14": {
+            "zh_TW": "14",
+            "en": "14",
+            "ja": "14",
+            "th": "14",
+            "zh_CN": "14"
+        },
+        "kids-shoes-size-jp-16": {
+            "zh_TW": "16",
+            "en": "16",
+            "ja": "16",
+            "th": "16",
+            "zh_CN": "16"
+        },
+        "mens-shoes-size-uk-6": {
+            "zh_TW": "6",
+            "en": "6",
+            "ja": "6",
+            "th": "6",
+            "zh_CN": "6"
+        },
+        "kids-shoes-size-us-9": {
+            "zh_TW": "9",
+            "en": "9",
+            "ja": "9",
+            "th": "9",
+            "zh_CN": "9"
+        },
+        "ring-size-hk-no-23": {
+            "zh_TW": "#23",
+            "en": "#23",
+            "ja": "#23",
+            "th": "#23",
+            "zh_CN": "#23"
+        },
+        "mens-shoes-size-us-12": {
+            "zh_TW": "12",
+            "en": "12",
+            "ja": "12",
+            "th": "12",
+            "zh_CN": "12"
+        },
+        "ring-size-us-no-7-5": {
+            "zh_TW": "#7.5",
+            "en": "#7.5",
+            "ja": "#7.5",
+            "th": "#7.5",
+            "zh_CN": "#7.5"
+        },
+        "ring-size-hk-no-20": {
+            "zh_TW": "#20",
+            "en": "#20",
+            "ja": "#20",
+            "th": "#20",
+            "zh_CN": "#20"
+        },
+        "color-pink": {
+            "zh_TW": "\u7c89\u7d05",
+            "en": "Pink",
+            "ja": "\u30d4\u30f3\u30af",
+            "th": "\u0e2a\u0e35\u0e0a\u0e21\u0e1e\u0e39",
+            "zh_CN": "\u7c89\u7ea2"
+        },
+        "ring-size-hk-no-26": {
+            "zh_TW": "#26",
+            "en": "#26",
+            "ja": "#26",
+            "th": "#26",
+            "zh_CN": "#26"
+        },
+        "ring-size-hk-no-25": {
+            "zh_TW": "#25",
+            "en": "#25",
+            "ja": "#25",
+            "th": "#25",
+            "zh_CN": "#25"
+        },
+        "mens-shoes-size-us-13": {
+            "zh_TW": "13",
+            "en": "13",
+            "ja": "13",
+            "th": "13",
+            "zh_CN": "13"
+        },
+        "kids-shoes-size-jp-13": {
+            "zh_TW": "13",
+            "en": "13",
+            "ja": "13",
+            "th": "13",
+            "zh_CN": "13"
+        },
+        "womens-shoes-size-uk-6-5": {
+            "zh_TW": "6.5",
+            "en": "6.5",
+            "ja": "6.5",
+            "th": "6.5",
+            "zh_CN": "6.5"
+        },
+        "ring-size-hk-no-28": {
+            "zh_TW": "#28",
+            "en": "#28",
+            "ja": "#28",
+            "th": "#28",
+            "zh_CN": "#28"
+        },
+        "mens-shoes-size-uk-10-5": {
+            "zh_TW": "10.5",
+            "en": "10.5",
+            "ja": "10.5",
+            "th": "10.5",
+            "zh_CN": "10.5"
+        },
+        "kids-shoes-size-jp-18-5": {
+            "zh_TW": "18.5",
+            "en": "18.5",
+            "ja": "18.5",
+            "th": "18.5",
+            "zh_CN": "18.5"
+        },
+        "ring-size-us-no-13-5": {
+            "zh_TW": "#13.5",
+            "en": "#13.5",
+            "ja": "#13.5",
+            "th": "#13.5",
+            "zh_CN": "#13.5"
+        },
+        "mens-shoes-size-uk-12-5": {
+            "zh_TW": "12.5",
+            "en": "12.5",
+            "ja": "12.5",
+            "th": "12.5",
+            "zh_CN": "12.5"
+        },
+        "kids-shoes-size-us-5-5": {
+            "zh_TW": "5.5",
+            "en": "5.5",
+            "ja": "5.5",
+            "th": "5.5",
+            "zh_CN": "5.5"
+        },
+        "ring-size-jp-no-11": {
+            "zh_TW": "#11",
+            "en": "#11",
+            "ja": "#11",
+            "th": "#11",
+            "zh_CN": "#11"
+        },
+        "kids-shoes-size-uk-12": {
+            "zh_TW": "12",
+            "en": "12",
+            "ja": "12",
+            "th": "12",
+            "zh_CN": "12"
+        },
+        "mens-shoes-size-us-7": {
+            "zh_TW": "7",
+            "en": "7",
+            "ja": "7",
+            "th": "7",
+            "zh_CN": "7"
+        },
+        "mens-shoes-size-us-8": {
+            "zh_TW": "8",
+            "en": "8",
+            "ja": "8",
+            "th": "8",
+            "zh_CN": "8"
+        },
+        "womens-shoes-size-us-6": {
+            "zh_TW": "6",
+            "en": "6",
+            "ja": "6",
+            "th": "6",
+            "zh_CN": "6"
+        },
+        "ring-size-hk-no-27": {
+            "zh_TW": "#27",
+            "en": "#27",
+            "ja": "#27",
+            "th": "#27",
+            "zh_CN": "#27"
+        },
+        "kids-shoes-size-uk-11": {
+            "zh_TW": "11",
+            "en": "11",
+            "ja": "11",
+            "th": "11",
+            "zh_CN": "11"
+        },
+        "size-m": {
+            "zh_TW": "M",
+            "en": "M",
+            "ja": "M",
+            "th": "M",
+            "zh_CN": "M"
+        },
+        "mens-shoes-size-jp-25-5": {
+            "zh_TW": "25.5",
+            "en": "25.5",
+            "ja": "25.5",
+            "th": "25.5",
+            "zh_CN": "25.5"
+        },
+        "ring-size-jp-no-13": {
+            "zh_TW": "#13",
+            "en": "#13",
+            "ja": "#13",
+            "th": "#13",
+            "zh_CN": "#13"
+        },
+        "ring-size-hk-no-10": {
+            "zh_TW": "#10",
+            "en": "#10",
+            "ja": "#10",
+            "th": "#10",
+            "zh_CN": "#10"
+        },
+        "ring-size-tw-no-20": {
+            "zh_TW": "#20",
+            "en": "#20",
+            "ja": "#20",
+            "th": "#20",
+            "zh_CN": "#20"
+        },
+        "ring-size-jp-no-10": {
+            "zh_TW": "#10",
+            "en": "#10",
+            "ja": "#10",
+            "th": "#10",
+            "zh_CN": "#10"
+        },
+        "ring-size-hk-no-17": {
+            "zh_TW": "#17",
+            "en": "#17",
+            "ja": "#17",
+            "th": "#17",
+            "zh_CN": "#17"
+        },
+        "mens-shoes-size-jp-27-5": {
+            "zh_TW": "27.5",
+            "en": "27.5",
+            "ja": "27.5",
+            "th": "27.5",
+            "zh_CN": "27.5"
+        },
+        "kids-shoes-size-uk-4-5": {
+            "zh_TW": "4.5",
+            "en": "4.5",
+            "ja": "4.5",
+            "th": "4.5",
+            "zh_CN": "4.5"
+        },
+        "mens-shoes-size-jp-25": {
+            "zh_TW": "25",
+            "en": "25",
+            "ja": "25",
+            "th": "25",
+            "zh_CN": "25"
+        },
+        "kids-shoes-size-jp-20": {
+            "zh_TW": "20",
+            "en": "20",
+            "ja": "20",
+            "th": "20",
+            "zh_CN": "20"
+        },
+        "mens-shoes-size-jp-24": {
+            "zh_TW": "24",
+            "en": "24",
+            "ja": "24",
+            "th": "24",
+            "zh_CN": "24"
+        },
+        "ring-size-tw-no-12": {
+            "zh_TW": "#12",
+            "en": "#12",
+            "ja": "#12",
+            "th": "#12",
+            "zh_CN": "#12"
+        },
+        "ring-size-tw-no-13": {
+            "zh_TW": "#13",
+            "en": "#13",
+            "ja": "#13",
+            "th": "#13",
+            "zh_CN": "#13"
+        },
+        "ring-size-tw-no-10": {
+            "zh_TW": "#10",
+            "en": "#10",
+            "ja": "#10",
+            "th": "#10",
+            "zh_CN": "#10"
+        },
+        "ring-size-tw-no-11": {
+            "zh_TW": "#11",
+            "en": "#11",
+            "ja": "#11",
+            "th": "#11",
+            "zh_CN": "#11"
+        },
+        "ring-size-tw-no-16": {
+            "zh_TW": "#16",
+            "en": "#16",
+            "ja": "#16",
+            "th": "#16",
+            "zh_CN": "#16"
+        },
+        "ring-size-us-no-8-5": {
+            "zh_TW": "#8.5",
+            "en": "#8.5",
+            "ja": "#8.5",
+            "th": "#8.5",
+            "zh_CN": "#8.5"
+        },
+        "womens-shoes-size-jp-27-5": {
+            "zh_TW": "27.5",
+            "en": "27.5",
+            "ja": "27.5",
+            "th": "27.5",
+            "zh_CN": "27.5"
+        },
+        "ring-size-tw-no-15": {
+            "zh_TW": "#15",
+            "en": "#15",
+            "ja": "#15",
+            "th": "#15",
+            "zh_CN": "#15"
+        },
+        "ring-size-jp-no-17": {
+            "zh_TW": "#17",
+            "en": "#17",
+            "ja": "#17",
+            "th": "#17",
+            "zh_CN": "#17"
+        },
+        "color-bronze": {
+            "zh_TW": "\u9285",
+            "en": "Bronze",
+            "ja": "\u30d6\u30ed\u30f3\u30ba",
+            "th": "\u0e2a\u0e35\u0e17\u0e2d\u0e07\u0e41\u0e14\u0e07",
+            "zh_CN": "\u94dc"
+        },
+        "ring-size-tw-no-19": {
+            "zh_TW": "#19",
+            "en": "#19",
+            "ja": "#19",
+            "th": "#19",
+            "zh_CN": "#19"
+        },
+        "womens-shoes-size-jp-24-5": {
+            "zh_TW": "24.5",
+            "en": "24.5",
+            "ja": "24.5",
+            "th": "24.5",
+            "zh_CN": "24.5"
+        },
+        "kids-shoes-size-jp-17-5": {
+            "zh_TW": "17.5",
+            "en": "17.5",
+            "ja": "17.5",
+            "th": "17.5",
+            "zh_CN": "17.5"
+        },
+        "kids-shoes-size-us-9-5": {
+            "zh_TW": "9.5",
+            "en": "9.5",
+            "ja": "9.5",
+            "th": "9.5",
+            "zh_CN": "9.5"
+        },
+        "womens-shoes-size-uk-4": {
+            "zh_TW": "4",
+            "en": "4",
+            "ja": "4",
+            "th": "4",
+            "zh_CN": "4"
+        },
+        "womens-shoes-size-uk-5": {
+            "zh_TW": "5",
+            "en": "5",
+            "ja": "5",
+            "th": "5",
+            "zh_CN": "5"
+        },
+        "womens-shoes-size-uk-6": {
+            "zh_TW": "6",
+            "en": "6",
+            "ja": "6",
+            "th": "6",
+            "zh_CN": "6"
+        },
+        "womens-shoes-size-uk-7": {
+            "zh_TW": "7",
+            "en": "7",
+            "ja": "7",
+            "th": "7",
+            "zh_CN": "7"
+        },
+        "womens-shoes-size-uk-8": {
+            "zh_TW": "8",
+            "en": "8",
+            "ja": "8",
+            "th": "8",
+            "zh_CN": "8"
+        },
+        "womens-shoes-size-uk-9": {
+            "zh_TW": "9",
+            "en": "9",
+            "ja": "9",
+            "th": "9",
+            "zh_CN": "9"
+        },
+        "mens-shoes-size-us-10": {
+            "zh_TW": "10",
+            "en": "10",
+            "ja": "10",
+            "th": "10",
+            "zh_CN": "10"
+        },
+        "mens-shoes-size-us-11": {
+            "zh_TW": "11",
+            "en": "11",
+            "ja": "11",
+            "th": "11",
+            "zh_CN": "11"
+        },
+        "mens-shoes-size-us-16": {
+            "zh_TW": "16",
+            "en": "16",
+            "ja": "16",
+            "th": "16",
+            "zh_CN": "16"
+        },
+        "kids-shoes-size-uk-13": {
+            "zh_TW": "13",
+            "en": "13",
+            "ja": "13",
+            "th": "13",
+            "zh_CN": "13"
+        },
+        "mens-shoes-size-us-14": {
+            "zh_TW": "14",
+            "en": "14",
+            "ja": "14",
+            "th": "14",
+            "zh_CN": "14"
+        },
+        "mens-shoes-size-us-15": {
+            "zh_TW": "15",
+            "en": "15",
+            "ja": "15",
+            "th": "15",
+            "zh_CN": "15"
+        },
+        "womens-shoes-size-us-10-5": {
+            "zh_TW": "10.5",
+            "en": "10.5",
+            "ja": "10.5",
+            "th": "10.5",
+            "zh_CN": "10.5"
+        },
+        "womens-shoes-size-eu-44": {
+            "zh_TW": "44",
+            "en": "44",
+            "ja": "44",
+            "th": "44",
+            "zh_CN": "44"
+        },
+        "kids-shoes-size-uk-8-5": {
+            "zh_TW": "8.5",
+            "en": "8.5",
+            "ja": "8.5",
+            "th": "8.5",
+            "zh_CN": "8.5"
+        },
+        "ring-size-jp-no-5": {
+            "zh_TW": "#5",
+            "en": "#5",
+            "ja": "#5",
+            "th": "#5",
+            "zh_CN": "#5"
+        },
+        "womens-shoes-size-eu-41": {
+            "zh_TW": "41",
+            "en": "41",
+            "ja": "41",
+            "th": "41",
+            "zh_CN": "41"
+        },
+        "ring-size-jp-no-6": {
+            "zh_TW": "#6",
+            "en": "#6",
+            "ja": "#6",
+            "th": "#6",
+            "zh_CN": "#6"
+        },
+        "color-purple": {
+            "zh_TW": "\u7d2b",
+            "en": "Purple",
+            "ja": "\u30d1\u30fc\u30d7\u30eb",
+            "th": "\u0e2a\u0e35\u0e21\u0e48\u0e27\u0e07",
+            "zh_CN": "\u7d2b"
+        },
+        "ring-size-jp-no-4": {
+            "zh_TW": "#4",
+            "en": "#4",
+            "ja": "#4",
+            "th": "#4",
+            "zh_CN": "#4"
+        },
+        "kids-shoes-size-us-6-5": {
+            "zh_TW": "6.5",
+            "en": "6.5",
+            "ja": "6.5",
+            "th": "6.5",
+            "zh_CN": "6.5"
+        },
+        "mens-shoes-size-uk-11-5": {
+            "zh_TW": "11.5",
+            "en": "11.5",
+            "ja": "11.5",
+            "th": "11.5",
+            "zh_CN": "11.5"
+        },
+        "mens-shoes-size-uk-15-5": {
+            "zh_TW": "15.5",
+            "en": "15.5",
+            "ja": "15.5",
+            "th": "15.5",
+            "zh_CN": "15.5"
+        },
+        "womens-shoes-size-eu-36": {
+            "zh_TW": "36",
+            "en": "36",
+            "ja": "36",
+            "th": "36",
+            "zh_CN": "36"
+        },
+        "womens-shoes-size-eu-37": {
+            "zh_TW": "37",
+            "en": "37",
+            "ja": "37",
+            "th": "37",
+            "zh_CN": "37"
+        },
+        "womens-shoes-size-eu-34": {
+            "zh_TW": "34",
+            "en": "34",
+            "ja": "34",
+            "th": "34",
+            "zh_CN": "34"
+        },
+        "womens-shoes-size-eu-35": {
+            "zh_TW": "35",
+            "en": "35",
+            "ja": "35",
+            "th": "35",
+            "zh_CN": "35"
+        },
+        "color-black": {
+            "zh_TW": "\u9ed1",
+            "en": "Black",
+            "ja": "\u30d6\u30e9\u30c3\u30af",
+            "th": "\u0e2a\u0e35\u0e14\u0e33",
+            "zh_CN": "\u9ed1"
+        },
+        "mens-shoes-size-uk-7-5": {
+            "zh_TW": "7.5",
+            "en": "7.5",
+            "ja": "7.5",
+            "th": "7.5",
+            "zh_CN": "7.5"
+        },
+        "color-neon-red": {
+            "zh_TW": "\u87a2\u5149\u7d05",
+            "en": "Neon red",
+            "ja": "\u30cd\u30aa\u30f3\u30ec\u30c3\u30c9",
+            "th": "\u0e2a\u0e35\u0e19\u0e35\u0e2d\u0e2d\u0e19\u0e41\u0e14\u0e07",
+            "zh_CN": "\u8424\u5149\u7ea2"
+        },
+        "womens-shoes-size-eu-39": {
+            "zh_TW": "39",
+            "en": "39",
+            "ja": "39",
+            "th": "39",
+            "zh_CN": "39"
+        },
+        "ring-size-hk-no-24": {
+            "zh_TW": "#24",
+            "en": "#24",
+            "ja": "#24",
+            "th": "#24",
+            "zh_CN": "#24"
+        },
+        "color-teal": {
+            "zh_TW": "\u85cd\u7da0",
+            "en": "Teal",
+            "ja": "\u30a8\u30e1\u30e9\u30eb\u30c9\u30b0\u30ea\u30fc\u30f3",
+            "th": "\u0e2a\u0e35\u0e40\u0e02\u0e35\u0e22\u0e27\u0e19\u0e01\u0e40\u0e1b\u0e47\u0e14\u0e19\u0e49\u0e33",
+            "zh_CN": "\u84dd\u7eff"
+        },
+        "womens-shoes-size-us-10": {
+            "zh_TW": "10",
+            "en": "10",
+            "ja": "10",
+            "th": "10",
+            "zh_CN": "10"
+        },
+        "womens-shoes-size-us-11": {
+            "zh_TW": "11",
+            "en": "11",
+            "ja": "11",
+            "th": "11",
+            "zh_CN": "11"
+        },
+        "ring-size-jp-no-15": {
+            "zh_TW": "#15",
+            "en": "#15",
+            "ja": "#15",
+            "th": "#15",
+            "zh_CN": "#15"
+        },
+        "size-s": {
+            "zh_TW": "S",
+            "en": "S",
+            "ja": "S",
+            "th": "S",
+            "zh_CN": "S"
+        },
+        "womens-shoes-size-us-4-5": {
+            "zh_TW": "4.5",
+            "en": "4.5",
+            "ja": "4.5",
+            "th": "4.5",
+            "zh_CN": "4.5"
+        },
+        "ring-size-jp-no-22": {
+            "zh_TW": "#22",
+            "en": "#22",
+            "ja": "#22",
+            "th": "#22",
+            "zh_CN": "#22"
+        },
+        "ring-size-jp-no-23": {
+            "zh_TW": "#23",
+            "en": "#23",
+            "ja": "#23",
+            "th": "#23",
+            "zh_CN": "#23"
+        },
+        "ring-size-jp-no-20": {
+            "zh_TW": "#20",
+            "en": "#20",
+            "ja": "#20",
+            "th": "#20",
+            "zh_CN": "#20"
+        },
+        "ring-size-jp-no-21": {
+            "zh_TW": "#21",
+            "en": "#21",
+            "ja": "#21",
+            "th": "#21",
+            "zh_CN": "#21"
+        },
+        "ring-size-jp-no-26": {
+            "zh_TW": "#26",
+            "en": "#26",
+            "ja": "#26",
+            "th": "#26",
+            "zh_CN": "#26"
+        },
+        "kids-shoes-size-us-14": {
+            "zh_TW": "14",
+            "en": "14",
+            "ja": "14",
+            "th": "14",
+            "zh_CN": "14"
+        },
+        "color-gold": {
+            "zh_TW": "\u91d1",
+            "en": "Gold",
+            "ja": "\u30b4\u30fc\u30eb\u30c9",
+            "th": "\u0e2a\u0e35\u0e17\u0e2d\u0e07",
+            "zh_CN": "\u91d1"
+        },
+        "kids-shoes-size-jp-18": {
+            "zh_TW": "18",
+            "en": "18",
+            "ja": "18",
+            "th": "18",
+            "zh_CN": "18"
+        },
+        "size-3xl": {
+            "zh_TW": "3XL",
+            "en": "3XL",
+            "ja": "3XL",
+            "th": "3XL",
+            "zh_CN": "3XL"
+        },
+        "ring-size-us-no-11": {
+            "zh_TW": "#11",
+            "en": "#11",
+            "ja": "#11",
+            "th": "#11",
+            "zh_CN": "#11"
+        },
+        "ring-size-us-no-10": {
+            "zh_TW": "#10",
+            "en": "#10",
+            "ja": "#10",
+            "th": "#10",
+            "zh_CN": "#10"
+        },
+        "ring-size-us-no-13": {
+            "zh_TW": "#13",
+            "en": "#13",
+            "ja": "#13",
+            "th": "#13",
+            "zh_CN": "#13"
+        },
+        "ring-size-us-no-12": {
+            "zh_TW": "#12",
+            "en": "#12",
+            "ja": "#12",
+            "th": "#12",
+            "zh_CN": "#12"
+        },
+        "ring-size-jp-no-14": {
+            "zh_TW": "#14",
+            "en": "#14",
+            "ja": "#14",
+            "th": "#14",
+            "zh_CN": "#14"
+        },
+        "size-l": {
+            "zh_TW": "L",
+            "en": "L",
+            "ja": "L",
+            "th": "L",
+            "zh_CN": "L"
+        },
+        "womens-shoes-size-us-7-5": {
+            "zh_TW": "7.5",
+            "en": "7.5",
+            "ja": "7.5",
+            "th": "7.5",
+            "zh_CN": "7.5"
+        },
+        "ring-size-jp-no-9": {
+            "zh_TW": "#9",
+            "en": "#9",
+            "ja": "#9",
+            "th": "#9",
+            "zh_CN": "#9"
+        },
+        "ring-size-jp-no-8": {
+            "zh_TW": "#8",
+            "en": "#8",
+            "ja": "#8",
+            "th": "#8",
+            "zh_CN": "#8"
+        },
+        "ring-size-jp-no-3": {
+            "zh_TW": "#3",
+            "en": "#3",
+            "ja": "#3",
+            "th": "#3",
+            "zh_CN": "#3"
+        },
+        "ring-size-jp-no-2": {
+            "zh_TW": "#2",
+            "en": "#2",
+            "ja": "#2",
+            "th": "#2",
+            "zh_CN": "#2"
+        },
+        "ring-size-jp-no-1": {
+            "zh_TW": "#1",
+            "en": "#1",
+            "ja": "#1",
+            "th": "#1",
+            "zh_CN": "#1"
+        },
+        "ring-size-jp-no-7": {
+            "zh_TW": "#7",
+            "en": "#7",
+            "ja": "#7",
+            "th": "#7",
+            "zh_CN": "#7"
+        },
+        "kids-shoes-size-jp-19": {
+            "zh_TW": "19",
+            "en": "19",
+            "ja": "19",
+            "th": "19",
+            "zh_CN": "19"
+        },
+        "color-yellow": {
+            "zh_TW": "\u9ec3",
+            "en": "Yellow",
+            "ja": "\u30a4\u30a8\u30ed\u30fc",
+            "th": "\u0e2a\u0e35\u0e40\u0e2b\u0e25\u0e37\u0e2d\u0e07",
+            "zh_CN": "\u9ec4"
+        },
+        "ring-size-us-no-6-5": {
+            "zh_TW": "#6.5",
+            "en": "#6.5",
+            "ja": "#6.5",
+            "th": "#6.5",
+            "zh_CN": "#6.5"
+        },
+        "size-xxs": {
+            "zh_TW": "XXS",
+            "en": "XXS",
+            "ja": "XXS",
+            "th": "XXS",
+            "zh_CN": "XXS"
+        },
+        "ring-size-us-no-5-5": {
+            "zh_TW": "#5.5",
+            "en": "#5.5",
+            "ja": "#5.5",
+            "th": "#5.5",
+            "zh_CN": "#5.5"
+        },
+        "ring-size-hk-no-12": {
+            "zh_TW": "#12",
+            "en": "#12",
+            "ja": "#12",
+            "th": "#12",
+            "zh_CN": "#12"
+        },
+        "womens-shoes-size-eu-38": {
+            "zh_TW": "38",
+            "en": "38",
+            "ja": "38",
+            "th": "38",
+            "zh_CN": "38"
+        },
+        "kids-shoes-size-us-10-5": {
+            "zh_TW": "10.5",
+            "en": "10.5",
+            "ja": "10.5",
+            "th": "10.5",
+            "zh_CN": "10.5"
+        }
+    },
+    "coupon_rule_name": {
+        "single": "\u55ae\u4e00\u5546\u54c1\u512a\u60e0",
+        "multi": "\u591a\u6b3e\u5546\u54c1\u512a\u60e0",
+        "store": "\u5168\u9928\u512a\u60e0",
+        "morethan": "\u6eff\u5e7e\u4ef6\u4ee5\u4e0a\u512a\u60e0",
+        "totalamount": "\u6eff\u984d\u512a\u60e0",
+        "freeshipping": "\u904b\u8cbb\u6298\u62b5"
+    },
+    "promo_left_operand_key_name_map": {
+        "shipping_fee": "\u904b\u8cbb\u512a\u60e0",
+        "subtotal": "\u5546\u54c1\u7e3d\u8a08\u512a\u60e0",
+        "q_p_pairs": "\u5546\u54c1\u55ae\u50f9\u512a\u60e0"
+    },
+    "exp_age_requirement": [
+        [
+            0,
+            "\u4e0d\u9650\u5e74\u9f61"
+        ],
+        [
+            3,
+            "3 \u6b72\u4ee5\u4e0a"
+        ],
+        [
+            6,
+            "6 \u6b72\u4ee5\u4e0a"
+        ],
+        [
+            12,
+            "12 \u6b72\u4ee5\u4e0a"
+        ],
+        [
+            18,
+            "18 \u6b72\u4ee5\u4e0a"
+        ],
+        [
+            99,
+            "\u898b\u6d3b\u52d5\u5167\u5bb9"
+        ]
+    ],
+    "color_code": {
+        "blue": "#3333ff",
+        "brown": "#885418",
+        "multi": "#000000",
+        "khaki": "#b5a780",
+        "gold": "#d6ad37",
+        "purple": "#993399",
+        "grey": "#999999",
+        "yellow": "#ffff33",
+        "transparent": "#000000",
+        "pink": "#ffccd5",
+        "black": "#000000",
+        "orange": "#ffb733",
+        "green": "#339933",
+        "white": "#FFFFFF",
+        "silver": "#aeafaf",
+        "red": "#ff3333"
+    },
+    "category": {
+        "0": "\u8863\u8457\u826f\u54c1",
+        "1": "\u5305\u5305\u63d0\u888b",
+        "2": "\u914d\u4ef6\u98fe\u54c1",
+        "3": "\u6587\u5177\u5361\u7247",
+        "4": "\u5abd\u54aa\u5bf6\u5bf6",
+        "5": "\u5c45\u5bb6\u751f\u6d3b",
+        "6": "\u5bf5\u7269\u7528\u54c1",
+        "8": "DIY \u6750\u6599",
+        "9": "\u904b\u52d5\u4f11\u9592",
+        "10": "\u54c1\u5473\u7f8e\u98df",
+        "11": "\u5275\u610f\u79d1\u6280",
+        "12": "\u978b\u5c65\u896a\u54c1",
+        "13": "\u5eda\u623f\u9910\u684c",
+        "14": "\u7f8e\u599d\u4fdd\u990a",
+        "15": "\u9ad4\u9a57\u6d3b\u52d5"
+    },
+    "intl_shipping_methods": [
+        "Taiwan",
+        "Hong Kong",
+        "Singapore",
+        "Macau",
+        "China",
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "France",
+        "Germany",
+        "The Netherlands",
+        "Spain",
+        "Portugal",
+        "Ireland",
+        "Switzerland",
+        "Russia",
+        "United Arab Emirates",
+        "Australia",
+        "New Zealand",
+        "Japan",
+        "South Korea",
+        "Indonesia",
+        "Thailand",
+        "Malaysia",
+        "Philippines",
+        "Latvia",
+        "Estonia",
+        "India",
+        "Vietnam",
+        "Sweden",
+        "Bulgaria",
+        "Hungary",
+        "Lithuania",
+        "Norway",
+        "Poland",
+        "Romania",
+        "Slovenia",
+        "Greece",
+        "Italy",
+        "Belgium",
+        "Chile",
+        "Ukraine",
+        "Finland",
+        "Czech Republic",
+        "Brazil",
+        "Turkey",
+        "Cambodia",
+        "Brunei",
+        "Lebanon",
+        "Nepal",
+        "Morocco",
+        "Denmark",
+        "Israel",
+        "Croatia",
+        "Argentina",
+        "Everywhere Else"
+    ],
+    "food_storage": {
+        "room_temperature": "\u5e38\u6eab",
+        "refrigeration": "\u51b7\u85cf",
+        "freezer": "\u51b7\u51cd",
+        "cool": "\u907f\u514d\u9ad8\u6eab",
+        "dry": "\u4e7e\u71e5",
+        "avoid_direct_sunlight": "\u907f\u514d\u967d\u5149\u76f4\u5c04",
+        "misc": "\u5176\u4ed6"
+    },
+    "food_allergen": {
+        "egg": "\u86cb",
+        "milk": "\u725b\u5976",
+        "fish": "\u9b5a",
+        "wheat": "\u5c0f\u9ea5",
+        "buckwheat": "\u854e\u9ea5",
+        "peanuts": "\u82b1\u751f",
+        "soybeans": "\u9ec3\u8c46",
+        "nuts": "\u5805\u679c",
+        "mango": "\u8292\u679c",
+        "shrimp": "\u8766",
+        "crab": "\u87f9",
+        "misc": "\u5176\u4ed6"
+    },
+    "item_location": {
+        "\u53f0\u7063": [
+            [
+                "TW-KEE",
+                "\u57fa\u9686\u5e02"
+            ],
+            [
+                "TW-TPE",
+                "\u53f0\u5317\u5e02"
+            ],
+            [
+                "TW-NWT",
+                "\u65b0\u5317\u5e02"
+            ],
+            [
+                "TW-TAO",
+                "\u6843\u5712\u5e02"
+            ],
+            [
+                "TW-HSZ",
+                "\u65b0\u7af9\u5e02"
+            ],
+            [
+                "TW-HSQ",
+                "\u65b0\u7af9\u7e23"
+            ],
+            [
+                "TW-MIA",
+                "\u82d7\u6817\u7e23"
+            ],
+            [
+                "TW-TXG",
+                "\u53f0\u4e2d\u5e02"
+            ],
+            [
+                "TW-CHA",
+                "\u5f70\u5316\u7e23"
+            ],
+            [
+                "TW-NAN",
+                "\u5357\u6295\u7e23"
+            ],
+            [
+                "TW-YUN",
+                "\u96f2\u6797\u7e23"
+            ],
+            [
+                "TW-CYI",
+                "\u5609\u7fa9\u5e02"
+            ],
+            [
+                "TW-CYQ",
+                "\u5609\u7fa9\u7e23"
+            ],
+            [
+                "TW-TNN",
+                "\u53f0\u5357\u5e02"
+            ],
+            [
+                "TW-KHH",
+                "\u9ad8\u96c4\u5e02"
+            ],
+            [
+                "TW-PIF",
+                "\u5c4f\u6771\u7e23"
+            ],
+            [
+                "TW-TTT",
+                "\u53f0\u6771\u7e23"
+            ],
+            [
+                "TW-HUA",
+                "\u82b1\u84ee\u7e23"
+            ],
+            [
+                "TW-ILA",
+                "\u5b9c\u862d\u7e23"
+            ],
+            [
+                "TW-PEN",
+                "\u6f8e\u6e56\u7e23"
+            ],
+            [
+                "TW-KIN",
+                "\u91d1\u9580\u7e23"
+            ],
+            [
+                "TW-LIE",
+                "\u9023\u6c5f\u7e23"
+            ]
+        ],
+        "\u4e2d\u570b\u5927\u9678": [
+            [
+                "CN-Guangzhou",
+                "\u5ee3\u5dde"
+            ],
+            [
+                "CN-Shenzhen",
+                "\u6df1\u5733"
+            ],
+            [
+                "CN-Xiamen",
+                "\u5ec8\u9580"
+            ],
+            [
+                "CN-Shanghai",
+                "\u4e0a\u6d77"
+            ],
+            [
+                "CN-Hangzhou",
+                "\u676d\u5dde"
+            ],
+            [
+                "CN-Beijing",
+                "\u5317\u4eac"
+            ],
+            [
+                "CN-Chengdu",
+                "\u6210\u90fd"
+            ]
+        ],
+        "\u9999\u6e2f": [
+            [
+                "HK-HongKongIsland",
+                "\u9999\u6e2f\u5cf6"
+            ],
+            [
+                "HK-Kowloon",
+                "\u4e5d\u9f8d"
+            ],
+            [
+                "HK-NewTerritories",
+                "\u65b0\u754c"
+            ],
+            [
+                "HK-Others",
+                "\u5176\u4ed6\u5730\u5340"
+            ]
+        ],
+        "\u6fb3\u9580": [
+            [
+                "MO-MacauPeninsula",
+                "\u6fb3\u9580\u534a\u5cf6"
+            ],
+            [
+                "MO-Taipa",
+                "\u6c39\u4ed4"
+            ],
+            [
+                "MO-Coloane",
+                "\u8def\u74b0"
+            ],
+            [
+                "MO-Others",
+                "\u5176\u4ed6\u5730\u5340"
+            ]
+        ],
+        "\u6cf0\u570b": [
+            [
+                "TH-10",
+                "\u66fc\u8c37"
+            ],
+            [
+                "TH-50",
+                "\u6e05\u9081"
+            ],
+            [
+                "TH-40",
+                "\u5764\u656c"
+            ],
+            [
+                "TH-83",
+                "\u666e\u5409"
+            ],
+            [
+                "TH-Others",
+                "\u5176\u4ed6\u5730\u5340"
+            ]
+        ],
+        "\u65e5\u672c": [
+            [
+                "JP-01",
+                "\u5317\u6d77\u9053"
+            ],
+            [
+                "JP-13",
+                "\u6771\u4eac"
+            ],
+            [
+                "JP-Nagoya",
+                "\u540d\u53e4\u5c4b"
+            ],
+            [
+                "JP-27",
+                "\u5927\u962a"
+            ],
+            [
+                "JP-26",
+                "\u4eac\u90fd"
+            ],
+            [
+                "JP-40",
+                "\u798f\u5ca1"
+            ],
+            [
+                "JP-Others",
+                "\u5176\u4ed6\u5730\u5340"
+            ]
+        ],
+        "\u5176\u4ed6\u5730\u5340": [
+            [
+                "Others-Others",
+                "\u5176\u4ed6\u5730\u5340"
+            ]
+        ]
+    },
+    "shipping_fee_item_prefix": {
+        "zh_TW": "\u88dc\u904b\u8cbb\u5546\u54c1",
+        "en": "Additional Shipping Fee listings",
+        "ja": "\u8ffd\u52a0\u9001\u6599",
+        "th": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e04\u0e48\u0e32\u0e08\u0e31\u0e14\u0e2a\u0e48\u0e07",
+        "zh_CN": "\u8865\u8fd0\u8d39\u5546\u54c1"
+    },
+    "country": {
+        "AC": "\u963f\u68ee\u677e\u5cf6",
+        "AD": "\u5b89\u9053\u723e",
+        "AE": "\u963f\u62c9\u4f2f\u806f\u5408\u5927\u516c\u570b",
+        "AF": "\u963f\u5bcc\u6c57",
+        "AG": "\u5b89\u5730\u5361\u53ca\u5df4\u5e03\u9054",
+        "AI": "\u5b89\u572d\u62c9",
+        "AL": "\u963f\u723e\u5df4\u5c3c\u4e9e",
+        "AM": "\u4e9e\u7f8e\u5c3c\u4e9e",
+        "AO": "\u5b89\u54e5\u62c9",
+        "AQ": "\u5357\u6975\u6d32",
+        "AR": "\u963f\u6839\u5ef7",
+        "AS": "\u7f8e\u5c6c\u85a9\u6469\u4e9e",
+        "AT": "\u5967\u5730\u5229",
+        "AU": "\u6fb3\u6d32",
+        "AW": "\u8377\u5c6c\u963f\u9b6f\u5df4",
+        "AX": "\u5967\u862d\u7fa4\u5cf6",
+        "AZ": "\u4e9e\u585e\u62dc\u7136",
+        "BA": "\u6ce2\u58eb\u5c3c\u4e9e\u8207\u8d6b\u585e\u54e5\u7dad\u7d0d",
+        "BB": "\u5df4\u8c9d\u591a",
+        "BD": "\u5b5f\u52a0\u62c9",
+        "BE": "\u6bd4\u5229\u6642",
+        "BF": "\u5e03\u5409\u7d0d\u6cd5\u7d22",
+        "BG": "\u4fdd\u52a0\u5229\u4e9e",
+        "BH": "\u5df4\u6797",
+        "BI": "\u84b2\u9686\u5730",
+        "BJ": "\u8c9d\u5357",
+        "BL": "\u8056\u5df4\u745f\u7c73",
+        "BM": "\u767e\u6155\u9054",
+        "BN": "\u6c76\u840a",
+        "BO": "\u73bb\u5229\u7dad\u4e9e",
+        "BQ": "\u8377\u862d\u52a0\u52d2\u6bd4\u5340",
+        "BR": "\u5df4\u897f",
+        "BS": "\u5df4\u54c8\u99ac",
+        "BT": "\u4e0d\u4e39",
+        "BV": "\u5e03\u5a01\u5cf6",
+        "BW": "\u6ce2\u672d\u90a3",
+        "BY": "\u767d\u4fc4\u7f85\u65af",
+        "BZ": "\u8c9d\u91cc\u65af",
+        "CA": "\u52a0\u62ff\u5927",
+        "CC": "\u79d1\u79d1\u65af\uff08\u57fa\u6797\uff09\u7fa4\u5cf6",
+        "CD": "\u525b\u679c\uff08\u91d1\u590f\u6c99\uff09",
+        "CF": "\u4e2d\u975e\u5171\u548c\u570b",
+        "CG": "\u525b\u679c\uff08\u5e03\u62c9\u85a9\uff09",
+        "CH": "\u745e\u58eb",
+        "CI": "\u8c61\u7259\u6d77\u5cb8",
+        "CK": "\u5eab\u514b\u7fa4\u5cf6",
+        "CL": "\u667a\u5229",
+        "CM": "\u5580\u9ea5\u9686",
+        "CN": "\u4e2d\u570b\u5927\u9678",
+        "CO": "\u54e5\u502b\u6bd4\u4e9e",
+        "CP": "\u514b\u91cc\u6d3e\u9813\u5cf6",
+        "CR": "\u54e5\u65af\u5927\u9ece\u52a0",
+        "CU": "\u53e4\u5df4",
+        "CV": "\u7dad\u5fb7\u89d2",
+        "CW": "\u5eab\u62c9\u7d22",
+        "CX": "\u8056\u8a95\u5cf6",
+        "CY": "\u8cfd\u666e\u52d2\u65af",
+        "CZ": "\u6377\u514b\u5171\u548c\u570b",
+        "DE": "\u5fb7\u570b",
+        "DG": "\u8fea\u4e9e\u54e5\u52a0\u897f\u4e9e\u5cf6",
+        "DJ": "\u5409\u5e03\u5730",
+        "DK": "\u4e39\u9ea5",
+        "DM": "\u591a\u7c73\u5c3c\u514b",
+        "DO": "\u591a\u660e\u5c3c\u52a0\u5171\u548c\u570b",
+        "DZ": "\u963f\u723e\u53ca\u5229\u4e9e",
+        "EA": "\u4f11\u9054\u8207\u6885\u5229\u5229\u4e9e",
+        "EC": "\u5384\u74dc\u591a",
+        "EE": "\u611b\u6c99\u5c3c\u4e9e",
+        "EG": "\u57c3\u53ca",
+        "EH": "\u897f\u6492\u54c8\u62c9",
+        "ER": "\u5384\u5229\u5782\u4e9e",
+        "ES": "\u897f\u73ed\u7259",
+        "ET": "\u8863\u7d22\u6bd4\u4e9e",
+        "EU": "\u6b50\u76df",
+        "FI": "\u82ac\u862d",
+        "FJ": "\u6590\u6fdf",
+        "FK": "\u798f\u514b\u862d\u7fa4\u5cf6",
+        "FM": "\u5bc6\u514b\u7f85\u5c3c\u897f\u4e9e\u7fa4\u5cf6",
+        "FO": "\u6cd5\u7f85\u7fa4\u5cf6",
+        "FR": "\u6cd5\u570b",
+        "GA": "\u52a0\u5f6d",
+        "GB": "\u82f1\u570b",
+        "GD": "\u683c\u745e\u90a3\u9054",
+        "GE": "\u55ac\u6cbb\u4e9e\u5171\u548c\u570b",
+        "GF": "\u6cd5\u5c6c\u572d\u4e9e\u90a3",
+        "GG": "\u6839\u897f\u5cf6",
+        "GH": "\u8fe6\u7d0d",
+        "GI": "\u76f4\u5e03\u7f85\u9640",
+        "GL": "\u683c\u9675\u862d",
+        "GM": "\u7518\u6bd4\u4e9e",
+        "GN": "\u5e7e\u5167\u4e9e",
+        "GP": "\u74dc\u5730\u6d1b\u666e",
+        "GQ": "\u8d64\u9053\u5e7e\u5167\u4e9e",
+        "GR": "\u5e0c\u81d8",
+        "GS": "\u5357\u55ac\u6cbb\u4e9e\u8207\u5357\u4e09\u660e\u6cbb\u7fa4\u5cf6",
+        "GT": "\u74dc\u5730\u99ac\u62c9",
+        "GU": "\u95dc\u5cf6",
+        "GW": "\u5e7e\u5167\u4e9e\u6bd4\u7d22",
+        "GY": "\u84cb\u4e9e\u90a3",
+        "HK": "\u9999\u6e2f",
+        "HM": "\u8d6b\u5fb7\u5cf6\u548c\u9ea5\u514b\u5510\u7d0d\u7fa4\u5cf6",
+        "HN": "\u5b8f\u90fd\u62c9\u65af",
+        "HR": "\u514b\u7f85\u57c3\u897f\u4e9e",
+        "HT": "\u6d77\u5730",
+        "HU": "\u5308\u7259\u5229",
+        "IC": "\u52a0\u90a3\u5229\u7fa4\u5cf6",
+        "ID": "\u5370\u5c3c",
+        "IE": "\u611b\u723e\u862d",
+        "IL": "\u4ee5\u8272\u5217",
+        "IM": "\u66fc\u5cf6",
+        "IN": "\u5370\u5ea6",
+        "IO": "\u82f1\u5c6c\u5370\u5ea6\u6d0b\u9818\u5730",
+        "IQ": "\u4f0a\u62c9\u514b",
+        "IR": "\u4f0a\u6717",
+        "IS": "\u51b0\u5cf6",
+        "IT": "\u7fa9\u5927\u5229",
+        "JE": "\u6fa4\u897f\u5cf6",
+        "JM": "\u7259\u8cb7\u52a0",
+        "JO": "\u7d04\u65e6",
+        "JP": "\u65e5\u672c",
+        "KE": "\u80af\u4e9e",
+        "KG": "\u5409\u723e\u5409\u65af",
+        "KH": "\u67ec\u57d4\u5be8",
+        "KI": "\u5409\u91cc\u5df4\u65af",
+        "KM": "\u845b\u6469",
+        "KN": "\u8056\u514b\u91cc\u65af\u591a\u798f\u53ca\u5c3c\u7dad\u65af",
+        "KP": "\u5317\u97d3",
+        "KR": "\u5357\u97d3",
+        "KW": "\u79d1\u5a01\u7279",
+        "KY": "\u958b\u66fc\u7fa4\u5cf6",
+        "KZ": "\u54c8\u85a9\u514b",
+        "LA": "\u5bee\u570b",
+        "LB": "\u9ece\u5df4\u5ae9",
+        "LC": "\u8056\u9732\u897f\u4e9e",
+        "LI": "\u5217\u652f\u6566\u65af\u767b",
+        "LK": "\u65af\u91cc\u862d\u5361",
+        "LR": "\u8cf4\u6bd4\u745e\u4e9e",
+        "LS": "\u8cf4\u7d22\u6258",
+        "LT": "\u7acb\u9676\u5b9b",
+        "LU": "\u76e7\u68ee\u5821",
+        "LV": "\u62c9\u812b\u7dad\u4e9e",
+        "LY": "\u5229\u6bd4\u4e9e",
+        "MA": "\u6469\u6d1b\u54e5",
+        "MC": "\u6469\u7d0d\u54e5",
+        "MD": "\u6469\u723e\u591a\u74e6",
+        "ME": "\u8499\u7279\u5167\u54e5\u7f85",
+        "MF": "\u6cd5\u5c6c\u8056\u99ac\u4e01",
+        "MG": "\u99ac\u9054\u52a0\u65af\u52a0",
+        "MH": "\u99ac\u7d39\u723e\u7fa4\u5cf6",
+        "MK": "\u99ac\u5176\u9813",
+        "ML": "\u99ac\u5229",
+        "MM": "\u7dec\u7538",
+        "MN": "\u8499\u53e4",
+        "MO": "\u6fb3\u9580",
+        "MP": "\u5317\u99ac\u91cc\u4e9e\u7d0d\u7fa4\u5cf6",
+        "MQ": "\u99ac\u4e01\u5c3c\u514b\u5cf6",
+        "MR": "\u8305\u5229\u5854\u5c3c\u4e9e",
+        "MS": "\u8499\u54f2\u81d8",
+        "MT": "\u99ac\u723e\u4ed6",
+        "MU": "\u6a21\u91cc\u897f\u65af",
+        "MV": "\u99ac\u723e\u5730\u592b",
+        "MW": "\u99ac\u62c9\u5a01",
+        "MX": "\u58a8\u897f\u54e5",
+        "MY": "\u99ac\u4f86\u897f\u4e9e",
+        "MZ": "\u83ab\u4e09\u6bd4\u514b",
+        "NA": "\u7d0d\u7c73\u6bd4\u4e9e",
+        "NC": "\u65b0\u5580\u91cc\u591a\u5c3c\u4e9e",
+        "NE": "\u5c3c\u65e5",
+        "NF": "\u8afe\u798f\u514b\u5cf6",
+        "NG": "\u5948\u53ca\u5229\u4e9e",
+        "NI": "\u5c3c\u52a0\u62c9\u74dc",
+        "NL": "\u8377\u862d",
+        "NO": "\u632a\u5a01",
+        "NP": "\u5c3c\u6cca\u723e",
+        "NR": "\u8afe\u9b6f",
+        "NU": "\u7d10\u57c3\u5cf6",
+        "NZ": "\u7d10\u897f\u862d",
+        "OM": "\u963f\u66fc\u738b\u570b",
+        "PA": "\u5df4\u62ff\u99ac",
+        "PE": "\u79d8\u9b6f",
+        "PF": "\u6cd5\u5c6c\u73bb\u91cc\u5c3c\u897f\u4e9e",
+        "PG": "\u5df4\u5e03\u4e9e\u7d10\u5e7e\u5167\u4e9e",
+        "PH": "\u83f2\u5f8b\u8cd3",
+        "PK": "\u5df4\u57fa\u65af\u5766",
+        "PL": "\u6ce2\u862d",
+        "PM": "\u8056\u76ae\u57c3\u723e\u548c\u5bc6\u514b\u9686\u7fa4\u5cf6",
+        "PN": "\u76ae\u7279\u80af\u7fa4\u5cf6",
+        "PR": "\u6ce2\u591a\u9ece\u5404",
+        "PS": "\u5df4\u52d2\u65af\u5766\u81ea\u6cbb\u5340",
+        "PT": "\u8461\u8404\u7259",
+        "PW": "\u5e1b\u7409",
+        "PY": "\u5df4\u62c9\u572d",
+        "QA": "\u5361\u9054",
+        "QO": "\u5927\u6d0b\u6d32\u908a\u7586\u7fa4\u5cf6",
+        "RE": "\u7559\u5c3c\u65fa",
+        "RO": "\u7f85\u99ac\u5c3c\u4e9e",
+        "RS": "\u585e\u723e\u7dad\u4e9e",
+        "RU": "\u4fc4\u7f85\u65af",
+        "RW": "\u76e7\u5b89\u9054",
+        "SA": "\u6c99\u70cf\u5730\u963f\u62c9\u4f2f",
+        "SB": "\u7d22\u7f85\u9580\u7fa4\u5cf6",
+        "SC": "\u585e\u5e2d\u723e",
+        "SD": "\u8607\u4e39",
+        "SE": "\u745e\u5178",
+        "SG": "\u65b0\u52a0\u5761",
+        "SH": "\u8056\u8d6b\u52d2\u62ff\u5cf6",
+        "SI": "\u65af\u6d1b\u7dad\u5c3c\u4e9e",
+        "SJ": "\u51b7\u5cb8\u53ca\u592e\u9ea5\u6069\u7fa4\u5cf6",
+        "SK": "\u65af\u6d1b\u4f10\u514b",
+        "SL": "\u7345\u5b50\u5c71",
+        "SM": "\u8056\u99ac\u5229\u8afe",
+        "SN": "\u585e\u5167\u52a0\u723e",
+        "SO": "\u7d22\u99ac\u5229\u4e9e",
+        "SR": "\u8607\u5229\u5357",
+        "SS": "\u5357\u8607\u4e39",
+        "ST": "\u8056\u591a\u7f8e\u666e\u6797\u897f\u6bd4",
+        "SV": "\u85a9\u723e\u74e6\u591a",
+        "SX": "\u8377\u5c6c\u8056\u99ac\u4e01",
+        "SY": "\u6558\u5229\u4e9e",
+        "SZ": "\u53f2\u74e6\u6fdf\u862d",
+        "TA": "\u7279\u91cc\u65af\u5766\u9054\u5eab\u5c3c\u4e9e\u7fa4\u5cf6",
+        "TC": "\u571f\u514b\u65af\u53ca\u958b\u79d1\u65af\u7fa4\u5cf6",
+        "TD": "\u67e5\u5fb7",
+        "TF": "\u6cd5\u5c6c\u5357\u65b9\u5c6c\u5730",
+        "TG": "\u591a\u54e5",
+        "TH": "\u6cf0\u570b",
+        "TJ": "\u5854\u5409\u514b",
+        "TK": "\u6258\u514b\u52de\u7fa4\u5cf6",
+        "TL": "\u6771\u5e1d\u6c76",
+        "TM": "\u571f\u5eab\u66fc",
+        "TN": "\u7a81\u5c3c\u897f\u4e9e",
+        "TO": "\u6771\u52a0",
+        "TR": "\u571f\u8033\u5176",
+        "TT": "\u5343\u91cc\u9054\u53ca\u6258\u5df4\u54e5",
+        "TV": "\u5410\u74e6\u9b6f",
+        "TW": "\u53f0\u7063",
+        "TZ": "\u5766\u5c1a\u5c3c\u4e9e",
+        "UA": "\u70cf\u514b\u862d",
+        "UG": "\u70cf\u5e72\u9054",
+        "UM": "\u7f8e\u570b\u672c\u571f\u5916\u5c0f\u5cf6\u5dbc",
+        "US": "\u7f8e\u570b",
+        "UY": "\u70cf\u62c9\u572d",
+        "UZ": "\u70cf\u8332\u5225\u514b",
+        "VA": "\u68b5\u8482\u5ca1",
+        "VC": "\u8056\u6587\u68ee\u53ca\u683c\u745e\u90a3\u4e01",
+        "VE": "\u59d4\u5167\u745e\u62c9",
+        "VG": "\u82f1\u5c6c\u7dad\u4eac\u7fa4\u5cf6",
+        "VI": "\u7f8e\u5c6c\u7dad\u4eac\u7fa4\u5cf6",
+        "VN": "\u8d8a\u5357",
+        "VU": "\u842c\u90a3\u675c",
+        "WF": "\u74e6\u5229\u65af\u548c\u5bcc\u5716\u7d0d\u7fa4\u5cf6",
+        "WS": "\u85a9\u6469\u4e9e",
+        "XK": "\u79d1\u7d22\u6c83",
+        "YE": "\u8449\u9580",
+        "YT": "\u99ac\u7d04\u7279",
+        "ZA": "\u5357\u975e",
+        "ZM": "\u5c1a\u6bd4\u4e9e",
+        "ZW": "\u8f9b\u5df4\u5a01"
+    },
+    "marginTids": [
+        "icYY4YXp"
+    ],
+    "coupon_rule_keys": [
+        "single",
+        "multi",
+        "store",
+        "morethan",
+        "totalamount",
+        "freeshipping"
+    ],
+    "variationIds": {
+        "closure": [
+            "closure-post",
+            "closure-hook",
+            "closure-clip-on"
+        ],
+        "size": [
+            "size-xxs",
+            "size-xs",
+            "size-s",
+            "size-m",
+            "size-l",
+            "size-xl",
+            "size-xxl",
+            "size-3xl",
+            "size-custom-size"
+        ],
+        "ring-size-jp": [
+            "ring-size-jp-no-1",
+            "ring-size-jp-no-2",
+            "ring-size-jp-no-3",
+            "ring-size-jp-no-4",
+            "ring-size-jp-no-5",
+            "ring-size-jp-no-6",
+            "ring-size-jp-no-7",
+            "ring-size-jp-no-8",
+            "ring-size-jp-no-9",
+            "ring-size-jp-no-10",
+            "ring-size-jp-no-11",
+            "ring-size-jp-no-12",
+            "ring-size-jp-no-13",
+            "ring-size-jp-no-14",
+            "ring-size-jp-no-15",
+            "ring-size-jp-no-16",
+            "ring-size-jp-no-17",
+            "ring-size-jp-no-18",
+            "ring-size-jp-no-19",
+            "ring-size-jp-no-20",
+            "ring-size-jp-no-21",
+            "ring-size-jp-no-22",
+            "ring-size-jp-no-23",
+            "ring-size-jp-no-24",
+            "ring-size-jp-no-25",
+            "ring-size-jp-no-26",
+            "ring-size-jp-no-27"
+        ],
+        "mens-shoes-size-uk": [
+            "mens-shoes-size-uk-5-5",
+            "mens-shoes-size-uk-6",
+            "mens-shoes-size-uk-6-5",
+            "mens-shoes-size-uk-7",
+            "mens-shoes-size-uk-7-5",
+            "mens-shoes-size-uk-8",
+            "mens-shoes-size-uk-8-5",
+            "mens-shoes-size-uk-9",
+            "mens-shoes-size-uk-9-5",
+            "mens-shoes-size-uk-10",
+            "mens-shoes-size-uk-10-5",
+            "mens-shoes-size-uk-11",
+            "mens-shoes-size-uk-11-5",
+            "mens-shoes-size-uk-12-5",
+            "mens-shoes-size-uk-13-5",
+            "mens-shoes-size-uk-14-5",
+            "mens-shoes-size-uk-15-5"
+        ],
+        "color": [
+            "color-black",
+            "color-white",
+            "color-gray",
+            "color-red",
+            "color-pink",
+            "color-peach",
+            "color-orange",
+            "color-yellow",
+            "color-brown",
+            "color-khaki",
+            "color-green",
+            "color-blue",
+            "color-teal",
+            "color-indigo",
+            "color-purple",
+            "color-gold",
+            "color-silver",
+            "color-bronze",
+            "color-rose-gold",
+            "color-neon-red",
+            "color-neon-orange",
+            "color-neon-yellow",
+            "color-neon-green",
+            "color-neon-blue"
+        ],
+        "mens-shoes-size-us": [
+            "mens-shoes-size-us-6",
+            "mens-shoes-size-us-6-5",
+            "mens-shoes-size-us-7",
+            "mens-shoes-size-us-7-5",
+            "mens-shoes-size-us-8",
+            "mens-shoes-size-us-8-5",
+            "mens-shoes-size-us-9",
+            "mens-shoes-size-us-9-5",
+            "mens-shoes-size-us-10",
+            "mens-shoes-size-us-10-5",
+            "mens-shoes-size-us-11",
+            "mens-shoes-size-us-11-5",
+            "mens-shoes-size-us-12",
+            "mens-shoes-size-us-13",
+            "mens-shoes-size-us-14",
+            "mens-shoes-size-us-15",
+            "mens-shoes-size-us-16"
+        ],
+        "womens-shoes-size-jp": [
+            "womens-shoes-size-jp-21",
+            "womens-shoes-size-jp-21-5",
+            "womens-shoes-size-jp-22",
+            "womens-shoes-size-jp-22-5",
+            "womens-shoes-size-jp-23",
+            "womens-shoes-size-jp-23-5",
+            "womens-shoes-size-jp-24",
+            "womens-shoes-size-jp-24-5",
+            "womens-shoes-size-jp-25",
+            "womens-shoes-size-jp-25-5",
+            "womens-shoes-size-jp-26",
+            "womens-shoes-size-jp-26-5",
+            "womens-shoes-size-jp-27",
+            "womens-shoes-size-jp-27-5",
+            "womens-shoes-size-jp-28"
+        ],
+        "womens-shoes-size-us": [
+            "womens-shoes-size-us-4-5",
+            "womens-shoes-size-us-5",
+            "womens-shoes-size-us-5-5",
+            "womens-shoes-size-us-6",
+            "womens-shoes-size-us-6-5",
+            "womens-shoes-size-us-7",
+            "womens-shoes-size-us-7-5",
+            "womens-shoes-size-us-8",
+            "womens-shoes-size-us-8-5",
+            "womens-shoes-size-us-9",
+            "womens-shoes-size-us-9-5",
+            "womens-shoes-size-us-10",
+            "womens-shoes-size-us-10-5",
+            "womens-shoes-size-us-11"
+        ],
+        "ring-size-us": [
+            "ring-size-us-no-2-5",
+            "ring-size-us-no-3",
+            "ring-size-us-no-3-5",
+            "ring-size-us-no-4",
+            "ring-size-us-no-4-5",
+            "ring-size-us-no-5",
+            "ring-size-us-no-5-5",
+            "ring-size-us-no-6",
+            "ring-size-us-no-6-5",
+            "ring-size-us-no-7",
+            "ring-size-us-no-7-5",
+            "ring-size-us-no-8",
+            "ring-size-us-no-8-5",
+            "ring-size-us-no-9",
+            "ring-size-us-no-9-5",
+            "ring-size-us-no-10",
+            "ring-size-us-no-10-5",
+            "ring-size-us-no-11",
+            "ring-size-us-no-11-5",
+            "ring-size-us-no-12",
+            "ring-size-us-no-12-5",
+            "ring-size-us-no-13",
+            "ring-size-us-no-13-5"
+        ],
+        "ring-size-tw": [
+            "ring-size-tw-no-4",
+            "ring-size-tw-no-5",
+            "ring-size-tw-no-6",
+            "ring-size-tw-no-7",
+            "ring-size-tw-no-8",
+            "ring-size-tw-no-9",
+            "ring-size-tw-no-10",
+            "ring-size-tw-no-11",
+            "ring-size-tw-no-12",
+            "ring-size-tw-no-13",
+            "ring-size-tw-no-14",
+            "ring-size-tw-no-15",
+            "ring-size-tw-no-16",
+            "ring-size-tw-no-17",
+            "ring-size-tw-no-18",
+            "ring-size-tw-no-19",
+            "ring-size-tw-no-20"
+        ],
+        "kids-shoes-size-us": [
+            "kids-shoes-size-us-4-5",
+            "kids-shoes-size-us-5",
+            "kids-shoes-size-us-5-5",
+            "kids-shoes-size-us-6",
+            "kids-shoes-size-us-6-5",
+            "kids-shoes-size-us-7",
+            "kids-shoes-size-us-7-5",
+            "kids-shoes-size-us-8",
+            "kids-shoes-size-us-8-5",
+            "kids-shoes-size-us-9",
+            "kids-shoes-size-us-9-5",
+            "kids-shoes-size-us-10",
+            "kids-shoes-size-us-10-5",
+            "kids-shoes-size-us-11",
+            "kids-shoes-size-us-12",
+            "kids-shoes-size-us-13",
+            "kids-shoes-size-us-14"
+        ],
+        "womens-shoes-size-uk": [
+            "womens-shoes-size-uk-4",
+            "womens-shoes-size-uk-4-5",
+            "womens-shoes-size-uk-5",
+            "womens-shoes-size-uk-5-5",
+            "womens-shoes-size-uk-6",
+            "womens-shoes-size-uk-6-5",
+            "womens-shoes-size-uk-7",
+            "womens-shoes-size-uk-7-5",
+            "womens-shoes-size-uk-8",
+            "womens-shoes-size-uk-8-5",
+            "womens-shoes-size-uk-9",
+            "womens-shoes-size-uk-9-5",
+            "womens-shoes-size-uk-10",
+            "womens-shoes-size-uk-10-5"
+        ],
+        "kids-shoes-size-jp": [
+            "kids-shoes-size-jp-12",
+            "kids-shoes-size-jp-12-5",
+            "kids-shoes-size-jp-13",
+            "kids-shoes-size-jp-13-5",
+            "kids-shoes-size-jp-14",
+            "kids-shoes-size-jp-14-5",
+            "kids-shoes-size-jp-15",
+            "kids-shoes-size-jp-15-5",
+            "kids-shoes-size-jp-16",
+            "kids-shoes-size-jp-16-5",
+            "kids-shoes-size-jp-17",
+            "kids-shoes-size-jp-17-5",
+            "kids-shoes-size-jp-18",
+            "kids-shoes-size-jp-18-5",
+            "kids-shoes-size-jp-19",
+            "kids-shoes-size-jp-19-5",
+            "kids-shoes-size-jp-20"
+        ],
+        "kids-shoes-size-uk": [
+            "kids-shoes-size-uk-4",
+            "kids-shoes-size-uk-4-5",
+            "kids-shoes-size-uk-5",
+            "kids-shoes-size-uk-5-5",
+            "kids-shoes-size-uk-6",
+            "kids-shoes-size-uk-6-5",
+            "kids-shoes-size-uk-7",
+            "kids-shoes-size-uk-7-5",
+            "kids-shoes-size-uk-8",
+            "kids-shoes-size-uk-8-5",
+            "kids-shoes-size-uk-9",
+            "kids-shoes-size-uk-9-5",
+            "kids-shoes-size-uk-10",
+            "kids-shoes-size-uk-10-5",
+            "kids-shoes-size-uk-11",
+            "kids-shoes-size-uk-12",
+            "kids-shoes-size-uk-13"
+        ],
+        "ring-size-hk": [
+            "ring-size-hk-no-6",
+            "ring-size-hk-no-7",
+            "ring-size-hk-no-8",
+            "ring-size-hk-no-9",
+            "ring-size-hk-no-10",
+            "ring-size-hk-no-11",
+            "ring-size-hk-no-12",
+            "ring-size-hk-no-13",
+            "ring-size-hk-no-14",
+            "ring-size-hk-no-15",
+            "ring-size-hk-no-16",
+            "ring-size-hk-no-17",
+            "ring-size-hk-no-18",
+            "ring-size-hk-no-19",
+            "ring-size-hk-no-20",
+            "ring-size-hk-no-21",
+            "ring-size-hk-no-22",
+            "ring-size-hk-no-23",
+            "ring-size-hk-no-24",
+            "ring-size-hk-no-25",
+            "ring-size-hk-no-26",
+            "ring-size-hk-no-27",
+            "ring-size-hk-no-28"
+        ],
+        "mens-shoes-size-jp": [
+            "mens-shoes-size-jp-22",
+            "mens-shoes-size-jp-22-5",
+            "mens-shoes-size-jp-23",
+            "mens-shoes-size-jp-23-5",
+            "mens-shoes-size-jp-24",
+            "mens-shoes-size-jp-24-5",
+            "mens-shoes-size-jp-25",
+            "mens-shoes-size-jp-25-5",
+            "mens-shoes-size-jp-26",
+            "mens-shoes-size-jp-26-5",
+            "mens-shoes-size-jp-27",
+            "mens-shoes-size-jp-27-5",
+            "mens-shoes-size-jp-28",
+            "mens-shoes-size-jp-28-5",
+            "mens-shoes-size-jp-29",
+            "mens-shoes-size-jp-29-5",
+            "mens-shoes-size-jp-30"
+        ],
+        "kids-shoes-size-eu": [
+            "kids-shoes-size-eu-20",
+            "kids-shoes-size-eu-21",
+            "kids-shoes-size-eu-22",
+            "kids-shoes-size-eu-23",
+            "kids-shoes-size-eu-24",
+            "kids-shoes-size-eu-25",
+            "kids-shoes-size-eu-26",
+            "kids-shoes-size-eu-27",
+            "kids-shoes-size-eu-28",
+            "kids-shoes-size-eu-29",
+            "kids-shoes-size-eu-30",
+            "kids-shoes-size-eu-31",
+            "kids-shoes-size-eu-32"
+        ],
+        "mens-shoes-size-eu": [
+            "mens-shoes-size-eu-38",
+            "mens-shoes-size-eu-39",
+            "mens-shoes-size-eu-40",
+            "mens-shoes-size-eu-41",
+            "mens-shoes-size-eu-42",
+            "mens-shoes-size-eu-43",
+            "mens-shoes-size-eu-44",
+            "mens-shoes-size-eu-45",
+            "mens-shoes-size-eu-46",
+            "mens-shoes-size-eu-47",
+            "mens-shoes-size-eu-48",
+            "mens-shoes-size-eu-49"
+        ],
+        "womens-shoes-size-eu": [
+            "womens-shoes-size-eu-34",
+            "womens-shoes-size-eu-35",
+            "womens-shoes-size-eu-36",
+            "womens-shoes-size-eu-37",
+            "womens-shoes-size-eu-38",
+            "womens-shoes-size-eu-39",
+            "womens-shoes-size-eu-40",
+            "womens-shoes-size-eu-41",
+            "womens-shoes-size-eu-42",
+            "womens-shoes-size-eu-43",
+            "womens-shoes-size-eu-44"
+        ]
+    },
+    "geo_shipping_country_map": {
+        "0": "Everywhere Else",
+        "BE": "Belgium",
+        "FR": "France",
+        "BG": "Bulgaria",
+        "UA": "Ukraine",
+        "HR": "Croatia",
+        "BN": "Brunei",
+        "DE": "Germany",
+        "JP": "Japan",
+        "HU": "Hungary",
+        "HK": "Hong Kong",
+        "BR": "Brazil",
+        "FI": "Finland",
+        "GR": "Greece",
+        "RU": "Russia",
+        "NL": "The Netherlands",
+        "PT": "Portugal",
+        "NO": "Norway",
+        "TW": "Taiwan",
+        "TR": "Turkey",
+        "LT": "Lithuania",
+        "LV": "Latvia",
+        "NZ": "New Zealand",
+        "TH": "Thailand",
+        "NP": "Nepal",
+        "PH": "Philippines",
+        "RO": "Romania",
+        "PL": "Poland",
+        "CH": "Switzerland",
+        "AE": "United Arab Emirates",
+        "CN": "China",
+        "CL": "Chile",
+        "EE": "Estonia",
+        "CA": "Canada",
+        "IT": "Italy",
+        "VN": "Vietnam",
+        "CZ": "Czech Republic",
+        "AR": "Argentina",
+        "AU": "Australia",
+        "GB": "United Kingdom",
+        "IN": "India",
+        "LB": "Lebanon",
+        "IE": "Ireland",
+        "ID": "Indonesia",
+        "ES": "Spain",
+        "MA": "Morocco",
+        "MY": "Malaysia",
+        "MO": "Macau",
+        "KH": "Cambodia",
+        "US": "United States",
+        "KR": "South Korea",
+        "SI": "Slovenia",
+        "DK": "Denmark",
+        "SG": "Singapore",
+        "SE": "Sweden",
+        "IL": "Israel"
+    },
+    "promo_translation_dict": {
+        "zh_HK": {
+            "\u6bcf\u4ef6\uff08\u5f8c\u7db4\uff09": "",
+            "\u904b\u8cbb\uff08\u524d\u7db4\uff09": "\u904b\u8cbb",
+            "\u904b\u8cbb\uff08\u5f8c\u7db4\uff09": ""
+        },
+        "zh_CN": {
+            "\u6bcf\u4ef6\uff08\u5f8c\u7db4\uff09": "",
+            "\u904b\u8cbb\uff08\u524d\u7db4\uff09": "\u8fd0\u8d39",
+            "\u904b\u8cbb\uff08\u5f8c\u7db4\uff09": ""
+        },
+        "zh_TW": {
+            "\u6bcf\u4ef6\uff08\u5f8c\u7db4\uff09": "",
+            "\u904b\u8cbb\uff08\u524d\u7db4\uff09": "\u904b\u8cbb",
+            "\u904b\u8cbb\uff08\u5f8c\u7db4\uff09": ""
+        },
+        "en": {
+            "\u3001": "/",
+            "\u904b\u8cbb\uff08\u5f8c\u7db4\uff09": " on shipping fees",
+            "\uff0c": ", ",
+            "\u6240\u6709\u5546\u54c1": "All items",
+            "\u6216": " or ",
+            "\u904b\u8cbb": "Shipping fee",
+            "\u6bcf\u4ef6": "",
+            "\uff1a": ": ",
+            "\u8acb\u9078\u64c7\u904b\u9001\u65b9\u5f0f": "Please select a shipping method or region.",
+            "\u65b9\u5f0f": "Method",
+            "\u6bcf\u4ef6\uff08\u5f8c\u7db4\uff09": " for each item",
+            "\u514d\u904b": "Free shipping",
+            "\u904b\u8cbb\uff08\u524d\u7db4\uff09": "",
+            "\u964d\u81f3 {}": "the price lowered to {}"
+        },
+        "th": {
+            "\u3001": ",",
+            "\u904b\u8cbb\uff08\u5f8c\u7db4\uff09": "",
+            "\u6bcf\u4ef6\uff08\u5f8c\u7db4\uff09": "",
+            "\uff0c": ",",
+            "\u904b\u8cbb\uff08\u524d\u7db4\uff09": "\u0e04\u0e48\u0e32\u0e08\u0e31\u0e14\u0e2a\u0e48\u0e07",
+            "\u6216": "\u0e2b\u0e23\u0e37\u0e2d",
+            "\uff1a": ":"
+        },
+        "ja": {
+            "\u3001": "\u30fb",
+            "\u904b\u8cbb\uff08\u5f8c\u7db4\uff09": "",
+            "\u6bcf\u4ef6\uff08\u5f8c\u7db4\uff09": "",
+            "\uff0c": "\u3001",
+            "\u904b\u8cbb\uff08\u524d\u7db4\uff09": "\u9001\u6599",
+            "\u6216": "\u3042\u308b\u3044\u306f",
+            "\uff1a": "\uff1a"
+        }
+    },
+    "color_name": {
+        "blue": "\u85cd\u8272",
+        "brown": "\u5496\u5561\u8272",
+        "multi": "\u591a\u8272",
+        "khaki": "\u5361\u5176\u8272",
+        "gold": "\u91d1\u8272",
+        "purple": "\u7d2b\u8272",
+        "grey": "\u7070\u8272",
+        "yellow": "\u9ec3\u8272",
+        "transparent": "\u900f\u660e",
+        "pink": "\u7c89\u7d05\u8272",
+        "black": "\u9ed1\u8272",
+        "orange": "\u6a58\u8272",
+        "green": "\u7da0\u8272",
+        "white": "\u767d\u8272",
+        "silver": "\u9280\u8272",
+        "red": "\u7d05\u8272"
+    },
+    "exp_language_name_pairs": [
+        [
+            "zh",
+            "\u4e2d\u6587"
+        ],
+        [
+            "jpn",
+            "\u65e5\u6587"
+        ],
+        [
+            "yue",
+            "\u7cb5\u8a9e"
+        ],
+        [
+            "tha",
+            "\u6cf0\u6587"
+        ],
+        [
+            "eng",
+            "\u82f1\u6587"
+        ]
+    ],
+    "permit": {
+        "1": "\u539f\u5275\u5546\u54c1",
+        "2": "\u6388\u6b0a\u8ca9\u552e",
+        "3": "\u5341\u5e74\u8001\u4ef6"
+    },
+    "shipping_country": {
+        "Taiwan": "\u53f0\u7063",
+        "Hong Kong": "\u9999\u6e2f",
+        "Singapore": "\u65b0\u52a0\u5761",
+        "Macau": "\u6fb3\u9580",
+        "China": "\u4e2d\u570b\u5927\u9678",
+        "United States": "\u7f8e\u570b",
+        "Canada": "\u52a0\u62ff\u5927",
+        "United Kingdom": "\u82f1\u570b",
+        "France": "\u6cd5\u570b",
+        "Germany": "\u5fb7\u570b",
+        "The Netherlands": "\u8377\u862d",
+        "Spain": "\u897f\u73ed\u7259",
+        "Portugal": "\u8461\u8404\u7259",
+        "Ireland": "\u611b\u723e\u862d",
+        "Switzerland": "\u745e\u58eb",
+        "Russia": "\u4fc4\u7f85\u65af",
+        "United Arab Emirates": "\u963f\u62c9\u4f2f\u806f\u5408\u5927\u516c\u570b",
+        "Australia": "\u6fb3\u6d32",
+        "New Zealand": "\u7d10\u897f\u862d",
+        "Japan": "\u65e5\u672c",
+        "South Korea": "\u5357\u97d3",
+        "Indonesia": "\u5370\u5c3c",
+        "Thailand": "\u6cf0\u570b",
+        "Malaysia": "\u99ac\u4f86\u897f\u4e9e",
+        "Philippines": "\u83f2\u5f8b\u8cd3",
+        "Latvia": "\u62c9\u812b\u7dad\u4e9e",
+        "Estonia": "\u611b\u6c99\u5c3c\u4e9e",
+        "India": "\u5370\u5ea6",
+        "Vietnam": "\u8d8a\u5357",
+        "Sweden": "\u745e\u5178",
+        "Bulgaria": "\u4fdd\u52a0\u5229\u4e9e",
+        "Hungary": "\u5308\u7259\u5229",
+        "Lithuania": "\u7acb\u9676\u5b9b",
+        "Norway": "\u632a\u5a01",
+        "Poland": "\u6ce2\u862d",
+        "Romania": "\u7f85\u99ac\u5c3c\u4e9e",
+        "Slovenia": "\u65af\u6d1b\u7dad\u5c3c\u4e9e",
+        "Greece": "\u5e0c\u81d8",
+        "Italy": "\u7fa9\u5927\u5229",
+        "Belgium": "\u6bd4\u5229\u6642",
+        "Chile": "\u667a\u5229",
+        "Ukraine": "\u70cf\u514b\u862d",
+        "Finland": "\u82ac\u862d",
+        "Czech Republic": "\u6377\u514b\u5171\u548c\u570b",
+        "Brazil": "\u5df4\u897f",
+        "Turkey": "\u571f\u8033\u5176",
+        "Cambodia": "\u67ec\u57d4\u5be8",
+        "Brunei": "\u6c76\u840a",
+        "Lebanon": "\u9ece\u5df4\u5ae9",
+        "Nepal": "\u5c3c\u6cca\u723e",
+        "Morocco": "\u6469\u6d1b\u54e5",
+        "Denmark": "\u4e39\u9ea5",
+        "Israel": "\u4ee5\u8272\u5217",
+        "Croatia": "\u514b\u7f85\u57c3\u897f\u4e9e",
+        "Argentina": "\u963f\u6839\u5ef7",
+        "Everywhere Else": "\u6240\u6709\u5176\u4ed6\u570b\u5bb6/\u5730\u5340"
+    }
+};})

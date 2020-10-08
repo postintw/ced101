@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/footer.css">
+	<meta charset="UTF-8">	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/contact-from.css">
+	<link rel="stylesheet" href="./css/flex.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
 	<title>書香世家</title>
 	<style>
+		
 		*{
 			box-sizing: border-box;
-			margin:0;
-			padding:0;
-		}
-		.flex{
-			display:flex;
-		}
-		.flex-n{
-			display:flex;
-			flex-wrap:nowrap;
-		}
-		.flex-w{
-			display:flex;
-			flex-wrap:wrap;
-		}
-		.flex-r{
-			display:flex;
-			flex-wrap:wrap-reverse;
-		}
-		.y-flex{
-			display:flex;
-			flex-direction: column;
-		}
-		.x-flex{display:flex;
-			flex-direction: row;}
+		}		
 		a{
 			text-decoration: none;
-			color:#000;
-		}
+			}
 		div.breadcrumb{
-		  /*background-color: #e9ecef;*/
+		  background-color: #e9ecef;
 		  padding: 5px 10px;
 		  border-radius: 5px;
 		}
@@ -56,17 +34,17 @@
 		  color: #aaa;
 		  margin-right: 12px;
 		}
-		/* 第一個 li 元素，將 ::before 設定回來需要的 */
+		 
 		div.breadcrumb ol.breadcrumb_list > li:first-child::before{
 		  content: "";
 		  margin-right: 0;
 		}
-		/* 基本文字樣式 */
+		 
 		div.breadcrumb ol.breadcrumb_list > li > a{
 		    display: inline-block;
 		  color: #007bff;
 		}
-		/* 滑動移過後改變文字顏色 */
+		 
 		div.breadcrumb ol.breadcrumb_list > li > a:hover{
 		  color: #0056b3;
 		}
@@ -93,7 +71,7 @@
 		.head {
 			text-indent:2px;
 			line-height: 40px;
-			border:1px solid yellow;
+			 border:1px solid yellow; 
 			text-align: center;
 			margin-top: 20px;
 			margin-bottom: 10px;
@@ -102,7 +80,7 @@
 		div.con{
 			margin-left:auto;
 			margin-right:auto;
-			border:2px solid brown;
+			 border:2px solid brown; 
 			width:100px;
 			height:45px;
 			text-align:center;
@@ -115,10 +93,7 @@
 			line-height: 40px;
 			
 		}
-		article.help div.map{
-			
-			
-		}
+
 		.adress{
 			margin:0;
 		}
@@ -128,10 +103,7 @@
 			width:100%;
 
 		}
-		/*article.help{
-			display:flex;
-			width:1000px;
-		}*/
+		
 	</style>
 </head>
 <body>
@@ -167,10 +139,11 @@
 				</li>
 			<li><a href="orginal.html">手工原創</a></li>
 			<li><a href="teaching2.html">手寫教學</a></li>
-			<li><a href="cantact.html">聯絡我們</a></li>
+			<li><a href="contact.html">聯絡我們</a></li>
 		</ul>
-		<div class="logobox"><img src="./img/logok.png" alt=""></div>
+		<div class="logobox"><a href="index.html"><img src="./img/logok.png" alt=""></a></div>
 	</header>
+	<main>
 	<div class="breadcrumb ad">
   	<ol class="breadcrumb_list">
     <li><a href="index.html">首頁</a></li>
@@ -196,7 +169,7 @@
 	<section  class="ad">
 		<h3 class="fc-00838f location">書香世家的位置：</h3>
 		<article class="help flex">
-				<div class="container">  
+				<div class="sheet">  
 				  <form id="contact" action="" method="post">
 				    <h3>聯絡我們</h3>
 				    <h4>留下你的訊息</h4>
@@ -208,8 +181,7 @@
 				    </fieldset>
 				    <fieldset>
 				      <input placeholder="你的電話號碼" type="tel" tabindex="3" required>
-				    </fieldset>
-				    
+				    </fieldset>				    
 				    <fieldset>
 				      <textarea placeholder="你想說甚麼" tabindex="4" required></textarea>
 				    </fieldset>
@@ -231,32 +203,34 @@
 			</div>
 
 		</article>
-	</section>
+	</section>	
+	</main>
+	
 	<footer>
-<div class="foot">
-  <div class="container">
-    <div class="item">
-      <h3>關於書香世家</h3>
-      <div class="nav"><a href="#">客製化服務</a><a href="#">預約空間</a><a href="#">預約座位</a></div>
-    </div>
-    <div class="item">
-      <h3>客戶須知</h3>
-      <div class="nav"><a href="#">退換貨流程</a><a href="#">售後服務</a><a href="#">免責聲明</a><a href="#">品牌理念</a></div>
-    </div>
-    <div class="item">
-      <h3>產品與服務</h3>
-      <div class="nav"><a href="orginal2.html">＞手工原創</a><a href="teaching2.html">＞手寫教學</a><a href="gift.html">＞禮品小物</a><a href="write.html">＞文房具</a></div>
-    </div>
-    <div class="item item_form">
-      <h3>訂閱電子報</h3>
-      <form>
-        <input type="email" name=""/>
-        <input type="submit" value="訂閱"/>
-      </form>
-    </div>
-  </div>
-  <div class="foot copy">copyright &copy;書香世家</div>
-</div>
-	</footer>
+		<div class="foot">
+		  <div class="container">
+			<div class="item">
+			  <h3>關於書香世家</h3>
+			  <div class="nav"><a href="#">客製化服務</a><a href="#">預約空間</a><a href="#">預約座位</a></div>
+			</div>
+			<div class="item">
+			  <h3>客戶須知</h3>
+			  <div class="nav"><a href="#">退換貨流程</a><a href="#">售後服務</a><a href="#">免責聲明</a><a href="#">品牌理念</a></div>
+			</div>
+			<div class="item">
+			  <h3>產品與服務</h3>
+			  <div class="nav"><a href="orginal2.html">＞手工原創</a><a href="teaching2.html">＞手寫教學</a><a href="gift.html">＞禮品小物</a><a href="write.html">＞文房具</a></div>
+			</div>
+			<div class="item item_form">
+			  <h3>訂閱電子報</h3>
+			  <form>
+				<input type="email" name=""/>
+				<input type="submit" value="訂閱"/>
+			  </form>
+			</div>
+		  </div>
+		  <div class="foot copy">copyright &copy;書香世家</div>
+		</div>
+			</footer>
 </body>
 </html>

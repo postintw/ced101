@@ -1,0 +1,28 @@
+.flex{
+    display:flex;
+}
+.flex-n{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.flex-w{
+    display:flex;
+    flex-wrap:wrap;
+}
+.flex-r{
+    display:flex;
+    flex-wrap:wrap-reverse;
+}
+.y-flex{
+    display:flex;
+    flex-direction: column;
+}
+.yr-flex{
+    display:flex;
+    flex-direction: column-reverse;
+}
+}
+.x-flex{display:flex;
+    flex-direction: row;}
+.xr-flex{display:flex;
+    flex-direction: row-reverse;}

@@ -11,23 +11,23 @@
 			margin:0;
 			padding:0;
 		}
-		
 		.x-n-flex{
 			display:flex;
 			flex-flow: row nowrap;
 		}
 		.ourter{
-
+			position: relative;
 		}
 		div.img{
-			border:1px solid blue;
+			/* border:1px solid blue; */
+			width:100%;
 		}
 		div.txt{
-			border:1px solid yellow;
+			/* border:1px solid yellow; */
 			position: absolute;
 			bottom:0;
 			width:100%;
-			height:150px;
+			height:100px;
 			text-align: center;
 			background-color: rgba(255,255,255,0.7);
 		}
@@ -37,17 +37,20 @@
 			flex-direction: row;
 		}
 		div.card{
+			margin:5px;
 			position: relative;
-			border:1px solid black;
+			border:1px solid rgb(46, 46, 46);
+			box-shadow: 1px 1px 3px rgba(36, 36, 36,.7);
 			height: 400px;
 			width:20%;
 			min-width:350px;
 			max-width:400px;
-
+			border-radius: 10px;
+			overflow:hidden;
 
 		}
 		div.card:hover{
-			box-shadow: 2px 2px 3px #000;
+			box-shadow: 2px 2px 6px rgba(36, 36, 36,.7);
 			transform: translateY(-5px);
 
 		}
@@ -133,7 +136,6 @@ summary {
     transform: translateY(-10px) rotate(135deg);
     transition: .3s;
 }
-
 .ui-menu[open] .ui-menu-summary::after {
     transform: translateY(-8px)  rotate(-45deg);
 }
@@ -146,159 +148,191 @@ summary {
 					<img src="./img/feather.png" alt="" class="pimg">
 					<a class="span1" href="#">文具房</a>
 					<ul class="span11">
-						<li><a href="#">筆記文具</a></li>
-						<li><a href="#">筆盒/筆袋</a></li>
-						<li><a href="#">墨水</a></li>
-						<li><a href="#">筆記本</a></li>
+						<li><a href="write.html">筆記文具</a></li>
+						<li><a href="write.html">筆盒/筆袋</a></li>
+						<li><a href="write.html">墨水</a></li>
+						<li><a href="write.html">筆記本</a></li>
 					</ul>
 				</div>
-					
-					
 				</li>
 				<li>
 				<div class="gift">
 					<img src="./img/gift-icon.png" alt="" class="gimg">
 					<a class="span2" href="#">禮品小物</a>
 					<ul class="span21">
-						<li><a href="#">療癒香氛</a></li>
-						<li><a href="#">清潔收納</a></li>
-						<li><a href="#">瓶瓶罐罐</a></li>
-						<li><a href="#">餐桌道具</a></li>
-						<li><a href="#">皮件工具</a></li>
+						<li><a href="gift.html">療癒香氛</a></li>
+						<li><a href="gift.html">清潔收納</a></li>
+						<li><a href="gift.html">瓶瓶罐罐</a></li>
+						<li><a href="gift.html">餐桌道具</a></li>
+						<li><a href="gift.html">皮件工具</a></li>
 					</ul>
 				</div>
-					
-				</li>
-			<li><a href="#">手工原創</a></li>
-			<li><a href="#">手寫教學</a></li>
-			<li><a href="#">聯絡我們</a></li>
+					</li>
+			<li><a href="orginal2.html">手工原創</a></li>
+			<li><a href="teaching2.html">手寫教學</a></li>
+			<li><a href="contact.html">聯絡我們</a></li>
 		</ul>
-		<div class="logobox"><img src="./img/logok.png" alt=""></div>
+		<div class="logobox">
+			<a href="index.html"><img src="./img/logok.png" alt=""></a>
+		</div>
 </header>
-<div class="breadcrumb ad">
-  	<ol class="breadcrumb_list">
-    <li><a href="index.html">首頁</a></li>
-    <li><a href="#">文具</a></li>
-  	</ol>
-	</div>
-<div class="x-n-flex ourter">
-	<div class="sidebar">
-		<div class="ui-menu-wrap">
-        <details class="ui-menu" open>
-            <summary class="ui-menu-summary">文具</summary>
-            <div class="ui-menu-list">
-                <a class="ui-btn">鋼筆</a>
-                <a class="ui-btn">筆記具</a>
-                <a class="ui-btn">筆盒/筆袋</a>
-                <a class="ui-btn">墨水</a>
-                <a class="ui-btn">精緻禮盒</a>
-            </div>
-        </details>
-        <details class="ui-menu" open>
-            <summary class="ui-menu-summary">中國文房四寶</summary>
-            <div class="ui-menu-list">
-                <a class="ui-btn">手工紙</a>
-                <a class="ui-btn">墨條</a>
-                <a class="ui-btn">硯台</a>
-                <a class="ui-btn">毛筆</a>
-            </div>
-        </details>
-    	</div>
-	</div>
-	<div class="frame">
-	
-		<div class="main">
-		<div class="card">
-			<div class="img"><img src="./img/10099165_480x.jpg" alt=""></div>
-			<div class="txt">
-				<p>美國 NOODLER'S 鯰魚鋼筆</p>
-				<p>Topikapi Amber (琥珀色)</p>
-				<p>STANDARD FLEX 標準桿 ST 彈性尖鋼筆</p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/9741350_480x.jpg" alt=""></div>
-			<div class="txt">
-				
-				<p>德國 LAMY AL-STAR 恆星 /恒星</p>
-				<p>2019限定色 BRONZE 古銅金 鋼筆</p>
-				<p>EF~B尖可選</p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/IMG_0839.jpg" alt=""></div>
-			<div class="txt">
-				<p>木質鋼珠筆</p>
-				<p>免費雷雕刻字</p>
-				<p></p>
+<main>
+	<div class="breadcrumb ad">
+		<ol class="breadcrumb_list">
+	  <li><a href="index.html">首頁</a></li>
+	  <li><a href="#">文具</a></li>
+		</ol>
+	  </div>
+  <div class="x-n-flex ourter">
+	  <div class="sidebar">
+		  <div class="ui-menu-wrap">
+		  <details class="ui-menu" open>
+			  <summary class="ui-menu-summary">文具</summary>
+			  <div class="ui-menu-list">
+				  <a class="ui-btn">鋼筆</a>
+				  <a class="ui-btn">筆記具</a>
+				  <a class="ui-btn">筆盒/筆袋</a>
+				  <a class="ui-btn">墨水</a>
+				  <a class="ui-btn">精緻禮盒</a>
+			  </div>
+		  </details>
+		  <details class="ui-menu" open>
+			  <summary class="ui-menu-summary">中國文房四寶</summary>
+			  <div class="ui-menu-list">
+				  <a class="ui-btn">手工紙</a>
+				  <a class="ui-btn">墨條</a>
+				  <a class="ui-btn">硯台</a>
+				  <a class="ui-btn">毛筆</a>
+			  </div>
+		  </details>
+		  </div>
+	  </div>
+	  <div class="frame">
+	  
+		  <div class="main">
+		  <div class="card">
+			<a href="#">
+				  <div class="img"><img src="./img/10099165_480x.jpg" alt=""></div>
+			</a>
+			  
+			  <div class="txt">
+				  <p>美國 NOODLER'S 鯰魚鋼筆</p>
+				  <p>Topikapi Amber (琥珀色)</p>
+				  <p>STANDARD FLEX 標準桿 ST 彈性尖鋼筆</p>
+			  </div>
+		  </div>
+		  <div class="card">
+				  <a href="#">
+				  <div class="img"><img src="./img/9741350_480x.jpg" alt=""></div>
+					</a>
+			  
+			  <div class="txt">
+				  
+				  <p>德國 LAMY AL-STAR 恆星 /恒星</p>
+				  <p>2019限定色 BRONZE 古銅金 鋼筆</p>
+				  <p>EF~B尖可選</p>
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/IMG_0839.jpg" alt=""></div>
+			  </a>
+			  
+			  <div class="txt">
+				  <p>木質鋼珠筆</p>
+				  <p>免費雷雕刻字</p>
+				  <p></p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/mitshibishi-unipin1.webp" alt=""></div>
+				</a>
+			  
+			  <div class="txt">
+				  <p>UNI PIN 耐水代針筆</p>
+				  <p></p>
+				  <p></p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/13436798.jpg" alt=""></div>
+			  </a>
+			  
+			  <div class="txt">
+				  <p>KAWECO 台灣限定 鋁桿紫丁香鋼筆</p>
+				  <p>EF/F/M/B/BB可選</p>
+				  <p></p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/10902322_480x.webp" alt=""></div>
+				</a>
+			  
+			  <div class="txt">
+				  <p>德國 LAMY AION 永恆系列 鋼筆</p>
+				  <p>霧銀/橄欖銀 霧黑 /黑色 EF/F/M/尖可選</p>
+				  <p></p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/22036308465470_181_m.jpg" alt=""></div>
+			  </a>
+			  
+			  <div class="txt">
+				  <p>水晶玻璃筆墨水星空沾水墨蘸水筆套裝</p>
+				  <p>水晶鋼筆羽毛學生用</p>
+				  <p>琉璃古風</p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/_2015-10-9 16 48 38.jpg" alt=""></div>
+			  </a>
+			  
+			  <div class="txt">
+				  <p>義大利 BORTOLETTI SET82 </p>
+				  <p>羽毛沾水筆+筆座+30ML黑色墨水一瓶（綠松石藍羽毛）</p>
+				  <p></p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/rotring-800-5.webp" alt=""></div>
+			  </a>
+			  
+			  <div class="txt">
+				  <p>Rotring 800系列自動鉛筆</p>
+				  <p>含筆芯</p>
+				  <p>NT$1,600</p>
+  
+			  </div>
+		  </div>
+		  <div class="card">
+			  <a href="#">
+				  <div class="img"><img src="./img/rotring-600-3color2.webp" alt=""></div>
+			  </a>
+			  
+			  <div class="txt">
+				  <p>Rotring 600紅藍綠桿自動鉛筆、原子筆</p>
+				  <p></p>
+				  <p></p>
+  
+			  </div>
+		  </div>
+	  </div>
+  </div>
+</main>
 
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/9741350_480x.jpg" alt=""></div>
-			<div class="txt">
-				<p>德國 Kaweco Skyline Sport</p>
-				<p>火狐狸 FOX 鋼筆</p>
-				<p></p>
-
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/13436798.jpg" alt=""></div>
-			<div class="txt">
-				<p>KAWECO 台灣限定 鋁桿紫丁香鋼筆</p>
-				<p>EF/F/M/B/BB可選</p>
-				<p></p>
-
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/10902322_480x.webp" alt=""></div>
-			<div class="txt">
-				<p>德國 LAMY AION 永恆系列 鋼筆</p>
-				<p>霧銀/橄欖銀 霧黑 /黑色 EF/F/M/尖可選</p>
-				<p></p>
-
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/22036308465470_181_m.jpg" alt=""></div>
-			<div class="txt">
-				<p>水晶玻璃筆墨水星空沾水墨蘸水筆套裝</p>
-				<p>水晶鋼筆羽毛學生用</p>
-				<p>琉璃古風</p>
-
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/_2015-10-9 16 48 38.jpg" alt=""></div>
-			<div class="txt">
-				<p>義大利 BORTOLETTI SET82 </p>
-				<p>羽毛沾水筆+筆座+30ML黑色墨水一瓶（綠松石藍羽毛）</p>
-				<p></p>
-
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/rotring-800-5.webp" alt=""></div>
-			<div class="txt">
-				<p>Rotring 800系列自動鉛筆</p>
-				<p>含筆芯</p>
-				<p>NT$1,600</p>
-
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="./img/rotring-600-3color2.webp" alt=""></div>
-			<div class="txt">
-				<p>Rotring 600紅藍綠桿自動鉛筆、原子筆</p>
-				<p></p>
-				<p></p>
-
-			</div>
-		</div>
-	</div>
-</div>
 	<footer>
 <div class="foot">
   <div class="container">

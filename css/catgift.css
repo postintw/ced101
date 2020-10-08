@@ -10,7 +10,7 @@ span{ font-family: 'Lato', sans-serif; }
 
 .ourter{
 	/*border:1px solid pink;*/
-  position:relative;
+  position:absolute;
   margin: auto;
   width: 320px;
   height: 320px;

@@ -16,7 +16,7 @@
 }
 .foot .container .item h3 {
   font-size: 20px;
-  color: #eec110;
+  color: #5e4c06;
   text-shadow: 0 0 2px black;
   font-weight: 50;
   border-bottom: 2px dotted #fff;
@@ -29,16 +29,16 @@
   line-height: 1.6em;
 }
 .foot .container .item .nav a {
-  color: #eec110;
+  color: #08395a;
   text-decoration: none;
   padding: 5px;
 }
-input[type="email"]{}
+/* input[type="email"]{} */
 .foot.copy {
   text-align: center;
   margin: 150px 0 0;
   padding: 10px 0;
   background-color: #fbf1e3;
-  color: #eec110;
+  color: #08395a;
 
 }
