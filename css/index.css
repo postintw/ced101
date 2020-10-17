@@ -1,0 +1,209 @@
+@charset "utf-8";
+a{
+    text-decoration: none;
+}
+div.write{
+    width:100%;
+    background-image: url(../img/石.png);
+    background-repeat: repeat;
+
+}
+div.row1{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    
+}
+div.p{
+    width:45%;
+    min-width: 400px;
+    text-align: center;
+}
+div.img1{
+
+    width:45%;
+    min-width:520px;
+    position:relative;
+}
+
+img.boo{
+    position:absolute;
+    max-width:520px;
+    right: 100px;
+    z-index: 4;
+}
+img.waterpen{
+    
+    width: 100%;
+    position: relative;
+    
+    right:0px;
+    z-index: 5;
+
+}
+div.write div.row2{
+    
+    height:400px;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+
+}
+div.shop1,div.shop2,div.shop3{
+    border:15px solid #ee2c03;
+    width:350px;
+    position:relative;
+}
+div.shopt{
+    width:100%;
+    height:80px;
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    bottom:0;
+    text-align:center;
+
+}
+.maingift{
+
+    background-color:rgb(255,186,255);
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.gift1{
+    width:335px;
+
+}
+.gift2{
+    
+    width:460px;
+    position:relative;
+    line-height: 40px;
+    text-align:center;
+    padding-top:40px;
+    
+}
+.gift2 h3{
+    width:300px;
+    margin:auto;
+    
+}
+
+
+
+ img{
+    max-width:100%;
+}
+.gift3{
+    width:355px;
+    text-align:center;
+}
+
+.gift3 img{
+    width:100%;
+}
+div.hand{
+width:100%;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+div.hand :nth-child(1){
+    width:45%;
+    min-width: 490px;
+    
+}
+div.hand :last-child{
+    width:45%;
+    min-width: 490px;
+    
+}
+.Carousel {
+z-index: 1;		
+width: 100%;
+height: 400px;
+overflow: hidden;
+position: relative;
+background-color: #000;
+}
+.Carousel > div {	
+width: 100%;
+height: 100%;
+background-size: cover;
+position: absolute;
+animation: change 25s infinite;
+opacity: 0;
+}
+.Carousel > div:nth-child(2) {
+animation-delay: 5s;
+}
+.Carousel > div:nth-child(3) {
+animation-delay: 10s;
+}
+.Carousel > div:nth-child(4) {
+animation-delay: 15s;
+}
+.Carousel > div:nth-child(5) {
+animation-delay: 20s;
+}
+
+@keyframes change {
+10% {
+opacity: 1;
+}
+20% {
+opacity: 1;
+}
+30% {
+opacity: 0;
+}
+40% {
+transform: scale(1.1);
+}  
+}
+/* news活動 */
+.fc{
+color:red;
+}
+.news{
+max-width:1330px;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+background: #f0f0f0;
+}
+.nframe{
+justify-content: space-around;
+}
+.ncard{
+margin:8px 10px;
+width: 300px;
+border-radius:12px;
+overflow: hidden;
+background:#FFF;
+}
+.ncard:hover{
+    transform: rotateY(-5deg);
+    transition: transform 2s;
+}
+.ntxt{
+padding:0px 10px ;
+line-height: 25px;
+}
+.ntxt a{
+    color:#551A8B;
+}
+.nimg{
+height:150px;
+overflow: hidden;
+width:100%
+}
+.nimg:hover{
+transform: scale(1.1);
+transition: transform 1s;
+}

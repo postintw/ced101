@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body{
+    background-color: #f5f6e3; 
+}
+
+.fc-00838f{color:#00838F;}
+.caruso{
+    width: 100%;
+    justify-content: center;
+}
+a{text-decoration: none;}
+div.title{
+    padding:auto;
+    margin-left:auto;
+    margin-right:auto;
+    width:325px;
+    height:100px;
+    border-top:10px double brown;
+    border-bottom:10px double brown;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    color:brown;
+             
+}
+
+section .cla .rcard{
+    max-width:350px;
+    margin:0 15px;
+    border:10px solid #FFF;
+    background:#FFF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #000;
+}
+.rcard:hover{
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 5px #000;
+
+}
+.cla .rcard .img{
+    padding-top:15px;
+}
+.cla .rcard .img img{
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+h3 {
+    color: #00838F;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.txt p{
+    font-size:18px;
+    padding:15px;
+    line-height: 1.5em;
+}
+.ourter, .txt1{			
+    margin:auto;
+    width:1200px;
+}
+.txt2{
+    line-height: 25px;
+    margin:20px auto;
+    width:1200px;
+}
+div.ourter{
+    margin-top:50px;
+}
+.ourter .vcard{
+    display:flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.ourter .vcard .txt{
+    /*outline:  unset;*/
+    /*padding:25px;*/
+    width: 55%;
+  flex-shrink: 0;
+  padding: 20px 20px;
+/*  background-color: red;*/
+  z-index: 2;
+  outline:5px solid #FFF;
+}
+.ourter .vcard .pic{
+    width:55%;
+    flex-shrink: 0;
+    z-index: 0;
+/*				min-width: 600px;
+    min-height: 350px;*/
+}
+.ourter .vcard .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.ourter .vcard :first-child{
+    margin-right:-35px;
+}
+.ourter .vcard:nth-of-type(1) .txt{
+    background-color: rgba(215, 248, 229, 0.7);
+    
+}
+.ourter .vcard:nth-of-type(2) .txt{
+    background-color: rgba(215, 237, 248, 0.7);
+    padding-right:50px;
+}
+.ourter .vcard:nth-of-type(2) .txt p{
+    padding-right:100px;
+}
+.ourter .vcard:nth-of-type(3) .txt{
+    background-color: rgba(248, 215, 246, 0.7);
+}
+.ourter .vcard:nth-of-type(4) .txt{
+    background-color: rgba(215, 248, 243, 0.7);
+}

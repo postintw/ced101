@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;
+        }
+        .p18{			font-size: 18px;		}
+		.p24{			font-size:24px		}
+		.p32{			font-size: 32px;		}
+		.p36{			font-size:36px;		}
+		.p42{			font-size:42px;		}
+		.xl100{
+			width:100%;
+			min-width: 1200px;
+		}
+        .flex{  display:flex;        }
+        .w-flex{display:flex;   flex-wrap: wrap;}
+        .r-flex{display:flex;   flex-wrap:wrap-reverse;}
+        .x-flex{display:flex;   flex-direction: row;}
+        .y-flex{display:flex;   flex-direction:column-reverse;        }
+        .dnone{            display:none;        }
+        ul{list-style: none;}
+        a{text-decoration: none;line-height: 2rem;}
+        .fc{color:red;}
+        .f0{            color:#000;        }
+
+        @keyframes ani {
+		  0% {		    transform: rotate(-10deg);		  }
+		  50%,100% {		    transform: rotate(0deg);		  }
+		  75% {		    transform: rotate(10deg);		  }
+		  	}
+        header{
+            width:100%;
+            min-width:960px;
+            background: rgba(254,252,224,0.7);
+        }
+        .logo{
+            width:174px;
+        }
+        .hdown:hover>.done{
+            
+            display:block;
+        }
+        .span11{
+            position: absolute;
+        }
+        ul.navul{
+            border:1px solid green;
+            margin-right:auto;
+			margin-left: auto;
+			width:800px;
+			justify-content: center;
+			padding-top:10px;
+        }
+        ul.navul li{
+			border:2px solid red;
+			
+			flex-grow: 1;
+			text-align: center;
+			font-size:24px;
+			display:relative;
+		}
+		ul.navul li:hover{
+			border-bottom: 5px solid #fccb00;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <div class="logo"><a href="index.html"><img src="./img/logok.png" alt="logo"></a></div>
+        <nav>
+
+            <ul class="navul flex">
+                <li>
+                    <div class="pen hdown">
+                        <img src="./img/feather.png" alt="" class="pimg">
+                        <a class="span1" href="#">文具房</a>
+                        <ul class="span11 dnone">
+                            <li><a href="write.html">筆記文具</a></li>
+                            <li><a href="write.html">筆盒/筆袋</a></li>
+                            <li><a href="write.html">墨水</a></li>
+                            <li><a href="write.html">筆記本</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="gift hdown">
+                        <img src="./img/gift-icon.png" alt="" class="gimg">
+                        <a class="span2" href="#">禮品小物</a>
+                        <ul class="span21 dnone">
+                            <li><a href="gift.html">療癒香氛</a></li>
+                            <li><a href="gift.html">清潔收納</a></li>
+                            <li><a href="gift.html">瓶瓶罐罐</a></li>
+                            <li><a href="gift.html">餐桌道具</a></li>
+                            <li><a href="gift.html">皮件工具</a></li>
+                        </ul>
+                    </div>
+                        
+                    </li>
+                <li><a href="orginal2.html">手工原創</a></li>
+                <li><a href="teaching2.html">手寫教學</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+        <div class="nn"></div>
+    </header>
+</body>
+</html>

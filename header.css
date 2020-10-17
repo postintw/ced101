@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 *{		
 			padding: 0;
 			margin: 0;	
@@ -17,7 +18,7 @@
 		  	}
 		.main-head{
 			z-index: 3;
-			border:1px solid yellow;
+			/* border:1px solid yellow; */
 			width:100%;
 			height:100px;
 			position: sticky;

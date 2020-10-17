@@ -4,229 +4,11 @@
 	<meta charset="UTF-8">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/bread.css">
+  <link rel="stylesheet" href="./css/orginal2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>書香世家</title>
-	<style>
-		*{box-sizing: border-box;
-	}
-	body{
-		background-color:#f8f9e4;
-	}
-	section.sec{
-		background-image: url(./img/cardbackground.png) ;
-		background-repeat:repeat-x;
-    margin:30px auto;
-	
-		border:10px double brown;
-		width:700px;
-		height:200px;
-		display:block;
-		text-align:center;
-		position: relative;
-   
-	}
-	section.sec>img.head2{
-		position: absolute;
-		top:-15px;
-		left:-24px;
-		transform: rotate(-45deg);
-		width:45px;
-		height:35px;
-	}
-		
-.banner1 {
-  margin-left: auto;
-  margin-right:auto;
-  width: 100%;
-  height: 100vh;
-  background-color: #ccc;
-  background: linear-gradient(-75deg, #7bf 30%, transparent 31%) center center/100% 100%, url("./img/no02_th.jpg") center center/auto 100% no-repeat;
-}
-.banner1 .container {
-	/*border:1px solid pink;*/
-	position:relative;
-  height: 100%;
-  width: 100%;
-  max-width: 1440px;
-  min-width: 900px;
-  margin: auto;
-}
-.banner1 .container .banner_text {
-	position: absolute;
-	right:3px;
-	/*border:1px solid pink;*/
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 30px;
-  margin-right: 15px;
- /* padding-bottom:30px;*/
-}
-.banner1 .container .banner_text h1, .banner .container .banner_text .h1_p {
-  font-weight: bold;
-}
-.banner1 .container .banner_text h1 {
-  font-size: 30px;
-}
-.banner1 .container .banner_text .h1_p {
-  border-bottom: 1px solid #333;
-  font-size: 20px;
-}
-.banner1 .container .banner_text h2 {
-  font-size: 25px;
-}
-.banner1 .container .banner_text p {
-  font-size: 15px;
-  width:300px;
-}
-div.momo{
-  border:3px solid brown;
-  padding:100px;
-  width:200px;
 
-  background-color:#fbf1e3; 
-  border-radius: 15px;
-}
-ul{list-style: none;}
-div.momo ul li{
-  display:flex;
-      justify-content: center;
-}
-div.momo ul li a{
-
-  font-size:32px;
-  text-decoration: none;
- color:#000;
- /*padding:0;*/
- text-align: center;
-
-}
-.banner2 {
-  margin-left: auto;
-  margin-right:auto;
-  width: 100%;
-  height: 100vh;
-  background-color: #ccc;
-  background: linear-gradient(115deg, #ccf1d3 30%, transparent 31%) center center/100% 100%, url("./img/4808006851.jpg") center center/auto 100% no-repeat;
-}
-.banner2 .container {
-	/*border:1px solid pink;*/
-	position:relative;
-  height: 100%;
-  width: 100%;
-  max-width: 1440px;
-  min-width: 900px;
-  margin: auto;
-}
-.banner2 .container .banner_text {
-/*	position: absolute;
-	right:3px;*/
-	/*border:1px solid pink;*/
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 30px;
-  margin-left: 15px;
-}
-.banner2 .container .banner_text h1, .banner .container .banner_text .h1_p {
-  font-weight: bold;
-}
-.banner2 .container .banner_text h1 {
-  font-size: 30px;
-}
-.banner2 .container .banner_text .h1_p {
-  border-bottom: 1px solid #333;
-  font-size: 20px;
-}
-.banner2 .container .banner_text h2 {
-  font-size: 25px;
-}
-.banner2 .container .banner_text p {
-  font-size: 15px;
-  width:300px;
-}
-div.momo{
-  border:3px solid brown;
-  padding:0;
-  width:200px;
-  background-color:#fbf1e3; 
-}
-ul{list-style: none;}
-div.momo ul li a{
-  font-size:32px;
-  text-decoration: none;
- color:#000;
- padding:0;
- text-align: center;
-
-}
-.banner3 {
-  margin-left: auto;
-  margin-right:auto;
-  width: 100%;
-  height: 100vh;
-  background-color: #ccc;
-  background: linear-gradient(-75deg, #eeccf1 30%, transparent 31%) center center/100% 100%, url("./img/no01_th.jpg") center center/auto 100% no-repeat;
-}
-.banner3 .container {
-	/*border:1px solid pink;*/
-	position:relative;
-  height: 100%;
-  width: 100%;
-  max-width: 1440px;
-  min-width: 900px;
-  margin: auto;
-}
-.banner3 .container .banner_text {
-	position: absolute;
-	right:3px;
-	/*border:1px solid pink;*/
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 30px;
-  margin-right: 15px;
- /* padding-bottom:30px;*/
-}
-.banner3 .container .banner_text h1, .banner .container .banner_text .h1_p {
-  font-weight: bold;
-}
-.banner3 .container .banner_text h1 {
-  font-size: 30px;
-}
-.banner3 .container .banner_text .h1_p {
-  border-bottom: 1px solid #333;
-  font-size: 20px;
-}
-.banner3 .container .banner_text h2 {
-  font-size: 25px;
-}
-.banner3 .container .banner_text p {
-  font-size: 15px;
-  width:300px;
-}
-div.momo{
-  border:3px solid brown;
-  padding:0;
-  width:200px;
-  background-color:#fbf1e3; 
-}
-ul{list-style: none;}
-div.momo ul li a{
-  font-size:32px;
-  text-decoration: none;
- color:#000;
- padding:0;
- text-align: center;
-
-}
-	</style>
 </head>
 <body>
   <header class="main-head">
@@ -265,6 +47,12 @@ div.momo ul li a{
     </ul>
     <div class="logobox"><a href="index.html"><img src="./img/logok.png" alt=""></a></div>
   </header>
+  <div class="breadcrumb ad">
+    <ol class="breadcrumb_list">
+  <li><a href="index.html">首頁</a></li>
+  <li>手工原創</li>
+    </ol>
+</div>
 	<section class="sec">
 		<h2>「 享受書寫的價值 」書寫每一刻，完美記錄你的生活</h2>
 		<p>"定製筆記本和獨家墨水可以說是書香世家的最大特色。"</p>

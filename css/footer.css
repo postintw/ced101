@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .foot {
+  width:100%;
   padding: 150px 0 0;
   background: linear-gradient(0deg, #f1e7c0, #f4f1e3);
 }
