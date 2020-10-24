@@ -1,135 +1,151 @@
-
-*{
-    margin:0;
-    padding:0;
-}
-.x-n-flex{
-    display:flex;
-    flex-flow: row nowrap;
+.x-n-flex {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.fc-00838f{color:#00838F;}
-.ourter{
-    position: relative;
-    width: 100%;
-    margin-left:auto;
-    margin-right: auto;
+.ourter {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div.txt{    
-    position: absolute;
-    bottom:0;
-    width:100%;
-    height:100px;
-    text-align: center;
-    background-color: rgba(255,255,255,0.7);
+div.txt {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-div.main{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.title_ban {
+  padding: 40px;
+  height: 200px;
+  background: linear-gradient(rgba(57, 57, 57, 0.7), rgba(57, 57, 57, 0.7))
+      center center/100% 100%,
+    url(../img/feather-3237961_1280.jpg) center/ cover no-repeat;
 }
-div.card{
-    margin:5px;
-    position: relative;
-    border:1px solid rgb(46, 46, 46);
-    box-shadow: 1px 1px 3px rgba(36, 36, 36,.7);
-    height: 400px;
-    width:20%;
-    min-width:350px;
-    max-width:400px;
-    border-radius: 10px;
-    overflow:hidden;
+.title_ban > img {
+  /* background: linear-gradient(-75deg, rgb(201, 200, 200) -11%, transparent 99%)
+    center center/100% 100%; */
+  width: 50%;
+  min-width: 300px;
+  max-width: 700px;
+}
+div.main {
+  display: flex;
+  flex-flow: row wrap;
+}
 
+div.card {
+  margin: 5px;
+  position: relative;
+  border: 1px solid rgb(46, 46, 46);
+  box-shadow: 1px 1px 3px rgba(36, 36, 36, 0.7);
+  height: 400px;
+  width: 20%;
+  min-width: 350px;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-div.card:hover{
-    box-shadow: 2px 2px 6px rgba(36, 36, 36,.7);
-    transform: translateY(-5px);
-
+div.card:hover {
+  box-shadow: 2px 2px 6px rgba(36, 36, 36, 0.7);
+  transform: translateY(-5px);
 }
-.img>img{
-    max-width: 100%;
+.img > img {
+  max-width: 100%;
 }
-.img{
-    height:300px;
-    overflow: hidden;
-    width:100%;
+.img {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
 }
-div.frame{
-    font-size: 16px;
-    width:84%;
-    /* max-width:1200px; */
-
+div.frame {
+  font-size: 16px;
+  width: 84%;
+  /* max-width:1200px; */
 }
-div.sidebar{
-    font-size: 16px;
-
-    width:200px;
+div.sidebar {
+  font-size: 16px;
+  transform: translateX(0%);
+  transition: all 2s;
+  width: 200px;
 }
 /*摺疊*/
 ::-webkit-details-marker {
-display: none;
+  display: none;
 }
 
 ::-moz-list-bullet {
-font-size: 0;
-float: left;
+  font-size: 0;
+  float: left;
 }
 
 summary {
-outline: 0;
+  outline: 0;
 }
 
 .ui-menu-wrap {
-width: 200px;
+  width: 200px;
 }
 
 .ui-btn {
-line-height: 40px;
-padding: 0 25px;
-font-size: 14px;
-color: #666;
-transition: .3s;
-cursor: pointer;
+  line-height: 40px;
+  padding: 0 25px;
+  font-size: 14px;
+  color: #666;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .ui-btn:hover {
-background: #edf9ff;
-color: #33b2ee;
+  background: #edf9ff;
+  color: #33b2ee;
 }
 
 .ui-menu-list .ui-btn {
-display: block;
+  display: block;
 }
 
 .ui-menu-summary {
-position: relative;
-line-height: 40px;
-padding:0 10px;
-color: #333;
-font-size: 14px;
-font-weight: bold;
-cursor: pointer;
-transition: .3s;
-user-select: none;
+  position: relative;
+  line-height: 40px;
+  padding: 0 10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
 }
 
-.ui-menu-summary:focus{
-background: #edf9ff;
+.ui-menu-summary:focus {
+  background: #edf9ff;
 }
 .ui-menu-summary::after {
-content: '';
-position: absolute;
-right: 65px;
-top: 50%;
-margin-top: 3px;
-width: 6px;
-height: 6px;
-border: 2px solid;
-border-width: 2px 2px 0 0;
-transform: translateY(-10px) rotate(135deg);
-transition: .3s;
+  content: "";
+  position: absolute;
+  right: 65px;
+  top: 50%;
+  margin-top: 3px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-width: 2px 2px 0 0;
+  transform: translateY(-10px) rotate(135deg);
+  transition: 0.3s;
 }
 .ui-menu[open] .ui-menu-summary::after {
-transform: translateY(-8px)  rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+@media screen and (max-width: 767px) {
+  .sidebar {
+    position: sticky;
+    left: 0;
+    transform: translateX(-100%);
+  }
+  .sidebar.on {
+    transform: translateX(0%);
+  }
 }

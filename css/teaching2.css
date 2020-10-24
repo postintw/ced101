@@ -1,119 +1,198 @@
 @charset "UTF-8";
-body{
-    background-color: #f5f6e3; 
+body {
+  background-color: #f5f6e3;
+}
+main {
+  overflow: hidden;
+  width: 100%;
+}
+.ban_orginal {
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(160deg, #393939 0%, transparent 99%) center
+      center/100% 100%,
+    url(../img/writer-c-cover.jpg) center/ cover fixed no-repeat;
+}
+.ban_orginal > img {
+  max-width: 700px;
+}
+.pr-1 {
+  padding-right: 15px !important;
+}
+.caruso {
+  width: 100%;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+div.title {
+  padding: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 325px;
+  height: 100px;
+  border-top: 10px double brown;
+  border-bottom: 10px double brown;
+
+  text-align: center;
+  vertical-align: middle;
+  color: brown;
 }
 
-.fc-00838f{color:#00838F;}
-.caruso{
-    width: 100%;
-    justify-content: center;
+section .cla .rcard {
+  max-width: 350px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin: 10px;
+  border: 10px solid #fff;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #000;
 }
-a{text-decoration: none;}
-div.title{
-    padding:auto;
-    margin-left:auto;
-    margin-right:auto;
-    width:325px;
-    height:100px;
-    border-top:10px double brown;
-    border-bottom:10px double brown;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    color:brown;
-             
+.rcard:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 5px #000;
 }
-
-section .cla .rcard{
-    max-width:350px;
-    margin:0 15px;
-    border:10px solid #FFF;
-    background:#FFF;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px #000;
+.cla .rcard .img {
+  padding-top: 15px;
 }
-.rcard:hover{
-    transform: translateY(-3px);
-    box-shadow: 2px 2px 5px #000;
-
-}
-.cla .rcard .img{
-    padding-top:15px;
-}
-.cla .rcard .img img{
-    width:100%;
-    margin-left: auto;
-    margin-right:auto;
+.cla .rcard .img img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h3 {
-    color: #00838F;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+  color: #00838f;
+  font-size: 20px;
+  font-weight: 600;
+
+  margin-bottom: 0.5em;
 }
-.txt p{
-    font-size:18px;
-    padding:15px;
-    line-height: 1.5em;
+h3.center {
+  text-align: center;
 }
-.ourter, .txt1{			
-    margin:auto;
-    width:1200px;
+.txt {
+  font-size: 18px;
+  padding: 50px;
+  line-height: 1.5em;
 }
-.txt2{
-    line-height: 25px;
-    margin:20px auto;
-    width:1200px;
+.ourter,
+.txt1 {
+  margin: auto;
 }
-div.ourter{
-    margin-top:50px;
+.af,
+.txt1,
+.txt2 {
+  padding: 10px 50px;
+  width: 100%;
 }
-.ourter .vcard{
-    display:flex;
-    align-items: center;
-    margin-bottom: 50px;
+.txt2 {
+  line-height: 25px;
+  margin: 20px auto;
 }
-.ourter .vcard .txt{
-    /*outline:  unset;*/
-    /*padding:25px;*/
-    width: 55%;
+div.ourter {
+  margin-top: 50px;
+  overflow-y: hidden;
+}
+.ourter .vcard {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.ourter .vcard .txt {
+  width: 45%;
   flex-shrink: 0;
   padding: 20px 20px;
-/*  background-color: red;*/
   z-index: 2;
-  outline:5px solid #FFF;
+  border: 5px solid #fff;
 }
-.ourter .vcard .pic{
-    width:55%;
-    flex-shrink: 0;
-    z-index: 0;
-/*				min-width: 600px;
-    min-height: 350px;*/
+.ourter .vcard .pic {
+  width: 45%;
+  flex-shrink: 0;
+  z-index: 0;
 }
-.ourter .vcard .pic img{
+.ourter .vcard .pic img {
+  vertical-align: middle;
+  width: 100%; /*必需!否則跑版*/
+}
+/* 調整.ourter .vcard .pic,.ourter .vcard .txt*/
+
+.ourter .vcard :first-child {
+  margin-right: -35px;
+}
+.ourter .vcard:nth-of-type(1) .txt {
+  background-color: rgba(215, 248, 229, 0.7);
+}
+.ourter .vcard:nth-of-type(2) .txt {
+  background-color: rgba(215, 237, 248, 0.7);
+  padding-right: 50px;
+}
+
+.ourter .vcard:nth-of-type(3) .txt {
+  background-color: rgba(248, 215, 246, 0.7);
+}
+.ourter .vcard:nth-of-type(4) .txt {
+  background-color: rgba(215, 248, 243, 0.7);
+}
+
+.writer > div {
+  min-height: 180px;
+  background-color: #fff;
+  padding: 8px 0px;
+}
+.fontleft {
+  background-image: url(../img/meiyi-hero-img.jpg);
+  background-position: 50% 0px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fontright {
+  margin-left: auto;
+  background-image: url(../img/writer-b-cover.jpg);
+  background-position: 50% 0px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fontleft > a,
+.fontright > a {
+  position: relative;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  padding-left: 25px;
+  padding-top: 25px;
+  color: #fff;
+}
+.fontleft > a:hover,
+.fontright > a:hover {
+  font-size: larger;
+  color: orange;
+  background-image: radial-gradient(transparent, transparent);
+}
+@media screen and (min-width: 576px) {
+  /*超過576px就設定寬度，!!規範小於576就滿版!!*/
+  section .cla .rcard {
+    min-width: 300px;
+  }
+  .ban_orginal > img {
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ourter .vcard .pic,
+  .ourter .vcard .txt {
     width: 100%;
-    vertical-align: middle;
-}
-.ourter .vcard :first-child{
-    margin-right:-35px;
-}
-.ourter .vcard:nth-of-type(1) .txt{
-    background-color: rgba(215, 248, 229, 0.7);
-    
-}
-.ourter .vcard:nth-of-type(2) .txt{
-    background-color: rgba(215, 237, 248, 0.7);
-    padding-right:50px;
-}
-.ourter .vcard:nth-of-type(2) .txt p{
-    padding-right:100px;
-}
-.ourter .vcard:nth-of-type(3) .txt{
-    background-color: rgba(248, 215, 246, 0.7);
-}
-.ourter .vcard:nth-of-type(4) .txt{
-    background-color: rgba(215, 248, 243, 0.7);
+    min-width: 0px;
+    max-width: 95vw;
+  }
+  img {
+    max-width: 100%;
+  }
+  .ourter .vcard :first-child {
+    margin-right: 0px;
+  }
 }

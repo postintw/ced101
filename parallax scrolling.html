@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Scrolling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Droid+Sans'>
+<style>
+  * {
+  font-family: "Droid Sans", sans-serif;
+  padding: 0;
+  margin: 0
+}
+
+.le-bg-w {
+  width: 100%;
+  position: relative;
+}
+
+.le-bg-w > .le-bg {
+  background: url("https://unsplash.it/1024/600?image=901") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.le-bg-w > .le-bg-ct {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.le-bg-w > .le-bg-ct > .le-bg-ct-cr {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.le-bg-w > .le-bg-ct > .le-bg-ct-cr > h1,
+.le-bg-w > .le-bg-ct > .le-bg-ct-cr > h2 {
+  text-align: center;
+}
+
+.le-bg-w > .le-bg-ct > .le-bg-ct-cr > h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.le-bg-w > .le-bg-ct > .le-bg-ct-cr > h2 {
+  font-size: 24px;
+  color: #cfcfcf;
+  font-weight: normal;
+}
+
+.le-ct {
+  background: white;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.le-ct > h1 {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.le-ct > .le-ct-tx {
+  font-size: 20px;
+}
+
+.le-ct > .le-ct-tx > p {
+  padding-bottom: 20px;
+}
+</style>
+
+  
+</head>
+
+<body>
+
+  <div class="le-bg-w">
+  <div class="le-bg"></div>
+  <div class="le-bg-ct">
+    <div class="le-bg-ct-cr">
+      <h1>PARALLAX SCROLL</h1>
+      <h2>A simple parallax scrolling effect</h2>
+    </div>
+  </div>
+</div>
+<div class="le-ct">
+  <h1>Lorem ipsum</h1>
+  <div class="le-ct-tx">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+  
+  
+
+    <script  >
+      var leBgWrapper = document.querySelector(".le-bg-w");
+var leBg = document.querySelector(".le-bg");
+
+function leInitWrapper() {
+  leBgWrapper.style.height = window.innerHeight + "px";
+  if (window.innerWidth < 1024) {
+    leBg.style.backgroundSize = "auto";
+  }
+  else {
+    leBg.style.backgroundSize = "100%";
+  }
+}
+leInitWrapper();
+
+window.addEventListener("resize", function() {
+  leInitWrapper();
+});
+
+window.addEventListener("scroll", function(evt) {
+  leBg.style.top = "-" + (this.scrollY / 2) + "px";
+});</script>
+
+
+
+
+</body>
+
+</html>

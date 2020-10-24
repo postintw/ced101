@@ -1,105 +1,237 @@
 @charset "UTF-8";
-		*{		
-			padding: 0;
-			margin: 0;	
-			box-sizing: border-box;
-		}
-		.p18{			font-size: 18px;		}
-		.p24{			font-size:24px		}
-		.p32{			font-size: 32px;		}
-		.p36{			font-size:36px;		}
-		.p42{			font-size:42px;		}
-		.xl100{
-			width:100%;
-			min-width: 1200px;
-		}
-		@keyframes ani {
-		  0% {		    transform: rotate(-10deg);		  }
-		  50%,100% {		    transform: rotate(0deg);		  }
-		  75% {		    transform: rotate(10deg);		  }		   
-		}
-		.main-head{
-			display:flex;
-			padding-top:10px;
-			/* border:1px solid transparent; */
-			z-index: 3;
-			height:100px;
-			position: sticky;	
-			top:0px;
-			background-color:rgba(254,252,224,0.7);
-			font-size:24px;
-			align-items: center;
-		}
-		div.logobox{
-			/* position:relative;
-			; */
-			/* border:1px solid transparent; */
-			width:142px;
-			margin-right: 0px;
-		}	
-		li a{
-		text-decoration: none;
-		color:#000;	
-		line-height: 2.1rem;
-		}
-		ul.navul{	
-			/* border:1px solid transparent; */
-			display: flex;
-			list-style: none;
-			/* margin-top:30px; */
-			margin-right:auto;
-			margin-left: auto;
-			width:800px;
-			justify-content: center;
-			padding-top:10px;
-		}
-		
-		ul.navul li{
-			/*border:2px solid red;*/
-			list-style: none;
-			flex-grow: 1;
-			text-align: center;
-			font-size:24px;
-			display:relative;
-		}
-		ul.navul li:hover{
-			border-bottom: 5px solid #fccb00;
-		}
-		li>div.pen,li>div.gift{
-			position:relative;
-		}
-		.pen>img.pimg, .gift>img.gimg{
-			display: block;
+@import "./hamgurbers.css"; /*漢堡*/
+@import "./flex.css"; /* flex規範系統 */
+@import "./bread.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500"); /*設計系統字體規範 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  /*body這部分要請專業的郭惟老師檢查*/
+  /* 字體規範 */
+  /* 行距行高另外設置 */
+  scroll-behavior: smooth; /* 平滑捲動 */
+  font-family: "微軟正黑體", "Roboto", Helvetica, Arial, sans-serif;
+  font-smooth: auto; /*字體平滑*/
+  -webkit-font-smoothing: antialiased; /*macOS字體平滑*/
+  -moz-osx-font-smoothing: auto;
+}
+.mask_gradient {
+  background-image: linear-gradient(
+    rgba(57, 57, 57, 0.7),
+    rgba(57, 57, 57, 0.7)
+  );
+}
+.d-block {
+  display: block;
+}
+.fc-00838f {
+  color: #00838f;
+}
+/* 字體大小規範 */
+.p14 {
+  font-size: 14px;
+}
+.p16 {
+  font-size: 16px;
+}
+.p18 {
+  font-size: 18px;
+}
+.p24 {
+  font-size: 24px;
+}
+.p32 {
+  font-size: 32px;
+}
+.p36 {
+  font-size: 36px;
+}
+.p42 {
+  font-size: 42px;
+}
+
+/* 行高規範 */
+.l150 {
+  line-height: 1.5rem;
+}
+/* 寬度規範 */
+.w100 {
+  width: 100%;
+}
+
+.wmax100 {
+  max-width: 100%;
+}
+.dnone {
+  display: none;
+}
+@keyframes ani {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+.main-head {
+  display: flex;
+  padding-top: 10px;
+
+  z-index: 3;
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  background-color: rgba(254, 252, 224, 0.7);
+  font-size: 24px;
+  align-items: center;
+}
+div.logobox {
+  width: 142px;
+  margin-right: 0px;
+}
+li a {
+  text-decoration: none;
+  color: #000;
+  line-height: 2.1rem;
+}
+ul.navul {
+  /* border:1px solid transparent; */
+  display: flex;
+  list-style: none;
+  flex: 1;
+  /* margin-top:30px; */
+  margin-right: auto;
+  margin-left: auto;
+  /* min-width:500px;
+      max-width:800px;
+      width:50%; */
+  justify-content: center;
+  padding-top: 10px;
+}
+
+ul.navul li {
+  /*border:2px solid red;*/
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  display: relative;
+  vertical-align: middle;
+}
+ul.navul li:hover {
+  border-bottom: 5px solid #fccb00;
+}
+li > div.pen,
+li > div.gift {
+  position: relative;
+}
+div.pen {
+  margin-right: 8px;
+}
+.pen > img.pimg,
+.gift > img.gimg {
+  /* display: block;
 			position:absolute;
 			left:0px;
 			bottom:0px;
-			width:18%;
-		}
+      width:18%; */
+  vertical-align: middle;
+}
 
-		.pen:hover img.pimg,.gift:hover img.gimg{
-			animation: ani 0.4s infinite alternate;
-		}
-		ul.span11, ul.span21{
-			margin:0 auto;
-			/*border:1px solid ;*/
-			display: none;
-			position:absolute;
-			background-color: rgba(50,11,5,0.7) ;
-			width:100%;
-		}
-		ul.span11 li a,ul.span21 li a{
-			color:#FFF;
-		}
-		ul.span11 li:hover, ul.span21 li:hover{
-			background-color: rgba(254,255,224,0.7);
-		}
-		ul.span11 li:hover a, ul.span21 li:hover a{
-			color:#00838F;
-			font-weight:600;
-		}
+.pen:hover img.pimg,
+.gift:hover img.gimg {
+  animation: ani 0.4s infinite alternate;
+}
+ul.span11,
+ul.span21 {
+  margin: 0 auto;
+  /*border:1px solid ;*/
+  display: none;
+  position: absolute;
+  background-color: rgba(50, 11, 5, 0.7);
+  width: 100%;
+}
+ul.span11 li a,
+ul.span21 li a {
+  color: #fff;
+}
+ul.span11 li:hover,
+ul.span21 li:hover {
+  background-color: rgba(254, 255, 224, 0.7);
+}
+ul.span11 li:hover a,
+ul.span21 li:hover a {
+  color: #00838f;
+  font-weight: 600;
+}
+.gift:hover ul.span21,
+.pen:hover ul.span11 {
+  display: block;
+}
 
+.drop {
+  position: absolute;
+  right: 0;
+}
 
-		.gift:hover ul.span21, .pen:hover ul.span11{
-			display:block;
-		}
-		
+@media screen and (min-width: 768px) {
+  .navul {
+    /*     display: block; */
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+button.btn_switch {
+  display: none;
+}
+/* 行動版時，將按鈕顯示出來 */
+@media screen and (max-width: 767px) {
+  button.btn_switch {
+    display: inline-block;
+  }
+
+  ul.navul {
+    display: none;
+    width: 100vw;
+    padding: 0;
+    /* top: 150px; */
+    max-height: 0px;
+    height: calc(100vh - 60px);
+  }
+  ul.navul > li a {
+    color: #fff;
+  }
+
+  ul.navul > li {
+    display: block;
+    background: rgba(50, 11, 5, 0.8);
+  }
+
+  .gift > .span21,
+  .pen > .span11 {
+    display: none;
+    position: relative;
+  }
+
+  div.logobox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .main-head {
+    flex-wrap: wrap;
+  }
+}

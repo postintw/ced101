@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/flex.css" />
+    <title>original_card</title>
+    <style>
+      .ban_orginal {
+        height: 200px;
+        width: 100%;
+        background: linear-gradient(160deg, #393939 0%, transparent 99%) center
+            center/100% 100%,
+          url(./img/writer-c-cover.jpg) center/ cover no-repeat;
+      }
+      .ban_orginal > img {
+        min-width: 300px;
+        max-width: 700px;
+      }
+      .ban_orginal2 {
+        height: 200px;
+        background: linear-gradient(#39393917, #39393917) center center/100%
+            100%,
+          url(./img/cmn_title_bg.jpg) center/ cover no-repeat;
+      }
+      .penhand {
+        max-width: 890px;
+        justify-content: center;
+      }
+      .pentxt {
+        padding: 60px;
+        background-color: #fef4e8;
+        max-width: 249px;
+      }
+      .pendiv {
+        padding: 50px 0px;
+        background-color: #ba7148;
+      }
+
+      .pendiv img {
+        position: relative;
+        left: 50px;
+      }
+      #card {
+        height: 100%;
+      }
+      #card > div {
+        padding: 20px;
+      }
+      .left {
+        border: 1px solid red;
+        width: 50%;
+      }
+      .right {
+        border: 1px solid rgb(64, 122, 64);
+        overflow-y: auto;
+      }
+      #ink_i {
+        height: 200px;
+      }
+      .ink_cc {
+        max-width: 890px;
+      }
+      .ink_left {
+        min-width: 300px;
+
+        /* background: url("./img/no02_th.jpg") fixed left 50%  no-repeat; */
+      }
+      .ink_right {
+        max-width: 200px;
+      }
+      .ban1 {
+        max-width: 800px;
+        background: rgb(196, 196, 241);
+        border: cornflowerblue;
+        /* outline: 5px solid #FFF; */
+      }
+      .col-6 {
+        width: 49.9%;
+      }
+
+      .context {
+        justify-self: center;
+        align-items: center;
+        background: aquamarine;
+      }
+      .in-txt {
+        width: 100px;
+        height: 30px;
+        background: chocolate;
+        border-radius: 10%;
+        text-align: center;
+      }
+      .ban1 > div {
+        min-width: 350px;
+      }
+      .ban2 > left {
+        width: 80%;
+        min-width: 500px;
+      }
+      .ban2 > right {
+        width: 19%;
+        max-width: 200px;
+      }
+      @media screen and (max-width: 960px) {
+        .pentxt {
+          max-width: 653px;
+          left: 0px;
+        }
+        .pendiv img {
+          position: relative;
+          left: initial;
+        }
+        .pendiv {
+          padding: 15px;
+        }
+        .pentxt {
+          padding: 25px;
+        }
+        .left,
+        .right {
+          width: 100%;
+        }
+        .col-6.md {
+          width: 100%;
+        }
+        .col-6.md .wmax100 {
+          max-width: initial;
+          width: 100%;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .banner2 {
+        width: 100%;
+        height: auto;
+        background-color: #ccc;
+        background: linear-gradient(115deg, #ccf1d3 30%, transparent 31%) center
+            center/100% 100%,
+          url("./img/3038717472443031.webp") center center/auto 100% no-repeat;
+      }
+      .banner2 .container {
+        /*border:1px solid pink;*/
+        padding-top: 50px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 1440px;
+        min-width: 900px;
+        margin: auto;
+      }
+      .banner2 .container .banner_text {
+        border: 2px solid cornflowerblue;
+        position: absolute;
+        left: 3px;
+        height: 100%;
+        line-height: 30px;
+        margin-left: 10px;
+      }
+
+      .banner2 .container .banner_text p {
+        font-size: 15px;
+        width: 150px;
+      }
+      .banner3 {
+        width: 100%;
+        height: 100vh;
+        background-color: #ccc;
+        background: linear-gradient(-75deg, #eeccf1 30%, transparent 31%) center
+            center/100% 100%,
+          url("./img/no01_th.jpg") center center/auto 100% no-repeat;
+      }
+      .banner3 .container {
+        /*border:1px solid pink;*/
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 1440px;
+        min-width: 900px;
+        margin: auto;
+      }
+      .banner3 .container .banner_text {
+        position: absolute;
+        right: 3px;
+        height: 100%;
+        line-height: 30px;
+        margin-right: 15px;
+      }
+
+      .banner3 .container .banner_text p {
+        font-size: 15px;
+        width: 200px;
+      }
+      .h1_p {
+        border-bottom: 1px solid #333;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flex ban_orginal2 w100 j_c">
+      <h3>打造專屬自己的禮品</h3>
+    </section>
+    <section class="w100 flex j_c" id="card">
+      <div class="flex-w w100 j_c ban1 mlr-auto">
+        <div class="left w100 col-6 md">
+          <img class="wmax100" src="./img/wedding_card1.jpg" alt="" />
+        </div>
+        <div class="right col-6 md">
+          <div class="top">
+            <img class="wmax100" src="./img/wedding_card2.jpg" alt="" />
+          </div>
+          <div class="context y-flex l_1_5rem">
+            <h3>獨一無二的精美卡片</h3>
+            <p>
+              沒有卡片可以比得上由你親自製作的卡片。忘記那些購自商店的千篇一律的卡片。使用我們適用於各種場合的範本—無論是喜帖、生日賀卡、週年紀念卡，還是示愛卡片—你都可以為摯愛製作完美卡片，而且省時省錢。
+            </p>
+            <a href="#">
+              <div class="in-txt">
+                <p>我有興趣</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w100 flex j_c" id="pen">
+      <div class="flex-w w100 penhand">
+        <div class="pendiv">
+          <img src="./img/woodpenhead.jpg" alt="" class="wmax100" />
+        </div>
+        <div class="pentxt">
+          <div class="gtxt">
+            <h3>手工木筆製作</h3>
+            <h4>手作質感文具</h4>
+            <p>講師：手治大塚 老師</p>
+          </div>
+          <div class="ltxt">
+            <p>✦想要有一隻個人特色的原木筆，卻對木工望而生畏嗎？</p>
+            <p>✦跳脫木工繁重複雜的印象，學習細緻亮化技巧，提升木筆質感層次。</p>
+            <p>
+              藉由作品的習作來學習木工機器的更精密的應用方式，加工亮化筆身，為鋼筆打造不同的質感層次
+            </p>
+            <a href="#"><div>我想參與</div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex j_c w100" id="ink_i">
+      <div class="ink_cc flex-w w100">
+        <div class="ink_left">
+          <img src="./img/no02_th.jpg" alt="" class="w100" />
+        </div>
+        <div class="ink_right">
+          <h3>獨家原創墨水</h3>
+          <p>
+            有別於市場上墨水，冰片、麝香…等秘方讓書寫過的文章防蛀蟲不易腐敗，亙古千年。多種原創鋼筆墨水，顏色寫起來的濃淡變化也更為美麗，你可以選擇三種基本色墨水，調出一種屬於你自己的墨水顏色來
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="w100" id="ink">
+    <div class="xr-w-flex ban2 ">
+        <div class="left">
+            <img src="./img/no02_th.jpg" alt="" class="max100 w100">
+        </div>
+        <div class="right">
+            <div class="banner_text y-flex j_c-a_c">
+                <h3>獨家原創墨水</h3>
+                <p>有別於市場上墨水，冰片、麝香…等秘方讓書寫過的文章防蛀蟲不易腐敗，亙古千年。多種原創鋼筆墨水，顏色寫起來的濃淡變化也更為美麗，你可以選擇三種基本色墨水，調出一種屬於你自己的墨水顏色來</p>
+                <a href="#">
+                <div class="in-txt">
+                <p>我有興趣</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section> -->
+    <!-- <section class="w100">
+    <div class="flex ban3 mlr-auto">
+        <div class="left"><img src="./img/4808006851.jpg" alt=""></div>
+        <div class="right"></div>
+    </div>
+</section> -->
+    <!-- <div class="banner2 mlr-auto flex">
+    <div class="container">
+        <div class="banner_text y-flex ">
+            <h3>自製復古羽毛筆</h3>
+            <p class="h1_p">自製的羽毛筆有別於工業化大量生產的筆，書寫起來更有文青風</p>
+            <a href="#">
+                <span class="momo">我想動筆</span>
+            </a>
+
+        </div>
+</div>
+<div class="banner3 mlr-auto">
+    <div class="container">
+        <div class="banner_text y-flex j_c-a_s">
+            <h1>原創訂製筆記本ー</h1>
+            <p class="h1_p">從紙張到構成筆記本的每個環節單品都能夠自由選擇，創造出獨一無二的專屬文具。 從封面到內頁、從線圈到綁繩都可以讓你徹底實踐「我流」，只專屬個人風格筆記本</p>
+            <div class="momo">
+                <ul>
+                    <li><a href="#">我有興趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <section class="w100">
+      <div class="ban4 xr-flex mlr-auto"></div>
+    </section>
+  </body>
+</html>

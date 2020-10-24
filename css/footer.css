@@ -1,17 +1,20 @@
 @charset "UTF-8";
 
 .foot {
-  width:100%;
-  padding: 150px 0 0;
+  padding: 15px;
+  width: 100%;
+  padding: 0;
   background: linear-gradient(0deg, #f1e7c0, #f4f1e3);
 }
 .foot .container {
-  width: 1200px;
+  padding-top: 15px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
 }
 .foot .container .item {
-  width: 0;
   flex-grow: 1;
   margin: 0 20px;
 }
@@ -26,7 +29,7 @@
 }
 .foot .container .item .nav {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   line-height: 1.6em;
 }
 .foot .container .item .nav a {
@@ -41,5 +44,13 @@
   padding: 10px 0;
   background-color: #fbf1e3;
   color: #08395a;
-
 }
+
+@media screen and (max-width: 575px) {
+  /*訂閱電子報會超出，*/
+  .foot {
+    overflow: hidden; /*訂閱電子報會超出，input輸入框太寬*/
+  }
+  input{
+    max-width: 90vw;
+  }

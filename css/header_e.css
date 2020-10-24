@@ -1,0 +1,147 @@
+@charset "UTF-8";
+		*{		
+			padding: 0;
+			margin: 0;	
+			box-sizing: border-box;
+    }
+    .p14{     font-size: 14px;   }
+    .p16{     font-size:16px;   }
+		.p18{			font-size:18px;		}
+		.p24{			font-size:24px		}
+		.p32{			font-size:32px;		}
+		.p36{			font-size:36px;		}
+		.p42{			font-size:42px;		}
+		/* .xl100{
+			width:100%;
+			min-width: 1200px;
+    } */
+    .l150{
+      line-height: 1.5rem;
+    }
+  .wmax100{
+    max-width: 100%;
+  }
+    .dnone{
+      display:none;
+    }
+		@keyframes ani {
+		  0% {		    transform: rotate(-10deg);		  }
+		  50%,100% {		    transform: rotate(0deg);		  }
+		  75% {		    transform: rotate(10deg);		  }		   
+		}
+		.main-head{
+			display:flex;
+			padding-top:10px;
+			/* border:1px solid transparent; */
+			z-index: 3;
+			height:100px;
+			position: sticky;	
+			top:0px;
+			background-color:rgba(254,252,224,0.7);
+			font-size:24px;
+			align-items: center;
+		}
+		div.logobox{
+			/* position:relative;
+			; */
+			/* border:1px solid transparent; */
+			width:142px;
+			margin-right: 0px;
+		}	
+		li a{
+		text-decoration: none;
+		color:#000;	
+		line-height: 2.1rem;
+		}
+		ul.navul{	
+			/* border:1px solid transparent; */
+			display: flex;
+      list-style: none;
+      flex:1;
+			/* margin-top:30px; */
+			margin-right:auto;
+			margin-left: auto;
+      /* min-width:500px;
+      max-width:800px;
+      width:50%; */
+			justify-content: center;
+			padding-top:10px;
+		}
+		
+		ul.navul li{
+			/*border:2px solid red;*/
+			list-style: none;
+			flex-grow: 1;
+			text-align: center;
+			font-size:24px;
+      display:relative;
+      vertical-align: middle;
+		}
+		ul.navul li:hover{
+			border-bottom: 5px solid #fccb00;
+		}
+		li>div.pen,li>div.gift{
+			position:relative;
+    }
+    div.pen{
+      margin-right:8px;
+    }
+		.pen>img.pimg, .gift>img.gimg{
+			/* display: block;
+			position:absolute;
+			left:0px;
+			bottom:0px;
+      width:18%; */
+      vertical-align: middle;
+		}
+
+		.pen:hover img.pimg,.gift:hover img.gimg{
+			animation: ani 0.4s infinite alternate;
+		}
+		ul.span11, ul.span21{
+			margin:0 auto;
+			/*border:1px solid ;*/
+			display: none;
+			position:absolute;
+			background-color: rgba(50,11,5,0.7) ;
+			width:100%;
+		}
+		ul.span11 li a,ul.span21 li a{
+			color:#FFF;
+		}
+		ul.span11 li:hover, ul.span21 li:hover{
+			background-color: rgba(254,255,224,0.7);
+		}
+		ul.span11 li:hover a, ul.span21 li:hover a{
+			color:#00838F;
+			font-weight:600;
+		}
+		.gift:hover ul.span21, .pen:hover ul.span11{
+			display:block;
+    }
+@media screen and (max-width: 767px) {
+  button.btn_switch {
+    display: inline-block;
+  }
+
+  ul.navul {
+    display: none;
+    top: 150px;
+    max-height: 0px;
+    height: calc(100vh - 100px);
+    min-width: auto;
+  }
+
+  ul.navul > li {
+    display: block;
+  }
+}
+@media screen and (min-width:768px) and (max-width:959px){
+
+}		
+@media screen and (min-width:960px) and (max-width:1139px){
+
+}
+@media screen and (min-width:1140px){
+
+}
