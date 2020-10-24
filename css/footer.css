@@ -51,6 +51,7 @@
   .foot {
     overflow: hidden; /*訂閱電子報會超出，input輸入框太寬*/
   }
-  input{
+  input {
     max-width: 90vw;
   }
+}
