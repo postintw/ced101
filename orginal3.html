@@ -24,6 +24,7 @@
             100%,
           url(./img/cmn_title_bg.jpg) center/ cover no-repeat;
       }
+      /* pen木頭筆 */
       .penhand {
         max-width: 890px;
         justify-content: center;
@@ -42,6 +43,18 @@
         position: relative;
         left: 50px;
       }
+      .pen_a {
+        padding: 10px;
+        display: inline-block;
+        color: #000;
+        border: 2px solid rgb(64, 82, 64);
+        border-radius: 9px;
+      }
+      .pen_a:hover {
+        color: #fef4e8;
+        background-color: #ba7148;
+      }
+      /* pen */
       #card {
         height: 100%;
       }
@@ -213,17 +226,28 @@
           <div class="top">
             <img class="wmax100" src="./img/wedding_card2.jpg" alt="" />
           </div>
-          <div class="context y-flex l_1_5rem">
-            <h3>獨一無二的精美卡片</h3>
+          <div class="context y-flex">
+            <h3 class="l200">獨一無二的精美卡片</h3>
+
             <p>
               沒有卡片可以比得上由你親自製作的卡片。忘記那些購自商店的千篇一律的卡片。使用我們適用於各種場合的範本—無論是喜帖、生日賀卡、週年紀念卡，還是示愛卡片—你都可以為摯愛製作完美卡片，而且省時省錢。
             </p>
+            <ul>
+              <li><a href="#">喜帖</a></li>
+              <li><a href="#">生日卡</a></li>
+              <li><a href="#">聖誕禮物</a></li>
+              <li><a href="#">情人書信</a></li>
+            </ul>
             <a href="#">
               <div class="in-txt">
                 <p>我有興趣</p>
               </div>
             </a>
           </div>
+        </div>
+        <div class="y-flex">
+          <div class="wedding_card3"></div>
+          <div class="wedding_card4"></div>
         </div>
       </div>
     </section>
@@ -233,18 +257,24 @@
           <img src="./img/woodpenhead.jpg" alt="" class="wmax100" />
         </div>
         <div class="pentxt">
-          <div class="gtxt">
+          <div
+            class="gtxt"
+            style="
+              line-height: 1.5rem;
+              font-size: 18px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            "
+          >
             <h3>手工木筆製作</h3>
             <h4>手作質感文具</h4>
-            <p>講師：手治大塚 老師</p>
+            <p>講師：手治大塚</p>
           </div>
-          <div class="ltxt">
+          <div class="ltxt" style="line-height: 1.5rem">
             <p>✦想要有一隻個人特色的原木筆，卻對木工望而生畏嗎？</p>
             <p>✦跳脫木工繁重複雜的印象，學習細緻亮化技巧，提升木筆質感層次。</p>
-            <p>
-              藉由作品的習作來學習木工機器的更精密的應用方式，加工亮化筆身，為鋼筆打造不同的質感層次
-            </p>
-            <a href="#"><div>我想參與</div></a>
+
+            <a href="#" class="pen_a"><div>我想參與</div></a>
           </div>
         </div>
       </div>

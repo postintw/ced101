@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import "catgift.css";
 a {
   text-decoration: none;
 }
@@ -38,20 +38,18 @@ img.boo {
 img.waterpen {
   width: 100%;
   position: relative;
-
   right: 0px;
   z-index: 5;
 }
 div.write div.row2 {
   /* height:400px; */
   width: 100%;
-
   justify-content: space-around;
 }
 div.shop1,
 div.shop2,
 div.shop3 {
-  border: 15px solid #ee2c03;
+  border: 15px solid #eee8e62a;
   width: 350px;
   position: relative;
 }
@@ -68,13 +66,22 @@ div.shopt {
   background-color: rgb(255, 186, 255);
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row; /*wrap*/
   justify-content: space-between;
   flex: 1;
 }
 .gift1,
 .gift3 {
-  width: 335px;
+  /* width: 335px; */
+  width: 33%;
+}
+.gift1 {
+  background-image: url("../img/gift_left.png");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background: cover;
+  background-origin: border-box;
+  background-position-x: right;
 }
 .gift2 {
   min-height: 340px;
@@ -84,14 +91,19 @@ div.shopt {
   text-align: center;
   padding-top: 40px;
 }
-
+.gift3 {
+  background-image: url("../img/gift_right.png");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background: cover;
+}
 img {
   max-width: 100%;
 }
 
-.gift3 img {
+/* .gift3 img {
   width: 100%;
-}
+} */
 div.hand {
   width: 100%;
   display: flex;
@@ -206,11 +218,30 @@ div.hand img {
     justify-content: center;
     align-items: center;
   }
-  div.row1 > .img1 {
-    margin-left: auto;
+  div.hand img {
+    width: 100%;
   }
   div.maingift {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+  }
+  div.row1 > .img1 {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 767px) and(min-width:576px) {
+  div.row1 > .img1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.p,
+  div.hand img,
+  div.img1 {
+    min-width: 0;
+  }
+  div.row1 > .img1 {
+    width: 100%;
   }
 }

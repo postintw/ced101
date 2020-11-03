@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .foot {
   padding: 15px;
   width: 100%;
@@ -23,7 +22,7 @@
   color: #5e4c06;
   text-shadow: 0 0 2px black;
   font-weight: 50;
-  border-bottom: 2px dotted #fff;
+  border-bottom: 2px solid #fff;
   margin-bottom: 0.5em;
   padding-bottom: 0.6em;
 }

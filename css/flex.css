@@ -1,5 +1,13 @@
+@charset "UTF-8";
+/*flex.css是個小模組，依照XY軸資料分布走向的自定義套件，*/
+/*第一、簡單明瞭的命名flex*/
+/*第二、flex-flow以XY軸命名，X表示row，Y表示column，r表示reverse。
+wrap:三個n→nowrap，w→wrap，r→wrap-reverse*/
 .flex {
   display: flex;
+}
+.inflex {
+  display: inline-flex;
 }
 .flex-n {
   display: flex;
@@ -37,9 +45,21 @@
   display: flex;
   flex-flow: row-reverse wrap;
 }
+.x-n-flex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .j_c {
   justify-content: center;
 }
+.j_sa {
+  justify-content: space-around;
+}
+.j_sb {
+  justify-content: space-between;
+}
+
 .a_c {
   align-items: center;
 }

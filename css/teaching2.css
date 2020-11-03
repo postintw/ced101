@@ -42,7 +42,7 @@ div.title {
 }
 
 section .cla .rcard {
-  max-width: 350px;
+  max-width: 300px;
   margin-top: 5px;
   margin-right: 10px;
   margin: 10px;
@@ -170,8 +170,14 @@ div.ourter {
 .fontleft > a:hover,
 .fontright > a:hover {
   font-size: larger;
-  color: orange;
+  color: rgb(156, 102, 0);
+  font-weight: 700;
+
   background-image: radial-gradient(transparent, transparent);
+}
+.fontleft > a:hover span,
+.fontright > a:hover span {
+  background: rgba(255, 255, 255, 0.582);
 }
 @media screen and (min-width: 576px) {
   /*超過576px就設定寬度，!!規範小於576就滿版!!*/

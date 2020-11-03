@@ -61,14 +61,33 @@ body {
 .l150 {
   line-height: 1.5rem;
 }
+.l200 {
+  line-height: 2rem;
+}
+.l300 {
+  line-height: 3rem;
+}
 /* 寬度規範 */
 .w100 {
   width: 100%;
 }
-
+.w50 {
+  width: 50%;
+}
 .wmax100 {
   max-width: 100%;
 }
+.wmax-xl {
+  max-width: 1200px;
+}
+/* 字體粗細規範 */
+.bold {
+  font-weight: bold;
+}
+.bolder {
+  font-weight: bolder;
+}
+
 .dnone {
   display: none;
 }
@@ -110,18 +129,18 @@ ul.navul {
   display: flex;
   list-style: none;
   flex: 1;
-  /* margin-top:30px; */
+
   margin-right: auto;
   margin-left: auto;
-  /* min-width:500px;
-      max-width:800px;
-      width:50%; */
+
   justify-content: center;
   padding-top: 10px;
 }
-
+.mlr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 ul.navul li {
-  /*border:2px solid red;*/
   list-style: none;
   flex-grow: 1;
   text-align: center;
@@ -130,33 +149,34 @@ ul.navul li {
   vertical-align: middle;
 }
 ul.navul li:hover {
-  border-bottom: 5px solid #fccb00;
+  /* border-bottom: 5px solid #fccb00;
+   */
+  box-shadow: 0px 0px 5px 5px rgb(245, 223, 182) inset;
 }
 li > div.pen,
 li > div.gift {
   position: relative;
 }
+
 div.pen {
   margin-right: 8px;
 }
 .pen > img.pimg,
 .gift > img.gimg {
-  /* display: block;
-			position:absolute;
-			left:0px;
-			bottom:0px;
-      width:18%; */
+  display: none;
   vertical-align: middle;
 }
 
 .pen:hover img.pimg,
 .gift:hover img.gimg {
   animation: ani 0.4s infinite alternate;
+  display: initial;
 }
+
 ul.span11,
 ul.span21 {
   margin: 0 auto;
-  /*border:1px solid ;*/
+
   display: none;
   position: absolute;
   background-color: rgba(50, 11, 5, 0.7);
@@ -166,9 +186,10 @@ ul.span11 li a,
 ul.span21 li a {
   color: #fff;
 }
+
 ul.span11 li:hover,
 ul.span21 li:hover {
-  background-color: rgba(254, 255, 224, 0.7);
+  background-color: rgba(229, 230, 223, 0.7);
 }
 ul.span11 li:hover a,
 ul.span21 li:hover a {
@@ -187,7 +208,6 @@ ul.span21 li:hover a {
 
 @media screen and (min-width: 768px) {
   .navul {
-    /*     display: block; */
     display: flex !important;
     flex-direction: row !important;
   }
@@ -212,17 +232,28 @@ button.btn_switch {
   }
   ul.navul > li a {
     color: #fff;
+    font-size: 20px;
   }
 
   ul.navul > li {
     display: block;
     background: rgba(50, 11, 5, 0.8);
   }
-
+  ul.navul li:hover {
+    border-bottom: none;
+  }
+  img.pimg {
+    position: relative;
+    right: 15px;
+  }
+  li > div.gift {
+    right: 15px;
+  }
   .gift > .span21,
   .pen > .span11 {
     display: none;
     position: relative;
+    text-indent: 4rem;
   }
 
   div.logobox {
@@ -233,5 +264,18 @@ button.btn_switch {
   }
   .main-head {
     flex-wrap: wrap;
+  }
+  .span1::after,
+  .span2::after {
+    content: ">";
+    position: relative;
+    right: -10px;
+    font-size: 20px;
+    font-weight: 700;
+    transform: rotate(0deg);
+  }
+  .span1:hover::after,
+  .span2:hover::after {
+    transform: rotate(90deg);
   }
 }

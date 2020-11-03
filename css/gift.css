@@ -5,10 +5,18 @@
 a {
   text-decoration: none;
 }
+.ban {
+  background: url(../img/g01.jpg) center 0% no-repeat;
+  /* background-attachment: fixed; */
+  height: 250px;
+}
 div.img {
   overflow: hidden;
   height: 200px;
   /*border:1px solid blue;*/
+}
+div.img > img {
+  max-width: 100%;
 }
 div.txt {
   padding: 10px;
@@ -29,12 +37,36 @@ div.card {
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 575px) and (min-width: 300px) {
+.card > a {
+  color: #000;
+}
+.btn_c {
+  padding: 15px;
+}
+.button_c {
+  font-size: 14px;
+
+  border-radius: 20px;
+  background-color: tomato;
+  height: 46px;
+  max-width: 246px;
+}
+.button_c > a {
+  padding: 15px;
+  color: #fff;
+  vertical-align: middle;
+}
+.button_c > a:hover .gt2 {
+  transform: translateX(20px);
+}
+/* @media screen and (max-width: 575px) and (min-width: 300px) {
   div.card {
     min-width: 0px;
   }
-}
-@media screen and (max-width: 299px) {
+} */
+/* .rec_card {
+} */
+@media screen and (max-width: 350px) {
   div.card {
     min-width: 0px;
     width: 100%;
