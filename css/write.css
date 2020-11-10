@@ -1,3 +1,6 @@
+p {
+  text-overflow: ellipsis;
+}
 .ourter {
   position: relative;
   width: 100%;
@@ -94,6 +97,10 @@ div.frame {
   background-attachment: fixed;
   height: 200px;
 }
+.pad1510 {
+  padding-left: 15%;
+  padding-right: 10%;
+}
 .siss {
   max-width: 800px;
 }
@@ -109,11 +116,13 @@ div.frame {
   background-position: left top;
   background-size: 50%;
   background-repeat: no-repeat;
-  text-align: right !important;
 }
+/* .siss_art > :nth-child(2) {
+  text-align: left;
+} */
 .siss_title {
   justify-content: flex-end;
-  padding-left: 50% !important;
+  padding-left: 50%;
 }
 .siss_art h2 {
   font-size: 24px;
@@ -126,7 +135,11 @@ div.frame {
   vertical-align: top;
   margin-left: auto;
   padding-bottom: 60%;
-  padding-right: 10%;
+  align-items: flex-start;
+}
+.siss_h2 h2 {
+  margin: 5px;
+  display: block;
 }
 
 .siss_img {
@@ -153,6 +166,16 @@ div.frame {
 }
 .ex2 strong {
   font-weight: 700;
+}
+.cn_ink {
+  margin-top: 100px;
+}
+.ink2 {
+  width: 50%;
+  padding: 50px 3% 50px 13%;
+}
+.wmax500px {
+  max-width: 500px;
 }
 .ch_ink3,
 .ch_ink4 {
@@ -234,6 +257,19 @@ summary {
   .sidebar.on {
     transform: translateX(0%);
   }
+  .ch_ink3,
+  .ch_ink4 {
+    width: 100%;
+  }
+  .ch_ink3 > :nth-child(2),
+  .ch_ink4 > :nth-child(2) {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .ink2 {
+    padding: 50px 3% 50px 20%;
+  }
 }
 @media screen and (max-width: 575px) {
   .nav_left {
@@ -241,6 +277,32 @@ summary {
   }
   .div.card {
     min-width: 0;
+  }
+  .siss_art {
+    background: none;
+  }
+  .cn_ink > div {
+    width: 100%;
+  }
+  .siss_h2 {
+    writing-mode: horizontal-tb;
+    padding-bottom: 0%;
+    margin-right: auto;
+    display: flex;
+    line-height: 3rem;
+  }
+  .siss_h2 h2,
+  .siss_h2 p,
+  .siss_h2 span {
+    writing-mode: horizontal-tb;
+  }
+  .siss_img,
+  .siss_art {
+    width: 100%;
+  }
+  .siss_img img {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 399px) {

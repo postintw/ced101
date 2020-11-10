@@ -3,7 +3,9 @@
 a {
   text-decoration: none;
 }
-
+h4 {
+  line-height: 1.5;
+}
 div.write {
   width: 100%;
   background-image: url(../img/石.png);
@@ -126,6 +128,7 @@ div.hand img {
 .Carousel > div {
   width: 100%;
   height: 100%;
+  background: center / 100%;
   background-size: cover;
   position: absolute;
   animation: change 25s infinite;
@@ -240,6 +243,9 @@ div.hand img {
   div.hand img,
   div.img1 {
     min-width: 0;
+  }
+  .Carousel > div {
+    background-size: contain;
   }
   div.row1 > .img1 {
     width: 100%;

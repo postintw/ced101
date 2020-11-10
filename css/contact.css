@@ -4,6 +4,9 @@ a {
 .fc-00838f {
   color: #00838f;
 }
+p {
+  text-overflow: ellipsis;
+}
 body {
   background-color: #f9f9ec;
 }
@@ -54,7 +57,7 @@ article.help {
 
 .adress {
   margin: 0;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 div.map {
   min-width: 300px;
@@ -63,4 +66,12 @@ article.help div.map img {
   border: 1px solid black;
 
   width: 100%;
+}
+@media screen and (max-width: 300px) {
+  div.map,
+  .adress,
+  .location {
+    min-width: 0;
+    max-width: 100%;
+  }
 }

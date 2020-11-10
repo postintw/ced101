@@ -12,7 +12,7 @@ main {
   width: 100%;
   background: linear-gradient(160deg, #393939 0%, transparent 99%) center
       center/100% 100%,
-    url(../img/writer-c-cover.jpg) center/ cover fixed no-repeat;
+    url(../img/writer-c-cover.jpg) 70% / cover fixed no-repeat;
 }
 .ban_orginal > img {
   max-width: 700px;

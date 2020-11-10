@@ -20,8 +20,8 @@
 .foot .container .item h3 {
   font-size: 20px;
   color: #5e4c06;
-  text-shadow: 0 0 2px black;
-  font-weight: 50;
+  /* text-shadow: 0 0 2px black; */
+  font-weight: 600;
   border-bottom: 2px solid #fff;
   margin-bottom: 0.5em;
   padding-bottom: 0.6em;

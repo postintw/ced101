@@ -2,6 +2,9 @@
 * {
   list-style: none;
 }
+p {
+  text-overflow: ellipsis;
+}
 a {
   text-decoration: none;
 }
@@ -19,8 +22,10 @@ div.img > img {
   max-width: 100%;
 }
 div.txt {
+  text-overflow: ellipsis;
   padding: 10px;
   height: 100px;
+  line-height: 1.5;
 }
 
 div.main {
@@ -59,16 +64,272 @@ div.card {
 .button_c > a:hover .gt2 {
   transform: translateX(20px);
 }
-/* @media screen and (max-width: 575px) and (min-width: 300px) {
-  div.card {
-    min-width: 0px;
+
+.t {
+  padding: 50px 20%;
+}
+.t h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+.design2 {
+  max-width: 1000px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.design2 > :nth-child(1) {
+  background-image: url("../img/06.jpg");
+}
+.design2 > :nth-child(2) {
+  background-image: url("../img/07.jpg");
+}
+.design2 > :nth-child(3) {
+  background-image: url("../img/09.jpg");
+}
+.design2 > :nth-child(4) {
+  background-image: url("../img/10.jpg");
+}
+.g-card {
+  max-width: 440px;
+  height: 440px;
+  position: relative;
+}
+.g-card > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.good {
+  padding: 30px;
+}
+.mark {
+  background-image: -webkit-linear-gradient(
+    transparent 31%,
+    #ff3 31%,
+    #ff3 61%,
+    transparent 61%
+  );
+}
+.rec_item {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid; /*防止斷點*/
+  margin: 10px 5px;
+  width: 320px;
+  padding: 15px;
+  border: 1px solid pink;
+}
+.demo-1 {
+  -moz-column-count: 3; /* Firefox */
+  -webkit-column-count: 3; /* Safari 和 Chrome */
+  column-count: 3;
+  -moz-column-gap: 0.5em;
+  -webkit-column-gap: 0.5em;
+  column-gap: 0.5em;
+}
+.rec_item p,
+.rec_item span {
+  line-height: 1.5rem;
+}
+
+.fa {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.fb {
+  padding-bottom: 10px;
+}
+.fc {
+  color: #1656ad;
+}
+/* 客製化專區 */
+.grid {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  flex-shrink: 0;
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1600px;
+  list-style: none;
+  text-align: center;
+} /* Common style */
+.grid figure {
+  position: relative;
+  /* float: left; */
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 160px;
+  max-width: 350px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.grid figure:hover figcaption {
+  background-image: linear-gradient(
+    45deg,
+    rgba(235, 86, 235, 0.13) 30%,
+    rgba(129, 74, 129, 0.582) 80%
+  );
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 500;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.grid figure h2 span {
+  font-weight: 800;
+}
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 16px;
+} /* Individual effects */
+figure.effect-chico {
+  background: -webkit-linear-gradient(
+    45deg,
+    #22682a30 0%,
+    #9b4a1b30 40%,
+    #77726a30 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #22682a30 0%,
+    #9b4a1b30 40%,
+    #3a342a30 100%
+  );
+}
+figure.effect-chico img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.5s, transform 0.5s;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+}
+figure.effect-chico:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+figure.effect-chico:hover img:nth-last-of-type(2),
+figure.effect-chico img:nth-last-of-type(1) {
+  display: none;
+}
+figure.effect-chico img:nth-last-of-type(2),
+figure.effect-chico:hover img:nth-last-of-type(1) {
+  display: initial;
+}
+figure.effect-chico figcaption {
+  padding: 3em;
+}
+figure.effect-chico figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: "";
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+figure.effect-chico h2 {
+  padding: 20% 0 20px 0;
+  display: none;
+}
+figure.effect-chico:hover h2 {
+  display: block;
+}
+figure.effect-chico p {
+  margin: 0 auto;
+  max-width: 200px;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* 客製化專區圖文結束 */
+@media screen and (min-width: 686px) and (max-width: 1020px) {
+  .demo-1 {
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari 和 Chrome */
+    column-count: 2;
   }
-} */
-/* .rec_card {
-} */
+}
+@media screen and (max-width: 685px) {
+  .demo-1 {
+    -moz-column-count: 1; /* Firefox */
+    -webkit-column-count: 1; /* Safari 和 Chrome */
+    column-count: 1;
+  }
+}
+@media screen and (max-width: 685px) and (min-width: 351px) {
+  figure.effect-chico {
+    min-width: 320px;
+  }
+}
 @media screen and (max-width: 350px) {
-  div.card {
+  div.card,
+  .rec_item {
     min-width: 0px;
+    width: 100%;
+  }
+  figure.effect-chico {
     width: 100%;
   }
 }

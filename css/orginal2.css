@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
 }
+p {
+  text-overflow: ellipsis;
+}
 .ban_title {
   background: url("../img/1912100338301089827981.jpg") center / 100% no-repeat;
   height: 200px;
@@ -22,6 +25,12 @@ section.sec {
   text-align: center;
   position: relative;
   vertical-align: middle;
+}
+.cc {
+  max-width: 400px;
+  background-image: url("../img/165822d94cdb53a.png");
+  background-attachment: fixed;
+  background-size: 50%;
 }
 section.sec > img.head2 {
   position: absolute;
@@ -54,6 +63,7 @@ section.sec > img.head2 {
   left: 50px;
 }
 .pen_a {
+  margin-top: 20px;
   padding: 10px;
   display: inline-block;
   color: #000;
@@ -69,6 +79,22 @@ section.sec > img.head2 {
   background: url("../img/dc2a09e8-3fa9-4b3b-a3e4-aae4ec116cac.jpg") center 50%;
   background-attachment: fixed;
   height: 200px;
+}
+.ink_pic {
+  max-width: 500px;
+}
+.ink_t1 {
+  padding: 20px;
+}
+.ink_t1 h2 {
+  position: relative;
+  overflow: hidden;
+  font-size: 32px;
+  writing-mode: vertical-lr;
+}
+.ink_t2 {
+  width: 45%;
+  padding: 50px;
 }
 .banner1 {
   margin-left: auto;
@@ -285,6 +311,15 @@ div.momo ul li a {
   }
   .pentxt {
     padding: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ink_t1 h2 {
+    writing-mode: horizontal-tb;
+    width: 100%;
+  }
+  .ink_t2 {
+    width: 100%;
   }
 }
 .h2bd {

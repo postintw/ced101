@@ -13,7 +13,6 @@
   -moz-box-sizing: border-box;
 }
 body {
-  /*body這部分要請專業的郭惟老師檢查*/
   /* 字體規範 */
   /* 行距行高另外設置 */
   scroll-behavior: smooth; /* 平滑捲動 */
@@ -21,6 +20,12 @@ body {
   font-smooth: auto; /*字體平滑*/
   -webkit-font-smoothing: antialiased; /*macOS字體平滑*/
   -moz-osx-font-smoothing: auto;
+  -webkit-overflow-scrolling: touch;
+}
+main.rwd {
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
 }
 .mask_gradient {
   background-image: linear-gradient(
@@ -31,8 +36,23 @@ body {
 .d-block {
   display: block;
 }
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
 .fc-00838f {
   color: #00838f;
+}
+.hidden {
+  overflow: hidden;
+}
+.hidden-y {
+  overflow-y: hidden;
+}
+.hidden-x {
+  overflow-x: hidden;
 }
 /* 字體大小規範 */
 .p14 {
@@ -45,9 +65,11 @@ body {
   font-size: 18px;
 }
 .p24 {
+  /* 字型大小x-large */
   font-size: 24px;
 }
 .p32 {
+  /* 字型大小xx-large */
   font-size: 32px;
 }
 .p36 {
@@ -56,29 +78,70 @@ body {
 .p42 {
   font-size: 42px;
 }
-
+/* 讓多出來的字變成點點點 */
+.ellipsis {
+  text-overflow: ellipsis;
+}
 /* 行高規範 */
 .l150 {
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 .l200 {
-  line-height: 2rem;
+  line-height: 2;
 }
 .l300 {
-  line-height: 3rem;
+  line-height: 3;
 }
 /* 寬度規範 */
 .w100 {
   width: 100%;
 }
+.h100 {
+  height: 100%;
+}
+.w20 {
+  width: 20%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
 .w50 {
   width: 50%;
+}
+.w80 {
+  width: 80%;
+}
+.font0 {
+  font-size: 0;
+}
+.center {
+  text-align: center;
+}
+.middle {
+  vertical-align: middle;
 }
 .wmax100 {
   max-width: 100%;
 }
+.max100vw {
+  max-width: 100vw;
+}
+.max90vw {
+  max-width: 90vw;
+}
+.max100vh {
+  max-height: 100vh;
+}
 .wmax-xl {
   max-width: 1200px;
+}
+.whfull {
+  width: 100%;
+
+  height: 100%;
 }
 /* 字體粗細規範 */
 .bold {
@@ -87,7 +150,9 @@ body {
 .bolder {
   font-weight: bolder;
 }
-
+.circle {
+  border-radius: 50%;
+}
 .dnone {
   display: none;
 }
@@ -151,7 +216,7 @@ ul.navul li {
 ul.navul li:hover {
   /* border-bottom: 5px solid #fccb00;
    */
-  box-shadow: 0px 0px 5px 5px rgb(245, 223, 182) inset;
+  box-shadow: 0px -3px 1px 0px rgb(245, 223, 182) inset;
 }
 li > div.pen,
 li > div.gift {
@@ -205,23 +270,24 @@ ul.span21 li:hover a {
   position: absolute;
   right: 0;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .navul {
     display: flex !important;
     flex-direction: row !important;
   }
 }
-
 button.btn_switch {
   display: none;
 }
 /* 行動版時，將按鈕顯示出來 */
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
   button.btn_switch {
     display: inline-block;
   }
-
+  .max-md {
+    display: initial;
+  }
   ul.navul {
     display: none;
     width: 100vw;
@@ -234,7 +300,6 @@ button.btn_switch {
     color: #fff;
     font-size: 20px;
   }
-
   ul.navul > li {
     display: block;
     background: rgba(50, 11, 5, 0.8);
@@ -255,7 +320,15 @@ button.btn_switch {
     position: relative;
     text-indent: 4rem;
   }
-
+  .m20px {
+    margin: 20px;
+  }
+  .pad50px {
+    padding: 50px;
+  }
+  .pad20px {
+    padding: 20px !important;
+  }
   div.logobox {
     margin-left: auto;
     margin-right: auto;
@@ -277,5 +350,35 @@ button.btn_switch {
   .span1:hover::after,
   .span2:hover::after {
     transform: rotate(90deg);
+  }
+}
+/* 命名規則min與max採用 @media標準 */
+/* 制定RWD規範，media要提高優先權才能蓋過 或者用!important */
+@media screen and (max-width: 575px) {
+  .xs-full,
+  .xs-full.w50 {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .ddd\/cp{height: 50px;} */
+  .dnone-max-sm {
+    display: none !important;
+  }
+  .sm-full {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .dnone-max-md {
+    display: none !important;
+  }
+  .md-full {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dnone-max-lg {
+    display: none !important;
   }
 }

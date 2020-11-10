@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+<style>
+  body{
+  background-color: #e74c3c
+}
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+}
+h2{
+  font-family:sans-serif;
+  color:#fff;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+</style>
+  </head>
+  <body>
+
+<div class="wrapper">
+  <h2>Slick Carousel Example<h2>
+    <div class="img"><img src="./img/design-student/12.jpg" alt=""></div>
+<div class="carousel" img-switch>
+  <div><img src="http://lorempixel.com/200/200/nature/"></div>
+  <div><img src="http://lorempixel.com/200/200/fashion/"></div>
+  <div><img src="http://lorempixel.com/200/200/sports/"></div>
+  <div><img src="http://lorempixel.com/200/200/animal/"></div>
+  <div><img src="http://lorempixel.com/200/200/abstract/"></div>
+  <div><img src="http://lorempixel.com/200/200/people/"></div>
+</div>
+</div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+  <script type="text/javascript">
+  var peo='http://lorempixel.com/200/200/people/';
+$(document).ready(function(){
+  $('.carousel').slick({
+  slidesToShow: 3,
+  dots:true,
+  centerMode: true,
+  autoplay:true,
+  autoplayspeed:300
+  });
+});
+
+  </script>
+
+  </body>
+</html>

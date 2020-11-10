@@ -1,0 +1,55 @@
+.fixed {
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  display: flex;
+  flex-flow: row;
+}
+.fixed > div {
+  display: inline-block;
+  margin: 0;
+}
+.like,
+.host {
+  outline: 1px solid pink;
+}
+.host,
+.like {
+  background-color: #fff;
+}
+.host,
+.apply {
+  float: left;
+}
+.host a,
+.like a {
+  color: #000;
+}
+.apply {
+  /* border: 1px solid red; */
+  background-color: blue;
+  width: 40%;
+}
+.apply a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+  .maxlg {
+    display: initial;
+  }
+  .side {
+    display: none;
+  }
+  .left {
+    width: 100%;
+  }
+  .frame {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .maxlg {
+    display: none;
+  }
+}
