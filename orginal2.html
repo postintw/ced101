@@ -2,6 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+      integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+      integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l"
+      crossorigin="anonymous"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -9,18 +25,20 @@
     <link rel="stylesheet" href="./css/orginal2.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>書香世家</title>
+    <style>
+      @import "./css/top-right.css";
+    </style>
   </head>
   <body>
     <header class="main-head">
       <div class="logobox">
-        <a href="index.html"><img src="./img/logok.png" alt="" /></a>
+        <a href="index.html"><img src="./img/logok.png" /></a>
       </div>
       <ul class="navul">
         <li>
           <div class="pen">
             <img
               src="./img/feather.png"
-              alt=""
               class="pimg wmax100"
               width="25px"
               height="auto"
@@ -64,6 +82,22 @@
           </span>
         </button>
       </div>
+      <div id="user">
+        <a id="cart"><i class="fad fa-shopping-cart"></i></a>
+        <a id="member"><i class="fas fa-user"></i></a>
+      </div>
+      <section id="login">
+        <div class="modan">
+          <a id="x-close"><i class="far fa-times"></i> </a>
+          <h3>會員登入</h3>
+          <form action="">
+            <input type="text" placeholder="請輸入email" /><br />
+            <input type="password" id="" placeholder="請輸入密碼" /><br />
+            <input type="submit" value="登入" /><br />
+            <input type="button" value="註冊" />
+          </form>
+        </div>
+      </section>
     </header>
     <main style="overflow: hidden; width: 100%; max-width: 100vw">
       <div class="breadcrumb ad">
@@ -79,7 +113,7 @@
         </h2>
         <p class="l150">"定製筆記本和獨家墨水可以說是書香世家的最大特色。"</p>
         <p class="l150">
-          "從紙張到構成筆記本的每個環節單品都能夠自由選擇，創造出充滿手感溫度的文房具。"
+          "從紙張到構成筆記本的每個環節單品都能夠自由選擇，創造出充滿手感溫度的文具。"
         </p>
         <img class="head2" src="./img/165035216.png" alt="" />
       </section>
@@ -180,10 +214,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="flex-r j_c"
-        style="background-color: #fff; max-width: 1200px"
-      >
+      <section class="flex-r j_c" style="background-color: #fff">
         <div
           class="y-flex j_c l200 pad50px"
           data-aos="fade-up"
@@ -257,6 +288,7 @@
     </div>
   </div>
 </div> -->
+    <a id="up"><i class="far fa-angle-up fa-2x"></i></a>
     <footer>
       <div class="foot">
         <div class="container">

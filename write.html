@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/footer.css">
-
-	<link rel="stylesheet" href="./css/write.css">
-
-	<title>書香世家</title>
-</head>
-    <header class=" main-head">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+      integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+      integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/write.css" />
+    <title>書香世家</title>
+    <style>
+      @import "./css/top-right.css";
+    </style>
+  </head>
+  <body>
+    <header class="main-head">
       <div class="logobox">
-        <a href="index.html"><img src="./img/logok.png" alt="書香世家logo" /></a>
+        <a href="index.html"
+          ><img src="./img/logok.png" alt="書香世家logo"
+        /></a>
       </div>
       <ul class="navul">
         <li>
@@ -64,284 +84,330 @@
           </span>
         </button>
       </div>
+      <div id="user">
+        <a href="#" id="cart"><i class="fad fa-shopping-cart"></i></a>
+        <a href="#" id="member"><i class="fas fa-user"></i></a>
+      </div>
     </header>
-<main>
-	<div class="breadcrumb ad">
-		<ol class="breadcrumb_list">
-		<li><a href="index.html">首頁</a></li>
-		<li>文具房</li>
-		</ol>
-	</div>
-	<section class="flex title_ban j_c-a_c">
-		<img src="./img/writer-a-quoteFFF.png" alt="" class="wmax100">
-	</section>
-  <div class="x-n-flex ourter">
-	  <!--<div class="sidebar">
-		   <div class="ui-menu-wrap">
-		  <details class="ui-menu" open>
-			  <summary class="ui-menu-summary">文具</summary>
-			  <div class="ui-menu-list">
-				  <a class="ui-btn">鋼筆</a>
-				  <a class="ui-btn">筆記具</a>
-				  <a class="ui-btn">筆盒/筆袋</a>
-				  <a class="ui-btn">墨水</a>
-				  <a class="ui-btn">精緻禮盒</a>
-			  </div>
-		  </details>
-		  <details class="ui-menu" open>
-			  <summary class="ui-menu-summary">中國文房四寶</summary>
-			  <div class="ui-menu-list">
-				  <a class="ui-btn">手工紙</a>
-				  <a class="ui-btn">墨條</a>
-				  <a class="ui-btn">硯台</a>
-				  <a class="ui-btn">毛筆</a>
-			  </div>
-		  </details>
-		  </div> 
-		</div>-->
-		<section class="nav_left">
-    	
-			<h3>文具用品</h3>
-        <div>	
-        <ul>
-          <li><a href="#">鋼筆</a></li>
-          <li><a href="#">筆記本</a></li>
-          <li><a href="#">筆盒/筆袋</a></li>
-          <li><a href="#">墨水</a></li>
-          <li><a href="#">禮盒</a></li>
-		</ul>
-		</div>
-        
-			<h3>西洋歐風系列</h3>
-        	<div>
+    <main>
+      <div class="breadcrumb ad">
+        <ol class="breadcrumb_list">
+          <li><a href="index.html">首頁</a></li>
+          <li>文具房</li>
+        </ol>
+      </div>
+      <section class="flex title_ban j_c-a_c">
+        <img src="./img/writer-a-quoteFFF.png" alt="" class="wmax100" />
+      </section>
+      <section>
+        <select name="" id="side" style="font-size: 16px">
+          <optgroup label="文具用品" style="font-size: 16px">
+            <option value="">鋼筆</option>
+            <option value="">筆記本</option>
+            <option value="">筆盒/筆袋</option>
+            <option value="">墨水</option>
+            <option value="">禮盒</option>
+          </optgroup>
+          <optgroup label="西洋歐風系列">
+            <option value="">羽毛筆</option>
+            <option value="">沾水筆</option>
+          </optgroup>
+          <optgroup label="中國水墨系列">
+            <option value="">端硯</option>
+            <option value="">宣紙</option>
+            <option value="">龍紋墨</option>
+            <option value="">毛筆/胎毛筆</option>
+          </optgroup>
+        </select>
+        <input
+          type="search"
+          name=""
+          id="search"
+          placeholder="請輸入關鍵字"
+        /><label for="search"><i class="fa fa-search"></i></label>
+      </section>
+      <div class="x-n-flex ourter">
+        <section class="nav_left">
+          <h3>文具用品</h3>
+          <div>
+            <ul>
+              <li><a href="#">鋼筆</a></li>
+              <li><a href="#">筆記本</a></li>
+              <li><a href="#">筆盒/筆袋</a></li>
+              <li><a href="#">墨水</a></li>
+              <li><a href="#">禮盒</a></li>
+            </ul>
+          </div>
+          <h3>西洋歐風系列</h3>
+          <div>
+            <ul>
+              <li><a href="#">羽毛筆</a></li>
+              <li><a href="#">沾水筆</a></li>
+            </ul>
+          </div>
+          <h3>中國水墨系列</h3>
+          <div>
+            <ul>
+              <li><a href="#">宣紙</a></li>
+              <li><a href="#">端硯</a></li>
+              <li><a href="#">龍紋墨</a></li>
+              <li><a href="#">毛筆/胎毛筆</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="frame">
+          <div class="main">
+            <div class="card">
+              <a href="#">
+                <div class="img">
+                  <img src="./img/10099165_480x.jpg" alt="" />
+                </div>
+              </a>
+              <div class="txt">
+                <p>美國 NOODLER'S 鯰魚鋼筆</p>
+                <p>Topikapi Amber (琥珀色)</p>
+                <p>STANDARD FLEX 標準桿 ST 彈性尖鋼筆</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img">
+                  <img src="./img/9741350_480x.jpg" alt="" />
+                </div>
+              </a>
+
+              <div class="txt">
+                <p>德國 LAMY AL-STAR 恆星 /恒星</p>
+                <p>2019限定色 BRONZE 古銅金 鋼筆</p>
+                <p>EF~B尖可選</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img"><img src="./img/800x6.jpg" alt="" /></div>
+              </a>
+
+              <div class="txt">
+                <p>義大利木桿沾水筆墨水禮盒-玫瑰花香</p>
+                <p>Francesco Rubinato</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img"><img src="./img/800x7.jpg" alt="" /></div>
+              </a>
+              <div class="txt">
+                <p>KACO - PURE 書源 0.5中性筆</p>
+                <p>莫蘭迪 5色5支裝</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img"><img src="./img/800x8.jpg" alt="" /></div>
+              </a>
+              <div class="txt">
+                <p>【IWI】Civilization拾時鋼筆</p>
+                <p>#5款可選</p>
+                <p>贈刻字服務</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img">
+                  <img src="./img/10902322_480x.webp" alt="" />
+                </div>
+              </a>
+
+              <div class="txt">
+                <p>德國 LAMY AION 永恆系列 鋼筆</p>
+                <p>霧銀/橄欖銀 霧黑 /黑色 EF/F/M/尖可選</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img"><img src="./img/800x10.jpg" alt="" /></div>
+              </a>
+              <div class="txt">
+                <p>收藏家原木雪茄鋼筆</p>
+                <p>肖楠 | 檜木 | 龍柏</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img"><img src="./img/800x11.jpg" alt="" /></div>
+              </a>
+              <div class="txt">
+                <p>【IWI】鋼筆卡水補充包</p>
+                <p>#10支裝</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img"><img src="./img/800x13.jpg" alt="" /></div>
+              </a>
+
+              <div class="txt">
+                <p>【梨煙系列】梨木鋼筆</p>
+                <p>可加購雷雕及皮革套</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="img">
+                  <img src="./img/rotring-600-3color2.webp" alt="" />
+                </div>
+              </a>
+              <div class="txt">
+                <p>Rotring 600紅藍綠桿自動鉛筆、原子筆</p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="flex ex j_c-a_c"></section>
+      <section class="flex w100 j_c">
+        <!-- siss代表伊麗莎白的小名 -->
+        <section class="siss flex-w">
+          <div class="siss_art">
+            <div class="flex _siss_title">
+              <div class="flex siss_h2">
+                <h2>客製化</h2>
+                <h2>禮盒</h2>
+              </div>
+            </div>
+            <div>
+              <p style="text-align: left">
+                運用網頁製作出專屬於你的特色文具禮盒透過「文字」來表達出自己獨特的味道。
+              </p>
+              <div class="siss_b"><a href="#">立即製作</a></div>
+            </div>
+          </div>
+          <div class="flex siss_img"><img src="./img/800x15.jpg" alt="" /></div>
+        </section>
+      </section>
+      <section class="ch_ink mlr-auto l200 flex-r wmax-xl">
+        <div class="ink2 xs-full">
+          <hgroup class="mlr-auto l200">
+            <h2 class="p32">小墨器</h2>
+            <h2 class="p24">最貼近你的書法用具</h2>
+          </hgroup>
           <ul>
-            <li><a href="#">羽毛筆</a></li>
-            <li><a href="#">沾水筆</a></li>
+            <li>一桶式的結構設計，便於收納與攜帶</li>
+            <li>口紅膠式墨條，易用不髒手</li>
+            <li>二合一設計，書寫墊即是筆簾</li>
+            <li>特殊紙鎮設計，與巧妙收納空間</li>
+            <li>毛筆來自百年品牌 - 林三益筆墨專家</li>
+            <li>台灣唯一手工松煙墨製業 - 大有製墨</li>
           </ul>
         </div>
-        
-			<h3>中國水墨系列</h3>
-        	<div>
-          <ul>
-            <li><a href="#">宣紙</a></li>
-            <li><a href="#">石硯</a></li>
-            <li><a href="#">龍紋墨</a></li>
-            <li><a href="#">毛筆/胎毛筆</a></li>
-          </ul>
+        <div class="xs-full w50 wmax500px" data-aos="fade-up">
+          <img
+            class="wmax100 w100"
+            src="./img/1101eaadc20242ac110005.png"
+            alt=""
+          />
         </div>
-      
-    	</section>
-	  
-	  <div class="frame">	  
-		  <div class="main">
-		  <div class="card">
-			<a href="#">
-				  <div class="img"><img src="./img/10099165_480x.jpg" alt=""></div>
-			</a>			  
-			  <div class="txt">
-				  <p>美國 NOODLER'S 鯰魚鋼筆</p>
-				  <p>Topikapi Amber (琥珀色)</p>
-				  <p>STANDARD FLEX 標準桿 ST 彈性尖鋼筆</p>
-			  </div>
-		  </div>
-		  <div class="card">
-					<a href="#">
-					<div class="img"><img src="./img/9741350_480x.jpg" alt=""></div>
-					</a>
-			  
-			  <div class="txt">
-				  
-					<p>德國 LAMY AL-STAR 恆星 /恒星</p>
-					<p>2019限定色 BRONZE 古銅金 鋼筆</p>
-					<p>EF~B尖可選</p>
-			  </div>
-		  </div>
-		  <div class="card">
-			  <a href="#">
-					<div class="img"><img src="./img/800x6.jpg" alt=""></div>
-			  </a>
-			  
-			  <div class="txt">
-					<p>義大利木桿沾水筆墨水禮盒-玫瑰花香</p>
-					<p>Francesco Rubinato</p>
-				  
-  
-			  </div>
-		  </div>
-		  <div class="card">
-			<a href="#">
-				<div class="img"><img src="./img/800x7.jpg" alt=""></div>
-			</a>
-			<div class="txt">
-				  <p>KACO - PURE 書源 0.5中性筆 </p>
-				  <p>莫蘭迪 5色5支裝</p>
-				  <p></p>
-  
-			</div>
-		  </div>
-		  <div class="card">
-				<a href="#">
-				<div class="img"><img src="./img/800x8.jpg" alt=""></div>
-				</a>
-				<div class="txt">
-				<p>【IWI】Civilization拾時鋼筆 </p>
-				<p>#5款可選</p>
-				<p>贈刻字服務</p>
-				</div>
-		  </div>
-		  <div class="card">
-				<a href="#">
-				<div class="img"><img src="./img/10902322_480x.webp" alt=""></div>
-				</a>
-			  
-				<div class="txt">
-				<p>德國 LAMY AION 永恆系列 鋼筆</p>
-				<p>霧銀/橄欖銀 霧黑 /黑色 EF/F/M/尖可選</p>
-				<p></p>
-  
-			  </div>
-		  </div>
-		  <div class="card">
-			  <a href="#">
-				  <div class="img"><img src="./img/800x10.jpg" alt=""></div>
-			  </a>
-			  <div class="txt">
-				  <p>收藏家原木雪茄鋼筆 </p>
-				  <p>肖楠 | 檜木 | 龍柏</p>
-				  <p></p>
-  
-			  </div>
-		  </div>
-		  <div class="card">
-			  <a href="#">
-				  <div class="img"><img src="./img/800x11.jpg" alt=""></div>
-			  </a>			  
-			  <div class="txt">
-				  <p>【IWI】鋼筆卡水補充包</p>
-				  <p>#10支裝</p>
-				  <p></p>
-			  </div>
-		  </div>
-		  <div class="card">
-			  <a href="#">
-				  <div class="img"><img src="./img/800x13.jpg" alt=""></div>
-			  </a>
-			  
-			  <div class="txt">
-				  <p>【梨煙系列】梨木鋼筆</p>
-				  <p>可加購雷雕及皮革套</p>
-				  <p></p>
-  
-			  </div>
-		  </div>
-		  <div class="card">
-			  <a href="#">
-				  <div class="img"><img src="./img/rotring-600-3color2.webp" alt=""></div>
-			  </a>			  
-			  <div class="txt">
-				  <p>Rotring 600紅藍綠桿自動鉛筆、原子筆</p>
-				  <p></p>
-				  <p></p>
-  			  </div>
-		  </div>
-	  </div>
-		</div>
-  </div>
-  <section class="flex ex j_c-a_c"></section>
-  <section class="flex w100 j_c ">	  
-	  <!-- siss代表伊麗莎白的小名 -->
-	  <section class="siss flex-w">
-<div class="siss_art ">
-	<div class="flex _siss_title">
-		<div class="flex siss_h2 ">
-			<h2>客製化</h2>
-			<h2>禮盒</h2>
-			
-		</div>
-	</div>
-	<div><p style="text-align:left;">運用網頁製作出專屬於你的特色文具禮盒透過「文字」來表達出自己獨特的味道。</p>
-		<div class="siss_b"><a href="#">立即製作</a></div>
-	</div>
-</div>
-<div class="flex siss_img"><img src="./img/800x15.jpg" alt=""></div>
-</section>
-  </section>
-  <section class="ch_ink mlr-auto l200 flex-r wmax-xl " >
-	<div class="ink2 xs-full "  >
-			<hgroup class="mlr-auto l200" 	>
-	  <h2 class="p32">小墨器</h2>
-	  <h2 class="p24">最貼近你的書法用具</h2>
-  </hgroup>
-<ul >
-	<li>一桶式的結構設計，便於收納與攜帶</li>
-	<li>口紅膠式墨條，易用不髒手</li>
-	<li>二合一設計，書寫墊即是筆簾</li>
-	<li>特殊紙鎮設計，與巧妙收納空間</li>
-	<li>毛筆來自百年品牌 - 林三益筆墨專家</li>
-	<li>台灣唯一手工松煙墨製業 - 大有製墨</li>
-</ul></div>
-	<div class="xs-full w50 wmax500px" data-aos="fade-up"><img class="wmax100 w100" src="./img/1101eaadc20242ac110005.png" alt=""></div>
-</section>
+      </section>
 
-<section style="background:url(./img/70245236-aaed-4ffe-8190-806d61d04e74.jpg);background-position: center;background-attachment:fixed ;height:200px; ";></section>
-<!-- <section class="ch_ink2 mlr-auto" style="max-width: 1200px;"><img class="wmax100" src="./img/2200x (1).webp" alt=""></section> -->
-<!-- <section class="mlr-auto " style="max-width: 1200px;"></section> -->
-<section class="ex2 flex-w j_sa">
-	<div class="hidden ch_ink3" >
-		<div data-aos="fade-up">
-			<img class="wmax100" src="./img/1200x(1).webp" alt="">
-		</div>
-		<div class="" data-aos="fade-right" data-aos-anchor-placement="top-center">
-				<strong><h2 class="l300">口紅膠式墨條，易用不髒手</h2></strong>
-				<p class="l200">利用口紅膠方式包覆墨條，告別以往墨條產品容易髒手的特性。</p>
-				<p class="l200">內部墨芯使用完可以做替換。</p>
-		</div>
-	</div>
-	<div class="ch_ink4" >
-		<div data-aos="fade-up">
-			<img class="wmax100" src="./img/1200x.webp" alt="">
-		</div>
-		
-		<div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-mirror="true" >
-			<strong><h2 class="l300">二合一設計，書寫墊即是筆簾</h2></strong>
-			<p class="l200">利用布柔軟的特性和簡易的切割，將筆簾與書寫墊結合。</p>
-		</div>
-	</div>
-</section>
-<section class="ch_ink2 mlr-auto wmax-xl" ><img class="wmax100" src="./img/2200x (1).webp" alt=""></section>
-</main>
+      <section
+        style="
+          background: url(./img/70245236-aaed-4ffe-8190-806d61d04e74.jpg);
+          background-position: center;
+          background-attachment: fixed;
+          height: 200px;
+        "
+      ></section>
+      <!-- <section class="ch_ink2 mlr-auto" style="max-width: 1200px;"><img class="wmax100" src="./img/2200x (1).webp" alt=""></section> -->
+      <!-- <section class="mlr-auto " style="max-width: 1200px;"></section> -->
+      <section class="ex2 flex-w j_sa">
+        <div class="hidden ch_ink3">
+          <div data-aos="fade-up">
+            <img class="wmax100" src="./img/1200x(1).webp" alt="" />
+          </div>
+          <div
+            class=""
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+          >
+            <strong><h2 class="l300">口紅膠式墨條，易用不髒手</h2></strong>
+            <p class="l200">
+              利用口紅膠方式包覆墨條，告別以往墨條產品容易髒手的特性。
+            </p>
+            <p class="l200">內部墨芯使用完可以做替換。</p>
+          </div>
+        </div>
+        <div class="ch_ink4">
+          <div data-aos="fade-up">
+            <img class="wmax100" src="./img/1200x.webp" alt="" />
+          </div>
 
-	<footer>
-<div class="foot">
-  <div class="container">
-    <div class="item">
-      <h3>關於書香世家</h3>
-      <div class="nav"><a href="#">客製化服務</a><a href="#">預約空間</a><a href="#">預約座位</a></div>
-    </div>
-    <div class="item">
-      <h3>客戶須知</h3>
-      <div class="nav"><a href="#">退換貨流程</a><a href="#">售後服務</a><a href="#">免責聲明</a><a href="#">品牌理念</a></div>
-    </div>
-    <div class="item">
-      <h3>產品與服務</h3>
-      <div class="nav"><a href="orginal2.html">＞手工原創</a><a href="teaching2.html">＞手寫教學</a><a href="gift.html">＞禮品小物</a><a href="write.html">＞文房具</a></div>
-    </div>
-    <div class="item item_form">
-      <h3>訂閱電子報</h3>
-      <form>
-        <input type="email" name=""/>
-        <input type="submit" value="訂閱"/>
-      </form>
-    </div>
-  </div>
-  <div class="foot copy">copyright &copy;書香世家</div>
-</div>
-	</footer>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-  AOS.init();
-</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="./js/main.js"></script>
-</body>
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-mirror="true"
+          >
+            <strong><h2 class="l300">二合一設計，書寫墊即是筆簾</h2></strong>
+            <p class="l200">
+              利用布柔軟的特性和簡易的切割，將筆簾與書寫墊結合。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="ch_ink2 mlr-auto wmax-xl">
+        <img class="wmax100" src="./img/2200x (1).webp" alt="" />
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <div class="container">
+          <div class="item">
+            <h3>關於書香世家</h3>
+            <div class="nav">
+              <a href="#">客製化服務</a><a href="#">預約空間</a
+              ><a href="#">預約座位</a>
+            </div>
+          </div>
+          <div class="item">
+            <h3>客戶須知</h3>
+            <div class="nav">
+              <a href="#">退換貨流程</a><a href="#">售後服務</a
+              ><a href="#">免責聲明</a><a href="#">品牌理念</a>
+            </div>
+          </div>
+          <div class="item">
+            <h3>產品與服務</h3>
+            <div class="nav">
+              <a href="orginal2.html">＞手工原創</a
+              ><a href="teaching2.html">＞手寫教學</a
+              ><a href="gift.html">＞禮品小物</a
+              ><a href="write.html">＞文房具</a>
+            </div>
+          </div>
+          <div class="item item_form">
+            <h3>訂閱電子報</h3>
+            <form>
+              <input type="email" name="" />
+              <input type="submit" value="訂閱" />
+            </form>
+          </div>
+        </div>
+        <div class="foot copy">copyright &copy;書香世家</div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

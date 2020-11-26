@@ -36,6 +36,14 @@ div.txt {
   min-width: 300px;
   max-width: 700px;
 }
+#side optgroup,
+#side option,
+select#side {
+  font-size: 16px;
+}
+#side {
+  display: none;
+}
 div.main {
   display: flex;
   flex-flow: row wrap;
@@ -274,6 +282,9 @@ summary {
 @media screen and (max-width: 575px) {
   .nav_left {
     display: none;
+  }
+  #side {
+    display: initial;
   }
   .div.card {
     min-width: 0;

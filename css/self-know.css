@@ -9,13 +9,10 @@
   display: inline-block;
   margin: 0;
 }
-.like,
-.host {
-  outline: 1px solid pink;
-}
 .host,
 .like {
   background-color: #fff;
+  outline: 1px solid pink;
 }
 .host,
 .apply {
@@ -26,7 +23,7 @@
   color: #000;
 }
 .apply {
-  /* border: 1px solid red; */
+  outline: 1px solid blue;
   background-color: blue;
   width: 40%;
 }

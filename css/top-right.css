@@ -1,0 +1,13 @@
+#user {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+#user > a {
+  padding: 5px;
+  display: inline-block;
+  color: #000;
+}
+#user > a:hover {
+  cursor: pointer;
+}

@@ -172,7 +172,7 @@ main.rwd {
   display: flex;
   padding-top: 10px;
 
-  z-index: 3;
+  z-index: 999;
   height: 100px;
   position: sticky;
   top: 0px;
@@ -214,28 +214,16 @@ ul.navul li {
   vertical-align: middle;
 }
 ul.navul li:hover {
-  /* border-bottom: 5px solid #fccb00;
-   */
   box-shadow: 0px -3px 1px 0px rgb(245, 223, 182) inset;
 }
 li > div.pen,
 li > div.gift {
   position: relative;
 }
-
-div.pen {
-  margin-right: 8px;
-}
 .pen > img.pimg,
 .gift > img.gimg {
   display: none;
   vertical-align: middle;
-}
-
-.pen:hover img.pimg,
-.gift:hover img.gimg {
-  animation: ani 0.4s infinite alternate;
-  display: initial;
 }
 
 ul.span11,
@@ -311,9 +299,6 @@ button.btn_switch {
     position: relative;
     right: 15px;
   }
-  li > div.gift {
-    right: 15px;
-  }
   .gift > .span21,
   .pen > .span11 {
     display: none;
@@ -351,9 +336,20 @@ button.btn_switch {
   .span2:hover::after {
     transform: rotate(90deg);
   }
+  .pen:hover img.pimg,
+  .gift:hover img.gimg {
+    animation: ani 0.4s infinite alternate;
+    display: initial;
+  }
 }
 /* 命名規則min與max採用 @media標準 */
 /* 制定RWD規範，media要提高優先權才能蓋過 或者用!important */
+#member {
+  position: relative;
+}
+#member:hover #login {
+  display: block;
+}
 @media screen and (max-width: 575px) {
   .xs-full,
   .xs-full.w50 {
@@ -381,4 +377,23 @@ button.btn_switch {
   .dnone-max-lg {
     display: none !important;
   }
+}
+
+#login {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.modan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#x-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }

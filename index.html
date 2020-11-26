@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- section適合調整百分比% -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>書香世家</title>
-	    <link
+  <head>
+    <!-- section適合調整百分比% -->
+    <link rel="icon" href="data:," />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>書香世家</title>
+    <style></style>
+    <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
@@ -21,251 +23,310 @@
       integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l"
       crossorigin="anonymous"
     />
-	  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/footer.css">
-	<link rel="stylesheet" href="./css/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <!-- <link rel="stylesheet" href="" /> -->
 
-</head>
-<body>
-<header class=" main-head">
-	<div class="logobox"><a href="index.html"><img src="./img/logok.png" alt=""></a></div>
-	<ul class="navul">
-		<li>
-			<div class="pen">
-				<img src="./img/feather.png" alt="" class="pimg wmax100" width="25px" height="auto">
-				<a class="span1" href="#">文具房</a>
-				<ul class="span11">
-					<li><a href="write.html">筆記文具</a></li>
-					<li><a href="write.html">筆盒/筆袋</a></li>
-					<li><a href="write.html">墨水</a></li>
-					<li><a href="write.html">筆記本</a></li>
-				</ul>
-			</div>
+    <style>
+      @import "./css/top-right.css";
+      @import "./css/index.css";
+    </style>
+  </head>
+  <body>
+    <header class="main-head">
+      <div class="logobox">
+        <a href="index.html"><img src="./img/logok.png" alt="" /></a>
+      </div>
+      <ul class="navul">
+        <li>
+          <div class="pen">
+            <img
+              src="./img/feather.png"
+              alt=""
+              class="pimg wmax100"
+              width="25px"
+              height="auto"
+            />
+            <a class="span1" href="#">文具房</a>
+            <ul class="span11">
+              <li><a href="write.html">筆記文具</a></li>
+              <li><a href="write.html">筆盒/筆袋</a></li>
+              <li><a href="write.html">墨水</a></li>
+              <li><a href="write.html">筆記本</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="gift">
+            <img
+              src="./img/gift-icon.png"
+              alt=""
+              class="gimg"
+              width="30px"
+              height="auto"
+            />
+            <a class="span2" href="#">禮品小物</a>
+            <ul class="span21">
+              <li><a href="gift.html">療癒香氛</a></li>
+              <li><a href="gift.html">清潔收納</a></li>
+              <li><a href="gift.html">瓶瓶罐罐</a></li>
+              <li><a href="gift.html">餐桌道具</a></li>
+              <li><a href="gift.html">皮件工具</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="orginal2.html">手工原創</a></li>
+        <li><a href="teaching2.html">手寫教學</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+      </ul>
+      <div class="drop">
+        <button class="hamburger hamburger--squeeze btn_switch" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div id="user" style="position: absolute; right: 15px; top: 5px">
+        <a id="cart"><i class="fad fa-shopping-cart"></i></a>
+        <a id="member">
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+      <section id="login" style="display: none">
+        <div class="modan">
+          <a id="x-close"><i class="far fa-times"></i> </a>
+          <h3>會員登入</h3>
+          <form action="">
+            <input type="text" placeholder="請輸入email" /><br />
+            <input type="password" id="" placeholder="請輸入密碼" /><br />
+            <input type="submit" value="登入" />
+            <input type="button" value="註冊" />
+          </form>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="Carousel">
+        <div style="background-image: url(./img/Bookstore2017_780.jpg)"></div>
+        <div
+          style="background-image: url(./img/160411833686088_P5307131.jpg)"
+        ></div>
+        <div
+          style="background-image: url(./img/blushline-WB69201-03.jpg)"
+        ></div>
+        <div style="background-image: url(./img/og_banner.jpg)"></div>
+        <div style="background-image: url(./img/172033.jpg)"></div>
+      </div>
+      <div class="write">
+        <div class="row1">
+          <div class="p y-flex j_c-a_c">
+            <p class="p32 l300">文 具 房</p>
+            <p>“沒有浮誇設計與機能、注重文具的本質。”</p>
+          </div>
+          <div class="img1">
+            <img class="waterpen" src="./img/專業沾水筆.png" alt="專業沾水筆" />
+            <img class="boo" src="./img/手寫簿.png" alt="手寫簿子" />
+          </div>
+        </div>
+        <div
+          class="row2 flex-w"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <div class="shop1">
+            <div class="img">
+              <img src="./img/29103230527_dc6661a4bf_b.png" alt="" />
+            </div>
+            <div class="shopt">
+              <h4>彩紋木桿沾水筆輕巧包/附筆尖 Francesco Rubinato</h4>
+            </div>
+          </div>
+          <div class="shop2">
+            <div class="img">
+              <img src="./img/46745092972_aeabf5138e_z2.png" alt="" />
+            </div>
+            <div class="shopt">
+              <h4>義大利豪華實用斜桿沾水筆禮盒 Francesco Rubinato</h4>
+            </div>
+          </div>
+          <div class="shop3">
+            <div class="img"><img src="./img/498010.png" alt="" /></div>
+            <div class="shopt">
+              <h4>手工木頭筆</h4>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="maingift">
+        <div class="gift1" data-aos="fade-right">
+          <!-- <img  src="./img/gift_left.png" alt=""> -->
+        </div>
+        <div class="gift2">
+          <a href="#" class="ourter">
+            <h3>各式禮品精緻小物</h3>
+            <p>本月主打手帳信紙周邊小物，並同步與日travel'note合作聯名商品</p>
+            <div class="box">
+              <div class="message"></div>
+              <div class="box-top">
+                <ul>
+                  <li class="first"></li>
+                  <li class="middle"></li>
+                  <li class="last"></li>
+                </ul>
+                <div class="lid"><span></span></div>
+              </div>
 
-		</li>
-		<li>
-			<div class="gift">
-				<img src="./img/gift-icon.png" alt="" class="gimg" width="30px" height="auto">
-				<a class="span2" href="#">禮品小物</a>
-				<ul class="span21">
-					<li><a href="gift.html">療癒香氛</a></li>
-					<li><a href="gift.html">清潔收納</a></li>
-					<li><a href="gift.html">瓶瓶罐罐</a></li>
-					<li><a href="gift.html">餐桌道具</a></li>
-					<li><a href="gift.html">皮件工具</a></li>
-				</ul>
-			</div>
-		</li>
-		<li><a href="orginal2.html">手工原創</a></li>
-		<li><a href="teaching2.html">手寫教學</a></li>
-		<li><a href="contact.html">聯絡我們</a></li>
-	</ul>
-	<div class="drop">
-		<button class="hamburger hamburger--squeeze btn_switch" type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
-	</div>
+              <div class="box-bottom">
+                <div class="base"><span></span></div>
+                <div class="cat">
+                  <div class="face">
+                    <span class="eye left"></span>
+                    <span class="eye right"></span>
+                    <span class="nose"></span>
+                    <span class="mouth"></span>
+                  </div>
+                  <div class="body">
+                    <span class="hand left"></span>
+                    <span class="hand right"></span>
+                    <div class="rotulo">
+                      <span style="z-index: 10">我要禮物</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="gift3" data-aos="fade-left">
+          <!--<img class="" src="./img/gift_right.png" alt=""> -->
+        </div>
+      </div>
 
-</header>
-	<main>
-		<div class="Carousel" >
-  <div style="background-image:url(./img/Bookstore2017_780.jpg)"></div>
-  <div style="background-image:url(./img/160411833686088_P5307131.jpg)"></div>
-  <div style="background-image:url(./img/blushline-WB69201-03.jpg)"></div>
-  <div style="background-image:url(./img/og_banner.jpg)"></div>
-  <div style="background-image:url(./img/172033.jpg)"></div>
-		</div>
-		<div class="write">
-			<div class="row1">
-				<div class="p y-flex j_c-a_c">
-				<p class="p32 l300">文	具	 房</p>
-				<p>“沒有浮誇設計與機能、注重文具的本質。”</p>
-				</div>
-				<div class="img1">
-					<img class="waterpen" src="./img/專業沾水筆.png" alt="專業沾水筆">
-					<img class="boo" src="./img/手寫簿.png" alt="手寫簿子">
-				</div>
-			</div>
-			<div class="row2 flex-w" data-aos="fade-up" data-aos-anchor-placement="top-center">
-				<div class="shop1">
-					<div class="img"><img src="./img/29103230527_dc6661a4bf_b.png" alt=""></div>
-					<div class="shopt">
-						<h4>彩紋木桿沾水筆輕巧包/附筆尖 Francesco Rubinato</h4>
-					</div>
-				</div>
-				<div class="shop2">
-					<div class="img"><img src="./img/46745092972_aeabf5138e_z2.png" alt=""></div>
-					<div class="shopt">
-						<h4>義大利豪華實用斜桿沾水筆禮盒 Francesco Rubinato</h4>
-					</div>
-				</div>
-				<div class="shop3">
-					<div class="img"><img src="./img/498010.png" alt=""></div>
-					<div class="shopt">
-						<h4>手工木頭筆</h4>
-					</div>
-				</div>
+      <div class="hand">
+        <img src="./img/handlove.png" alt="" />
+        <img src="./img/handright.png" alt="" />
+      </div>
+      <div class="news">
+        <div class="h"><h1 class="p24">熱門活動</h1></div>
+        <div class="nframe flex-w">
+          <div class="ncard">
+            <div class="nimg">
+              <a href="200215giftcard.html"
+                ><img src="./img/7e8c506f3d694b5699c1e387b9cb969b.jpg" alt=""
+              /></a>
+            </div>
+            <div class="ntxt">
+              <p><i class="far fa-clock"></i>2016-03-19(六)</p>
+              <a href="200215giftcard.html"
+                ><h4>[初夢手作工坊]自製手工書課程</h4></a
+              >
+              <br />
+              <a href="#" class="fc">#藝術</a>
+            </div>
+          </div>
+          <div class="ncard">
+            <div class="nimg">
+              <a href="200214giftcard.html"
+                ><img src="./img/2003030645136561267240.jpg" alt=""
+              /></a>
+            </div>
+            <div class="ntxt">
+              <p><i class="far fa-clock"></i>2020-10-18(日)</p>
+              <a href="200214giftcard.html"
+                ><h4>沾水筆美字：摩登體習字班</h4></a
+              >
+              <br />
+              <a href="#" class="fc">#寫字</a>
+            </div>
+          </div>
+          <div class="ncard">
+            <div class="nimg">
+              <a href="200212giftcard.html"
+                ><img src="./img/20012112171640134855402.jpg" alt=""
+              /></a>
+            </div>
+            <div class="ntxt">
+              <p><i class="far fa-clock"></i>2020-02-02(日)</p>
+              <a href="200212giftcard.html"
+                ><h4>【生活休憩客棧】情人節寶藏卡手作體驗</h4></a
+              >
+              <a href="#" class="fc">#卡片</a>
+            </div>
+          </div>
+          <div class="ncard">
+            <div class="nimg">
+              <a href="200213giftcard.html"
+                ><img src="./img/1912091400041136558124.jpg" alt=""
+              /></a>
+            </div>
+            <div class="ntxt">
+              <p><i class="far fa-clock"></i>2020-03-29(日)</p>
+              <a href="200213giftcard.html"
+                ><h4>下班手作 ‖ 鐵罐乾燥花香氛蠟燭</h4></a
+              >
+              <br />
+              <a href="#" class="fc">#手作</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-
-			</div>
-		</div>
-		
-		<div class="maingift">
-				<div class="gift1" data-aos="fade-right">
-				<!-- <img  src="./img/gift_left.png" alt=""> -->
-				</div>
-				<div class="gift2">
-				
-				
-				<a href="#" class="ourter" >
-				<h3>各式禮品精緻小物</h3>
-				<p>本月主打手帳信紙周邊小物，並同步與日travel'note合作聯名商品</p>
-				  <div class="box">   
-				    <div class="message"></div>   
-				    <div class="box-top">
-				      <ul>
-				        <li class="first"></li>
-				        <li class="middle"></li>
-				        <li class="last"></li>
-				      </ul>
-				      <div class="lid"><span></span></div>
-				    </div>
-				    
-				    <div class="box-bottom">
-				      <div class="base"><span></span></div>
-				      <div class="cat">
-				        <div class="face">
-				          <span class="eye left"></span>
-				          <span class="eye right"></span>
-				          <span class="nose"></span>
-				          <span class="mouth"></span>
-				        </div>
-				        
-				        <div class="body">
-				          <span class="hand left"></span>
-				          <span class="hand right"></span>
-				          <div class="rotulo"><span style="z-index:10;">我要禮物</span></div>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				</a>
-				</div>
-				 <div class="gift3" data-aos="fade-left"><!--<img class="" src="./img/gift_right.png" alt=""> -->
-				</div >
-
-				
-			</div>
-		</div>	
-				
-		<div class="hand">
-			<img src="./img/handlove.png" alt="">
-			<img src="./img/handright.png" alt="">
-		</div>
-<div class="news">
-	<div class="h"><h1 class="p24">熱門活動</h1></div>
-	<div class="nframe flex-w">
-		<div class="ncard">
-			<div class="nimg">
-				<a href="200215giftcard.html"><img src="./img/7e8c506f3d694b5699c1e387b9cb969b.jpg" alt=""></a>
-			</div>
-			<div class="ntxt">
-				
-				<p><i class="far fa-clock"></i>2016-03-19(六)</p>
-				<a href="200215giftcard.html"><h4>[初夢手作工坊]自製手工書課程</h4></a>
-				<br>
-				<a href="#" class="fc">#藝術</a>
-
-			</div>
-		</div>
-		<div class="ncard">
-			<div class="nimg">
-				<a href="200214giftcard.html"><img src="./img/2003030645136561267240.jpg" alt=""></a>
-			</div>
-			<div class="ntxt">
-				
-				<p><i class="far fa-clock"></i>2020-10-18(日)</p>
-				<a href="200214giftcard.html"><h4>沾水筆美字：摩登體習字班</h4></a>
-				<br>
-				<a href="#" class="fc">#寫字</a>
-
-			</div>
-		</div>
-		<div class="ncard">
-			<div class="nimg">
-				<a href="200212giftcard.html"><img src="./img/20012112171640134855402.jpg" alt=""></a>
-			</div>
-			<div class="ntxt">
-				
-				<p><i class="far fa-clock"></i>2020-02-02(日)</p>
-				<a href="200212giftcard.html"><h4>【生活休憩客棧】情人節寶藏卡手作體驗</h4></a>
-				<a href="#" class="fc">#卡片</a>
-
-			</div>
-		</div>
-		<div class="ncard">
-			<div class="nimg">
-				<a href="200213giftcard.html"><img src="./img/1912091400041136558124.jpg" alt=""></a>
-			</div>
-			<div class="ntxt">
-				<p><i class="far fa-clock"></i>2020-03-29(日)</p>
-				<a href="200213giftcard.html"><h4>下班手作 ‖ 鐵罐乾燥花香氛蠟燭</h4></a>
-				<br>
-				<a href="#" class="fc">#手作</a>
-			</div>
-		</div>
-	</div>
-
-</div>
-	</main>
-
-
-
-	<footer class="">
-<div class="foot ">
-  <div class="container">
-    <div class="item">
-      <h3>關於書香世家</h3>
-      <div class="nav"><a href="#">客製化服務</a><a href="#">預約空間</a><a href="#">預約座位</a></div>
-    </div>
-    <div class="item">
-      <h3>客戶須知</h3>
-      <div class="nav"><a href="#">退換貨流程</a><a href="#">售後服務</a><a href="#">免責聲明</a><a href="#">品牌理念</a></div>
-    </div>
-    <div class="item">
-      <h3>產品與服務</h3>
-      <div class="nav"><a href="orginal2.html">＞手工原創</a><a href="teaching2.html">＞手寫教學</a><a href="gift.html">＞禮品小物</a><a href="write.html">＞文房具</a></div>
-    </div>
-    <div class="item item_form">
-      <h3>訂閱電子報</h3>
-      <form>
-        <input type="email" name=""/>
-        <input type="submit" value="訂閱"/>
-	  </form>
-	  <div class="flex" >
-<a href="https://line.me/zh-hant/" target="_blank"><i class="fab fa-line fa-2x" ></i></a>
-<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x" ></i></a>
-<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x" ></i></a>
-<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-	  </div>
-    </div>
-  </div>
-  <div class="foot copy">copyright &copy;書香世家</div>
-</div>
-	</footer>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-  AOS.init();
-</script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
+    <a id="up"><i class="far fa-angle-up fa-2x"></i></a>
+    <footer class="">
+      <div class="foot">
+        <div class="container">
+          <div class="item">
+            <h3>關於書香世家</h3>
+            <div class="nav">
+              <a href="#">客製化服務</a><a href="#">預約空間</a
+              ><a href="#">預約座位</a>
+            </div>
+          </div>
+          <div class="item">
+            <h3>客戶須知</h3>
+            <div class="nav">
+              <a href="#">退換貨流程</a><a href="#">售後服務</a
+              ><a href="#">免責聲明</a><a href="#">品牌理念</a>
+            </div>
+          </div>
+          <div class="item">
+            <h3>產品與服務</h3>
+            <div class="nav">
+              <a href="orginal2.html">＞手工原創</a
+              ><a href="teaching2.html">＞手寫教學</a
+              ><a href="gift.html">＞禮品小物</a
+              ><a href="write.html">＞文房具</a>
+            </div>
+          </div>
+          <div class="item item_form">
+            <h3>訂閱電子報</h3>
+            <form>
+              <input type="email" name="" />
+              <input type="submit" value="訂閱" />
+            </form>
+          </div>
+        </div>
+        <div class="foot copy">copyright &copy;書香世家</div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      document.body.addEventListener("touchstart", function () {}); //IOS
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
