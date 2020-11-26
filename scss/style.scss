@@ -1,0 +1,199 @@
+@import 'var';//加上下底線不轉譯
+@import 'node_modules/';
+@mixin marginAuto(){
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+@mixin css3($property,$value){
+  @each $prefix in '', -webkit- , -moz- , -o- , -ms-
+{
+    #{$prefix}#{$property}:$value
+}  
+}
+@mixin rwd($b){
+    @if $b == desktop{
+        @media all and (min-width:1200px){
+            @content;
+        }
+    }
+    @else if $b == medium{
+        @media all and (min-width:996px){
+            @content;
+        }
+    }
+        @else if $b == small{
+        @media all and (min-width:768px){
+            @content;
+        }
+    }
+}
+@mixin text($weight){
+    font-size: 16px;
+    @if $weight==bold{
+        font-weight:bold;
+    }
+    @else if $weight==medium{
+        font-weight:400;
+    }
+    @else if $weight==lighter{
+        font-weight:100;
+    }
+}
+// @mixin($W,$h,$bordercolor,){}
+@mixin rect($w){
+    width:$w * 2 ;
+    height:$w;
+}
+@mixin rects($w,$h){
+    width:$w;
+    height:$h;
+}
+@mixin btn($w,$h,$bordercolor,$bgc,$borderRadius:null){padding:$w $h;
+text-align: center;
+border:1px solid $bordercolor;
+outline:springgreen;
+border-radius:$borderRadius;
+background-color: $bgc;
+&:hover{
+    background-color:linghten($bgc,20);
+}
+}
+.box{
+    @include rect(100px);
+    @include marginAuto();
+}
+.box1{
+@include rect(100px);
+@include marginAuto();
+}
+body{
+    *{
+        box-sizing: border-box;
+    }
+    padding:20px;
+    font-size: $font-size ;
+    margin:$margin;
+background-color: map-get($bgcolor, 'blue');
+.wrapper{
+    height:100vh;
+    width:100vw;
+    h1{
+    font-size: $font-size;
+   }
+   .content{
+       width:80%;
+   }
+} 
+
+}
+.red{
+    color:red;
+}
+.blue{
+    color:blue;
+}
+.boxblue{
+    width:100px;
+    height:300px;
+    @extend .blue;
+}
+.boxred{
+    width:300px;
+    height:400px;
+    @extend .red;
+}
+.bb{
+    width:100 + 100;
+    height:100px - 20px;
+}
+.cc{
+    width:ceil(78.95px);//無條件進位
+    height:round(67.45px);//四捨五入
+    padding:floor(56.34px);//無條件捨去
+}
+@mixin fontSize($font-base-size){
+h1{
+    font-size:ceil($font-base-size * 4.2);
+}
+h2{
+    font-size:ceil($font-base-size * 3.8);
+}
+h3{
+    font-size:ceil($font-base-size * 2.5);
+}
+h4{
+    font-size:ceil($font-base-size * 1.5);
+}
+h5{
+    font-size:ceil($font-base-size * 1.2);
+}
+}
+@include fontSize(15px);
+@for $i from 1 through 10{
+    .dot-#{$i}{
+        width:$i * 1px;
+    }
+}
+@include rwd(desktop){
+body{
+    font-size:30px;
+}
+}
+@include rwd(small){
+    body{
+        font-size: 30px;
+        color:#FFF;
+    }
+}
+@mixin img_bg($img-map,$files:jpg){
+@each $img in $img-map{
+    .#{$img}-photo{
+        background-image: url('./images/#{img}.#{$files}');
+        width:100%;
+        background-size:cover;
+        @content;
+    }
+}
+}
+@include img_bg(a1 a2){
+width:100%;
+height:300px;
+};
+@include img_bg(c1 c2 c3,png){
+width:100%;
+}
+.boxer{
+    @include css3(transition,0.1s); 
+}
+.btnbox{
+    width:100px;
+    padding:20px;
+    text-align:conter;
+    color:#FFF;
+}
+%redColor{
+    color:red;
+
+}
+.boxes{
+    @extend %redColor
+}
+%bg-image{
+    width:100%;
+    background-position:center center ;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+@mixin bgImages(){
+    width:100%;
+    background-position:center center ;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+.f-image{
+    @extend %bg-image;
+
+}

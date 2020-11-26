@@ -19,12 +19,7 @@ a {
   width: 100%;
   max-width: 1000px;
 }
-.himg img {
-  max-width: 100%;
-}
-.txt1 {
-  line-height: 1.5;
-}
+
 .left {
   width: 75%;
 }
@@ -37,7 +32,8 @@ a {
 .txt3 {
   text-align: center;
 }
-.txt4 img {
+.txt4 img,
+.himg img {
   max-width: 100%;
 }
 [class^="txt"] {

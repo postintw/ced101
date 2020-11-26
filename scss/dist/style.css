@@ -1,0 +1,196 @@
+.box {
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box1 {
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  padding: 20px;
+  font-size: 14px;
+  margin: 10px 10px 10px 20px;
+  background-color: #0024ff;
+}
+body * {
+  box-sizing: border-box;
+}
+body .wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+body .wrapper h1 {
+  font-size: 14px;
+}
+body .wrapper .content {
+  width: 80%;
+}
+
+.red, .boxred {
+  color: red;
+}
+
+.blue, .boxblue {
+  color: blue;
+}
+
+.boxblue {
+  width: 100px;
+  height: 300px;
+}
+
+.boxred {
+  width: 300px;
+  height: 400px;
+}
+
+.bb {
+  width: 200;
+  height: 80px;
+}
+
+.cc {
+  width: 79px;
+  height: 67px;
+  padding: 56px;
+}
+
+h1 {
+  font-size: 63px;
+}
+
+h2 {
+  font-size: 57px;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.dot-1 {
+  width: 1px;
+}
+
+.dot-2 {
+  width: 2px;
+}
+
+.dot-3 {
+  width: 3px;
+}
+
+.dot-4 {
+  width: 4px;
+}
+
+.dot-5 {
+  width: 5px;
+}
+
+.dot-6 {
+  width: 6px;
+}
+
+.dot-7 {
+  width: 7px;
+}
+
+.dot-8 {
+  width: 8px;
+}
+
+.dot-9 {
+  width: 9px;
+}
+
+.dot-10 {
+  width: 10px;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 30px;
+  }
+}
+@media all and (min-width: 768px) {
+  body {
+    font-size: 30px;
+    color: #FFF;
+  }
+}
+.a1-photo {
+  background-image: url("./images/img.jpg");
+  width: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.a2-photo {
+  background-image: url("./images/img.jpg");
+  width: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.c1-photo {
+  background-image: url("./images/img.png");
+  width: 100%;
+  background-size: cover;
+  width: 100%;
+}
+
+.c2-photo {
+  background-image: url("./images/img.png");
+  width: 100%;
+  background-size: cover;
+  width: 100%;
+}
+
+.c3-photo {
+  background-image: url("./images/img.png");
+  width: 100%;
+  background-size: cover;
+  width: 100%;
+}
+
+.boxer {
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+}
+
+.btnbox {
+  width: 100px;
+  padding: 20px;
+  text-align: conter;
+  color: #FFF;
+}
+
+.boxes {
+  color: red;
+}
+
+.f-image {
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -5,7 +5,11 @@
   padding: 0;
   background: linear-gradient(0deg, #f1e7c0, #f4f1e3);
 }
+input {
+  height: 22.4px;
+}
 .foot .container {
+  max-width: 100%;
   padding-top: 15px;
   width: 100%;
   display: flex;
@@ -44,6 +48,9 @@
   background-color: #fbf1e3;
   color: #08395a;
 }
+.item_form > div {
+  display: flex;
+}
 
 @media screen and (max-width: 575px) {
   /*訂閱電子報會超出，*/
@@ -53,4 +60,29 @@
   input {
     max-width: 90vw;
   }
+}
+#up {
+  display: inline-block;
+  color: #fff;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 50;
+}
+#up:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#up.show {
+  opacity: 1;
+  visibility: visible;
 }

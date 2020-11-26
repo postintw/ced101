@@ -1,0 +1,28 @@
+$font-size:14px;
+$color:#000;
+$null:null;
+$as:true;
+$num: (10 - 2);
+$font_family:'Arial';
+$margin:10px 10px 10px 20px;//list
+//類似陣列
+$bgcolor : ('blue':rgb(0,36,275),'yellow':rgb(250,250,250));
+$font-base-size:14px;
+$desktop:1366px;
+$medium:1024px;
+$small:721px;
+$img-bg:a1,a2,a3,a4,b1,b2;//有沒有逗號都兼容
+$titlefont:(
+    'h1':60px, 
+    'h2':50px,
+    'h3':40px,
+    'h4':30px,
+    'h5':20px,
+    'h6':16px
+);
+$btnColor:(
+    'blue':rgb(0,37,245),
+    'yellow':rgb(255,238,0),
+    'green':rgb(51,255,0),
+    'black':rgb(0,0,0)
+);

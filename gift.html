@@ -2,11 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+      integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+      integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>書香世家</title>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/gift.css" />
+    <style>
+      @import "./css/top-right.css";
+    </style>
   </head>
   <body>
     <header class="main-head">
@@ -62,6 +81,10 @@
           </span>
         </button>
       </div>
+      <div id="user">
+        <a href="#" id="cart"><i class="fad fa-shopping-cart"></i></a>
+        <a href="#" id="member"><i class="fas fa-user"></i></a>
+      </div>
     </header>
     <div class="breadcrumb ad">
       <ol class="breadcrumb_list">
@@ -73,7 +96,7 @@
     <div class="frame">
       <div class="sidebar"></div>
     </div>
-    <div class="main flex-w">
+    <div class="main flex-w j_c">
       <div class="card">
         <a href="#">
           <div class="img">
@@ -88,7 +111,6 @@
           </div>
         </a>
       </div>
-
       <div class="card">
         <a href="#">
           <div class="img"><img src="./img/800x_3.webp" alt="" /></div>
@@ -296,7 +318,7 @@
       <img src="./img/special-plan-5a33830d778cb.jpg" alt="" class="wmax100" />
     </section>
     <section class="t"><h2>客製化商品~熱門選項</h2></section>
-    <section class="design w100 flex j_c">
+    <section class="flex design w100 j_c">
       <section class="design2 w100 flex-w j_c">
         <div class="g-card w50"><a href="#" class=""> </a></div>
         <div class="g-card w50"><a href="#" class=""> </a></div>
@@ -377,7 +399,7 @@
         </figcaption>
       </figure>
     </section>
-    <section class="w100 flex j_c t">
+    <section class="flex w100 j_c t">
       <div class="good">
         <h2>“好評推薦”</h2>
       </div>
@@ -386,7 +408,7 @@
       <section class="demo-1">
         <!-- <div class="rec_item"></div> -->
         <div class="rec_item">
-          <div class="fb flex a_c">
+          <div class="flex fb a_c">
             <div class="fa circle">
               <img class="w100" src="./img/thumb_yi.jpg" alt="" />
             </div>
@@ -399,7 +421,7 @@
           </p>
         </div>
         <div class="rec_item">
-          <div class="fb flex a_c">
+          <div class="flex fb a_c">
             <div class="fa circle">
               <img class="w100" src="./img/thumb_hsu.jpg" alt="" />
             </div>
@@ -420,7 +442,7 @@
           <p>希望以後可以再繼續看到你們更多更美的作品👍</p>
         </div>
         <div class="rec_item">
-          <div class="fb flex a_c">
+          <div class="flex fb a_c">
             <div class="fa circle">
               <img src="./img/thumb_hu.jpg" alt="" class="w100" />
             </div>
@@ -432,7 +454,7 @@
           <p>持續支持你們👍🏻👍🏻👍🏻👍🏻👍🏻</p>
         </div>
         <div class="rec_item">
-          <div class="fb flex a_c">
+          <div class="flex fb a_c">
             <div class="fa circle">
               <img class="w100" src="./img/thumb_huang.jpg" alt="" />
             </div>
@@ -444,7 +466,7 @@
           <p>未來我親手做出去的機關爆炸卡</p>
         </div>
         <div class="rec_item">
-          <div class="fb flex a_c">
+          <div class="flex fb a_c">
             <div class="fa">
               <img src="./img/thumb_lee.jpg" alt="" class="w100" />
             </div>
@@ -458,7 +480,7 @@
           </p>
         </div>
         <div class="rec_item">
-          <div class="fb flex a_c">
+          <div class="flex fb a_c">
             <div class="fa circle">
               <img src="./img/thumb_yu.jpg" alt="" class="w100" />
             </div>
@@ -486,6 +508,7 @@
         />
       </div>
     </section> -->
+    <a id="up"><i class="far fa-angle-up fa-2x"></i></a>
     <footer>
       <div class="foot">
         <div class="container">
