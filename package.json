@@ -27,10 +27,12 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
+    "browser-sync": "^2.26.13",
     "electron-nightly": "^13.0.0-nightly.20201127",
     "eslint": "^7.14.0",
     "eslint-plugin-vue": "^7.1.0",
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.2.2",

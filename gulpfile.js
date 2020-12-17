@@ -1,4 +1,6 @@
-const { src, dest, series, parallel } = require('gulp'), concat = require('gulp-concat'), cleanCss = require('gulp-clean-css'),uglify=require('gulp-uglify'),sass=require('gulp-sass'),sourcemaps=require('gulp-sourcemaps'),fileinclude=require(gulp-file-include);
+const { src, dest, series, parallel } = require('gulp'), concat = require('gulp-concat'), cleanCss = require('gulp-clean-css'),uglify=require('gulp-uglify'),sass=require('gulp-sass'),sourcemaps=require('gulp-sourcemaps'),fileinclude=require(gulp-file-include),clean = require('gulp-clean'),browserSync = require('browser-sync').create();
+
+var reload = browserSync.reload;
 var rename = require('gulp-rename');
 //js任務
 function defaultTask(cb) {
@@ -51,10 +53,6 @@ function sassStyle() {
         .pipe(dest('.dest/css'));
 }
 exports.sass = sassStyle;
-
-
-
-
 function includehtml() {
     return src('*.html')
         .pipe(fileinclude({
@@ -64,7 +62,36 @@ function includehtml() {
         .pipe(dest('app/'));
 }
 function watchfile() {
-    watch('sass/*.scss', sassStyle);
-    watch('js/*.js',ugljs)
+    watch('sass/*.scss', series(del, sassStyle));
+    watch('js/*.js', ugljs);
+}
+function clearHtml() {
+    return src('dist/*.html', {
+        read: false,//fsalse不讀取內容直接刪除，效能增加
+        force: true,//強制刪除檔案
+        allowEmpty: true,
+    }).pipe(clean());
 }
 exports.watch = watchfile;
+function clear() {
+    return src('dist/css', {
+        read: false,//false不讀取內容直接刪除，效能增加
+        force: true,//強制刪除檔案
+        allowEmpty:true,
+    }).pipe(clean());
+}
+exports.del = clear;
+//先清除css後打包sass怎麼做
+// exports.cssall = series(del, sassStyle);
+function sync() {
+    browserSync.init({
+        server: {
+            baseDir: "./",
+            index:'index.html',
+        },port:3600
+    });
+        watch('sass/*.scss', series(del, sassStyle).on('change',reload));
+    watch('js/*.js', ugljs);
+}
+exports.bsync = sync;
+
